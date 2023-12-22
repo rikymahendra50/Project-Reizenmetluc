@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+@layer components {
+  .label-text {
+    @apply font-medium text-slate-500;
+  }
+  .active {
+    @apply bg-emerald-200;
+  }
+}
+
+.shadow-effect {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-effect-video {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-smallcard {
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.9);
+}
