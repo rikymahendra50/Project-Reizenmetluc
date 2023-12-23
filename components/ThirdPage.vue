@@ -108,7 +108,7 @@
             <img
               src="../assets/images/Screenshots for section 3/code-remote.png"
               alt="code-remote"
-              class="opacity-70 shadow-effect block"
+              class="shadow-effect block rounded-xl"
             />
             <div class="flex justify-end">
               <img
