@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="buttonOrg text-sm lg:text-[18px] font-bold tracking-widest flex flex-wrap w-[90%] h-10 md:h-14 bg-primarycolor justify-center items-center rounded-[7px] cursor-pointer hover:bg-slate-500"
+    class="buttonOrg text-[12px] lg:text-[18px] font-extrabold tracking-widest flex flex-wrap w-[90%] h-10 md:h-14 bg-primarycolor justify-center items-center rounded-[7px] cursor-pointer hover:bg-slate-500"
     target="_blank"
   >
     {{ title }}
@@ -25,7 +25,7 @@ export default {
 
 <style>
 .buttonOrg {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .buttonOrg:hover {

@@ -2,15 +2,16 @@
   <section
     class="relative w-full h-auto bg-cover bg-no-repeat bg-center flex flex-col text-white py-10"
   >
-    <div
-      class="flex flex-col text-center my-5 md:my-10 mx-5"
-      data-aos="zoom-in"
-    >
-      <h1 class="text-[26px] md:text-[40px] font-bold pb-3">
+    <div class="flex flex-col text-center mb-10 mx-2" data-aos="zoom-in">
+      <h1
+        class="text-[22px] sm:text-[26px] md:text-[40px] lg:text-[55px] font-bold pb-3"
+      >
         Hier is wat jij gaat
-        <span class="h-5 border-b-8 border-primarycolor">unlocken</span>
+        <span class="h-3 border-b-4 sm:h-5 sm:border-b-8 border-primarycolor"
+          >unlocken</span
+        >
       </h1>
-      <p class="text-[15px] font-light">
+      <p class="text-[12px] sm:text-[15px] lg:text-[20px] font-light">
         <span class="font-bold">2 kopjes koffie</span> per maand voor
         <span class="font-bold">jouw droom leven</span>, dat is pas een
         <span class="font-bold">goeie deal</span>
@@ -20,7 +21,7 @@
       <!-- Content 1 -->
       <div class="sm:w-1/3 relative mb-5" data-aos="flip-left">
         <div
-          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-5 px-5 py-8 shadow-effect"
+          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] lg:mx-5 mx-2 px-5 py-8 shadow-effect"
         >
           <h1 class="text-[18px] sm:text-[24px] lg:text-[40px] font-bold">
             Gratis
@@ -90,7 +91,7 @@
       <!-- Content 2 -->
       <div class="relative mb-5 sm:w-1/3" data-aos="flip-left">
         <div
-          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-5 px-5 py-8 shadow-effect"
+          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] lg:mx-5 mx-2 px-5 py-8 shadow-effect"
         >
           <h1
             class="text-[24px] lg:text-[30px] font-bold lg:flex lg:justify-between lg:items-center"
@@ -179,7 +180,7 @@
       <!-- Content 3 -->
       <div class="relative mb-5 sm:w-1/3" data-aos="flip-left">
         <div
-          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-5 px-5 py-8 shadow-effect"
+          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] lg:mx-5 mx-2 px-5 py-8 shadow-effect"
         >
           <h1
             class="text-[24px] lg:text-[30px] font-bold lg:flex lg:justify-between lg:items-center"

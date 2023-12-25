@@ -28,7 +28,7 @@
 .wrap-slider {
   width: 100%;
   overflow: hidden;
-  height: 500px;
+  height: 510px;
   position: relative;
 
   ul {

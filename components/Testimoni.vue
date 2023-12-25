@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full bg-cover bg-no-repeat bg-center flex flex-col text-white py-10 justify-center items-center"
+    class="relative w-full flex flex-col text-white py-10 justify-center items-center"
   >
     <div
       class="w-[90%] bg-black bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
@@ -21,10 +21,14 @@
           :key="itemtestimoni.id"
         >
           <ImageSlider
-            :img="'/_nuxt/assets/images/' + itemtestimoni.imagePerson"
+            :img="
+              '/_nuxt/assets/images/testimonial comments/' +
+              itemtestimoni.imagePerson
+            "
             :comment="itemtestimoni.comment"
             :username="itemtestimoni.username"
             :underscore="itemtestimoni.underscore"
+            :title="itemtestimoni.title"
           />
         </div>
       </div>
