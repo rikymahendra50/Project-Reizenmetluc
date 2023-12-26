@@ -24,6 +24,10 @@
   </section>
 </template>
 
+<script>
+import Slider from "@/components/Slider.vue";
+</script>
+
 <style>
 .wrap-slider {
   width: 100%;

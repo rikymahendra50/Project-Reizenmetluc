@@ -15,7 +15,7 @@
         </p>
         <ButtonOrg link="page-1" title="Claim Jouw Plek In De Community" />
         <img
-          src="../assets/images/logo-amazon.png"
+          src="/_nuxt/assets/images/logo-amazon.png"
           alt="amazon-logo"
           class="hidden lg:block w-[200px] h-[50px] absolute right-[-50px] bottom-[-70px]"
           loading="lazy"
@@ -27,7 +27,7 @@
         <div class="relative w-[100%] flex justify-between">
           <div class="flex">
             <img
-              src="../assets/images/Screenshots for sections 1/IMG_0701.jpg"
+              src="/_nuxt/assets/images/Screenshots for sections 1/IMG_0701.jpg"
               alt="picture-1"
               class="rounded-lg shadow-effect w-[30%] h-[90%]"
               loading="lazy"
@@ -36,7 +36,7 @@
               class="relative flex flex-col w-[40%] h-[90%] justify-between px-2 lg:px-5"
             >
               <img
-                src="../assets/images/Screenshots for sections 1/IMG_0833.jpg"
+                src="/_nuxt/assets/images/Screenshots for sections 1/IMG_0833.jpg"
                 alt="comment-1"
                 class="w-full md:rounded-lg shadow-effect mt-5 md:mt-10"
               />
@@ -46,7 +46,7 @@
                 Unlock jouw droomleven
               </p>
               <img
-                src="../assets/images/Screenshots for sections 1/IMG_0832.jpg"
+                src="/_nuxt/assets/images/Screenshots for sections 1/IMG_0832.jpg"
                 alt="comment-2"
                 class="w-full md:rounded-lg shadow-effect relative"
                 loading="lazy"
@@ -54,7 +54,7 @@
             </div>
             <div class="relative flex w-[40%] h-[90%] mt-5">
               <img
-                src="../assets/images/Screenshots for sections 1/IMG_0708.jpg"
+                src="/_nuxt/assets/images/Screenshots for sections 1/IMG_0708.jpg"
                 alt="picture-3"
                 class="rounded-lg shadow-effect"
                 loading="lazy"
@@ -70,7 +70,7 @@
               Maak like-minded vrienden
             </p>
             <img
-              src="../assets/images/Screenshots for sections 1/Person.png"
+              src="/_nuxt/assets/images/Screenshots for sections 1/Person.png"
               alt="person"
               class="ml-[40px] lg:ml-[60px] w-[70%] mt-5 lg:mt-5 shadow-effect rounded-t-lg"
             />
@@ -82,7 +82,7 @@
               Inspiratie & motivatie op 1 plek - voor jou
             </p>
             <img
-              src="../assets/images/Screenshots for sections 1/IMG_0702.jpg"
+              src="/_nuxt/assets/images/Screenshots for sections 1/IMG_0702.jpg"
               alt="picture-4"
               class="w-[90%] mt-2 lg:mt-10 rounded-md md:rounded-[10px] shadow-effect"
             />
@@ -99,7 +99,7 @@
           moment hun droom
         </h1>
         <img
-          src="../assets/images/Screenshots for sections 1/People1.png"
+          src="/_nuxt/assets/images/Screenshots for sections 1/People1.png"
           alt="people3"
           class="w-[70px] ml-2"
         />
