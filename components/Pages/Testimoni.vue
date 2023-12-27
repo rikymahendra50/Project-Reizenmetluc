@@ -43,10 +43,11 @@
 
 <style scoped>
 .wrap-slider2 {
-  width: 100%;
+  width: 95%;
   overflow: hidden;
   height: 400px;
   position: relative;
+  margin: auto;
 
   ul {
     padding: 0;
