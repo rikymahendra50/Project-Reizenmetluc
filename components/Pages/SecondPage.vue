@@ -1,9 +1,7 @@
 <template>
-  <section
-    class="relative w-full h-auto bg-cover bg-no-repeat bg-center flex flex-col text-white py-10 mt-10 sm:mt-0"
-  >
+  <section class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0">
     <div
-      class="inline-block text-center my-5 mx-5 items-start"
+      class="inline-block text-center my-3 mx-5 items-start"
       data-aos="flip-up"
     >
       <h1 class="text-[30px] md:text-[44px] font-bold pb-3 tracking-widest">
@@ -45,9 +43,6 @@ import Slider from "@/components/Slider.vue";
     transform: translate(0, -50%);
     display: flex;
     flex-direction: row;
-    /* will-change: transform; */
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
 
     li {
       display: block;

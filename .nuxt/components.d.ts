@@ -2,7 +2,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'ButtonOrg': typeof import("../components/ButtonOrg.vue")['default']
-    'ImageSlider': typeof import("../components/ImageSlider.vue")['default']
     'PagesFirstPage': typeof import("../components/Pages/FirstPage.vue")['default']
     'PagesForthPage': typeof import("../components/Pages/ForthPage.vue")['default']
     'PagesSecondPage': typeof import("../components/Pages/SecondPage.vue")['default']
@@ -40,7 +39,6 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyButtonOrg': typeof import("../components/ButtonOrg.vue")['default']
-    'LazyImageSlider': typeof import("../components/ImageSlider.vue")['default']
     'LazyPagesFirstPage': typeof import("../components/Pages/FirstPage.vue")['default']
     'LazyPagesForthPage': typeof import("../components/Pages/ForthPage.vue")['default']
     'LazyPagesSecondPage': typeof import("../components/Pages/SecondPage.vue")['default']
@@ -81,7 +79,6 @@ declare module 'vue' {
 }
 
 export const ButtonOrg: typeof import("../components/ButtonOrg.vue")['default']
-export const ImageSlider: typeof import("../components/ImageSlider.vue")['default']
 export const PagesFirstPage: typeof import("../components/Pages/FirstPage.vue")['default']
 export const PagesForthPage: typeof import("../components/Pages/ForthPage.vue")['default']
 export const PagesSecondPage: typeof import("../components/Pages/SecondPage.vue")['default']
@@ -119,7 +116,6 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyButtonOrg: typeof import("../components/ButtonOrg.vue")['default']
-export const LazyImageSlider: typeof import("../components/ImageSlider.vue")['default']
 export const LazyPagesFirstPage: typeof import("../components/Pages/FirstPage.vue")['default']
 export const LazyPagesForthPage: typeof import("../components/Pages/ForthPage.vue")['default']
 export const LazyPagesSecondPage: typeof import("../components/Pages/SecondPage.vue")['default']

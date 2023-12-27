@@ -1,9 +1,9 @@
 <template>
   <section
-    class="relative w-full flex flex-col text-white py-10 justify-center items-center"
+    class="relative w-full flex text-white py-10 justify-center items-center"
   >
     <div
-      class="w-[90%] bg-black bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
+      class="w-[90%] h-[500px] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
     >
       <div class="flex justify-center text-center">
         <h1 class="text-[30px] lg:text-[44px] my-5 font-bold">
@@ -11,33 +11,63 @@
           we al geholpen
         </h1>
       </div>
-      <div
-        class="relative flex md:flex-row flex-col justify-between lg:mx-10 h-auto"
-      >
-        <!-- card testimoni -->
-        <div
-          class="flex flex-col bg-black md:w-1/3 mx-5 md:mx-2 rounded-2xl p-5 justify-between shadow-effect h-[250px] md:h-[300px] my-5 relative"
-          v-for="itemtestimoni in testimoni"
-          :key="itemtestimoni.id"
-        >
-          <ImageSlider
-            :img="
-              '/_nuxt/assets/images/testimonial comments/' +
-              itemtestimoni.imagePerson
-            "
-            :comment="itemtestimoni.comment"
-            :username="itemtestimoni.username"
-            :underscore="itemtestimoni.underscore"
-            :title="itemtestimoni.title"
-          />
-        </div>
+      <div class="wrap-slider2" id="js-wrapSlider2">
+        <ul class="js-slider2">
+          <li
+            class="item2 bg-black w-[379px] rounded-2xl shadow-effect relative h-[250px] md:h-[300px] mx-5 shadow-smallcard"
+            v-for="itemtestimoni in testimoni"
+            :key="itemtestimoni.id"
+          >
+            <p class="text-[13px] lg:text-sm font-bold text-justify">
+              {{ itemtestimoni.comment }}
+            </p>
+            <div class="flex pt-3 absolute bottom-3">
+              <img
+                :src="`/_nuxt/assets/images/testimonial comments/${itemtestimoni.imagePerson}`"
+                alt="title"
+                class="w-[50px] h-[50px]"
+              />
+              <div class="flex flex-col pl-3">
+                <h1 class="font-bold text-sm">
+                  {{ itemtestimoni.underscore }}
+                </h1>
+                <p class="font-thin text-sm">{{ itemtestimoni.username }}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-import ImageSlider from "@/components/ImageSlider.vue";
+<style scoped>
+.wrap-slider2 {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: row;
+
+    li {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+</style>
+
+<script scoped>
 export default {
   data() {
     return {
@@ -72,9 +102,124 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.setupSlider2();
+  },
+  methods: {
+    setupSlider2() {
+      window.requestAnimFrame2 = (function () {
+        return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+          }
+        );
+      })();
+      const wrapSlider2 = document.querySelector("#js-wrapSlider2");
+      const widthWrap2 = wrapSlider2.offsetWidth;
 
-  components: {
-    ImageSlider,
+      let items2;
+      let sliders2;
+      let sliderList2 = [];
+
+      const getSliderList2 = () => {
+        sliders2 = document.querySelectorAll(".js-slider2");
+        // get the dom elements in a array to better use it
+        sliderList2 = [...sliders2];
+      };
+      // made a function for update later
+      getSliderList2();
+
+      const slider2 = document.querySelectorAll(".js-slider2")[0];
+      const sliderWidth2 = slider2.offsetWidth;
+
+      const sumIsLargerThanSlider2 = sliderWidth2 >= widthWrap2 + sliderWidth2;
+
+      const iterationItems2 = Math.ceil(
+        (widthWrap2 + sliderWidth2) / sliderWidth2
+      );
+
+      // we clone number of slider we need
+      if (iterationItems2 > 1) {
+        for (let i = 0; i < iterationItems2 - 1; i++) {
+          const clone2 = slider2.cloneNode(true);
+          wrapSlider2.appendChild(clone2);
+        }
+
+        getSliderList2();
+      }
+
+      // we create an array for knowing the state of each item
+      let stateList2 = sliderList2.map((item, i) => {
+        let pos2 = 0;
+        let start2 = false;
+
+        // here we allow the slide to start fully at left
+        if (i < iterationItems2 - 1) {
+          pos2 = -widthWrap2 + sliders2[i].offsetWidth * i;
+          start2 = true;
+
+          sliders2[i].style.transform = `translate(${pos2}px, -50%)`;
+        }
+
+        return {
+          pos2,
+          start2,
+        };
+      });
+
+      // logic animation for sliding each item at a time
+      const translate2 = () => {
+        for (let i = 0; i < sliderList2.length; i++) {
+          const slider2 = sliderList2[i];
+          const sliderWidth2 = slider2.offsetWidth;
+          const nextIndex2 = i != sliderList2.length - 1 ? i + 1 : 0;
+          let pos2;
+
+          // if slider should be in movement
+          if (stateList2[i].start2) {
+            stateList2[i].pos2 -= 1;
+            pos2 = stateList2[i].pos2;
+
+            slider2.style.transform = `translate(${pos2}px, -50%)`;
+          }
+
+          const isComplete2 = pos2 <= -sliderWidth2;
+          const isOutSeen2 = pos2 <= -widthWrap2 - sliderWidth2;
+
+          // if the slider is fully on screen
+          if (isComplete2) {
+            stateList2[nextIndex2].start2 = true;
+          }
+          // if the slider finished crossing the slider and has disappeared
+          if (isOutSeen2) {
+            stateList2[i].start2 = false;
+            stateList2[i].pos2 = 0;
+          }
+        }
+      };
+
+      let isPaused2 = false;
+
+      function start2() {
+        if (!isPaused2) {
+          translate2();
+        }
+
+        requestAnimFrame2(start2);
+      }
+
+      wrapSlider2.addEventListener("mouseover", () => {
+        isPaused2 = true;
+      });
+      wrapSlider2.addEventListener("mouseout", () => {
+        isPaused2 = false;
+      });
+
+      start2();
+    },
   },
 };
 </script>

@@ -1,10 +1,8 @@
 <template>
-  <section
-    class="relative w-full h-auto bg-cover bg-no-repeat bg-center flex flex-col text-white py-10"
-  >
+  <section>
     <div class="flex flex-col text-center mb-10 mx-2" data-aos="zoom-in">
       <h1
-        class="text-[22px] sm:text-[26px] md:text-[40px] lg:text-[55px] font-bold pb-3"
+        class="text-[22px] sm:text-[30px] md:text-[40px] lg:text-[55px] font-bold pb-3"
       >
         Hier is wat jij gaat
         <span class="h-3 border-b-4 sm:h-5 sm:border-b-8 border-primarycolor"
@@ -17,7 +15,7 @@
         <span class="font-bold">goeie deal</span>
       </p>
     </div>
-    <div class="flex sm:flex-row flex-col md:mx-10">
+    <div class="flex sm:flex-row flex-col md:mx-4">
       <!-- Content 1 -->
       <div
         class="sm:w-1/3 relative mb-5"
@@ -26,7 +24,7 @@
         :key="itemPageCard.id"
       >
         <div
-          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] lg:mx-5 mx-2 px-5 py-8 shadow-effect"
+          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-5 py-8 shadow-effect"
         >
           <h1
             class="text-[24px] lg:text-[30px] font-bold lg:flex lg:justify-between lg:items-center"
@@ -36,7 +34,7 @@
               itemPageCard.price
             }}</span>
           </h1>
-          <p class="text-sm my-3 font-extraligh">
+          <p class="desk text-[14px] my-3 font-extraligh">
             {{ itemPageCard.description }}
           </p>
           <!-- Ini code nya -->
@@ -74,12 +72,10 @@
 
 <script>
 import CustomLink from "@/components/ButtonOrg.vue";
-// import Bigcard from "@/components/BigCard.vue";
 
 export default {
   components: {
     CustomLink,
-    // Bigcard,
   },
   data() {
     return {
@@ -88,7 +84,7 @@ export default {
           id: 1,
           title: "Gratis",
           description:
-            "Deze groep is perfect voor als je gezellig met wil chatten, inspiratie op wilt doen en opzoek bent naar die handige travel hacks en deals.",
+            "Deze groep is perfect voor als je gezellig met wil andere reizigers chatten, inspiratie op wilt doen en opzoek bent naar die handige travel hacks en deals.",
           list: [
             "Chat met like-minded reizigers",
             "Vind jouw nieuwe travel buddy",
@@ -105,7 +101,7 @@ export default {
           title: " Maandelijks /",
           price: "€7,77",
           description:
-            "Verbreed je netwerk , leer de juiste kennis om online  en ontdekt hoe jij van je lifestyle gaat maken",
+            "Verbreed je netwerk, leer de juiste kennis om online geld te verdienen en ontdekt hoe jij van reizen en werken je lifestyle gaat maken.",
           list: [
             "Alles van de vorige +",
             "7+ online verdien modellen",
@@ -124,7 +120,7 @@ export default {
           title: "Jaarlijks /",
           price: "€77,77",
           description:
-            "Voor dat als zeergens voor gaan Krijg 2 maanden gratis + 1 op 1 coaching call met Luc.",
+            "Voor de mensen die weten dat als ze ergens voor gaan dromen uit komen. Krijg 2 maanden gratis + 1 op 1 coaching call met Luc.",
           list: [
             "Alles van de vorige 2 +",
             "1 op 1 transformatie call",
@@ -138,6 +134,40 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const pElements = this.$el.querySelectorAll(".desk");
+      const wordsToBold = [
+        "gezellig",
+        "andere reizigers",
+        "inspiratie op wilt",
+        "handige travel hacks en deals.",
+        "andere reizigers",
+        "Verbreed je netwerk",
+        "juiste kennis",
+        "geld te verdienen",
+        "reizen en werken",
+        "de mensen die weten",
+        "dromen uit komen",
+        "2 maanden gratis",
+        "1 op 1 coaching call",
+      ];
+      pElements.forEach((pElement) => {
+        const textContent = pElement.textContent;
+        let newTextContent = textContent;
+
+        wordsToBold.forEach((word) => {
+          const regExp = new RegExp(word, "g");
+          newTextContent = newTextContent.replace(
+            regExp,
+            `<span class="font-extrabold">${word}</span>`
+          );
+        });
+
+        pElement.innerHTML = newTextContent;
+      });
+    });
   },
 };
 </script>

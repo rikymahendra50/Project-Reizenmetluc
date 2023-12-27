@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="relative w-full bg-cover bg-no-repeat bg-center flex flex-col text-white py-10"
-  >
+  <section class="py-10">
     <div class="block text-center my-5" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
