@@ -35,7 +35,7 @@ export default <Partial<Config>>{
         secondarycolor: "#FFF",
       },
       backgroundImage: {
-        background: "url('~/assets/images/Background.png')",
+        // background: "url('~/assets/images/Background.png')",
         background2: "url('~/assets/images/Website-background.jpg')",
       },
     },

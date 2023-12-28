@@ -116,7 +116,7 @@ const _inlineRuntimeConfig = {
     "baseURL": "/_ipx",
     "alias": {},
     "fs": {
-      "dir": "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/assets/images"
+      "dir": "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/public"
     },
     "http": {
       "domains": []

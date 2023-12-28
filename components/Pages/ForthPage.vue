@@ -67,7 +67,7 @@
 </template>
 
 <style>
-/* Properti CSS kosong */
+/* CSS empty */
 </style>
 
 <script>

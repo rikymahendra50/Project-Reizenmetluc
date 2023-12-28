@@ -17,7 +17,6 @@
           src="/_nuxt/assets/images/Screenshots for sections 1/arrow-nonshadow.png"
           alt="arrow-logo"
           class="hidden lg:block w-[200px] h-[50px] absolute right-[-50px] bottom-[-70px]"
-          loading="lazy"
         />
       </div>
       <!-- End Left Content -->
@@ -29,8 +28,8 @@
               :src="NormalPicture[0].fileName"
               :alt="NormalPicture[0].title"
               class="rounded-lg shadow-effect w-[30%] h-[90%]"
-              loading="lazy"
             />
+            <!-- comment -->
             <div
               class="relative flex flex-col w-[40%] h-[90%] justify-between px-2 lg:px-5"
             >
@@ -41,7 +40,6 @@
               />
               <p
                 class="bg-primarycolor shadow-effect absolute right-[-60px] top-[70px] sm:top-[90px] md:top-[81px] lg:top-[90px] xl:top-[140px] px-2 rounded-md font-bold text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] tracking-widest z-10 xl:text-[16px]"
-                loading="lazy"
               >
                 {{ orangeTitle[0].title }}
               </p>
@@ -49,7 +47,6 @@
                 :src="commentScrenshot[1].fileName"
                 :alt="commentScrenshot[1].title"
                 class="w-full md:rounded-lg shadow-effect relative"
-                loading="lazy"
               />
             </div>
             <div class="relative flex w-[40%] h-[90%] mt-5">
@@ -57,7 +54,6 @@
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
                 class="rounded-lg shadow-effect"
-                loading="lazy"
               />
             </div>
           </div>
@@ -66,7 +62,6 @@
           <div class="flex-col flex w-1/2 mt-2 lg:mt-10">
             <p
               class="bg-primarycolor shadow-effect absolute top-[-3px] md:top-[-10px] lg:top-[-11px] py-1 lg:py-2 px-2 rounded-md font-bold text-[8px] sm:text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] tracking-widest"
-              loading="lazy"
             >
               {{ orangeTitle[1].title }}
             </p>
@@ -79,7 +74,6 @@
           <div class="w-1/2 relative flex flex-col lg:mt-0 mt-5">
             <p
               class="bg-primarycolor w-[80%] lg:w-[60%] text-[8px] sm:text-[11px] md:text-[10px] lg:text-[14px] shadow-effect rounded-md font-bold lg:mt-5 font-bold py-1 px-2 xl:text-[16px]"
-              loading="lazy"
             >
               {{ orangeTitle[2].title }}
             </p>
@@ -122,7 +116,6 @@ export default {
         description:
           "Ben je klaar met de sleur van het dagelijks leven en is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
       },
-
       NormalPicture: [
         {
           id: 1,
@@ -168,7 +161,6 @@ export default {
         { id: 2, title: "Maak like-minded vrienden" },
         { id: 3, title: " Inspiratie & motivatie op 1 plek - voor jou" },
       ],
-
       footerFirstPage: {
         title: "3000+ reizigers",
         titleSpan: "leven op dit moment hun droom",

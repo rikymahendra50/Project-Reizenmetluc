@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0"
-    lazy="loading"
-  >
+  <section class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0">
     <div
       class="inline-block text-center my-3 mx-5 items-start"
       data-aos="flip-up"
@@ -56,7 +53,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .wrap-slider {
   width: 100%;
   overflow: hidden;

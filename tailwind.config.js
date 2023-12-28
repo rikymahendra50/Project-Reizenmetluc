@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundImage: {
         // background: "url('~/assets/images/Background.png')",
-        background2: "url('~/assets/images/Website-background.webp.webp')",
+        background2: "url('~/assets/images/Website-background.jpg')",
       },
     },
   },

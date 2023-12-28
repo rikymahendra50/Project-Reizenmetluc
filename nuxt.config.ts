@@ -15,6 +15,7 @@ const projectImageThumbnail =
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   devtools: { enabled: false },
   modules: [
     "@nuxtjs/tailwindcss",
@@ -36,7 +37,6 @@ export default defineNuxtConfig({
   },
   image: {
     format: ["webp", "jpg", "png"],
-    dir: "assets/images",
   },
   devServer: {
     /**

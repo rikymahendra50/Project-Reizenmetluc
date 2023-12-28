@@ -28,11 +28,6 @@ export default {
     ForthPage,
     Testimoni,
   },
-  head() {
-    return {
-      title: "Judul Baru Halaman",
-    };
-  },
 };
 </script>
 
