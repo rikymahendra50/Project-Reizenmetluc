@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="py-10 mt-3 lg:mt-10 sm:mt-0">
     <div class="flex flex-col text-center mb-10 mx-2" data-aos="zoom-in">
       <h1
         class="text-[22px] sm:text-[30px] md:text-[40px] lg:text-[55px] font-bold pb-3"

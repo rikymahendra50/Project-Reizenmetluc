@@ -4,10 +4,13 @@
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
       >
-        Dit is wat <span class="text-primarycolor">jij ontvangt</span>
+        {{ title.firstHeader[0] }}
+        <span class="text-primarycolor"> {{ title.firstHeader[1] }}</span>
       </h1>
       <p class="text-[15px] md:text-[20px] lg:text-[30px] 2xl:text-[46px]">
-        In de <span class="font-bold">ik wil reizen</span> community
+        {{ title.secondHeader[0] }}
+        <span class="font-bold"> {{ title.secondHeader[1] }}</span>
+        {{ title.secondHeader[2] }}
       </p>
     </div>
     <div class="flex lg:mx-10">
@@ -16,9 +19,9 @@
         <!-- Content 1 -->
         <div class="md:mt-14">
           <SmallCard
-            img="/_nuxt/assets/images/emoji/brain.png"
-            description="Toegang tot de tips, tools & kennis van onze remote inkomen coaches"
-            title="brain"
+            :img="dataSmallCard[0].img"
+            :description="dataSmallCard[0].description"
+            :title="dataSmallCard[0].title"
             class="my-10 shadow-effect"
             data-aos="fade-right"
           />
@@ -32,14 +35,16 @@
               class="w-[100%] py-1 lg:py-2 px-2 md:px-3 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
             >
               <p class="text-[10px] sm:text-md md:text-[22px] lg:text-[34px]">
-                <span class="font-bold">Retour</span>&nbsp;Malediven
+                <span class="font-bold">
+                  {{ priceDescription[0].title.span }} </span
+                >&nbsp;{{ priceDescription[0].title.nonspan }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
               >
                 <span class="line-through text-red-600 font-extralight"
-                  >€&nbsp;899</span
-                >&nbsp;€&nbsp;256
+                  >€&nbsp;{{ priceDescription[0].price.normalPrice }}</span
+                >&nbsp;€&nbsp;{{ priceDescription[0].price.discountPrice }}
               </p>
             </div>
           </div>
@@ -51,14 +56,17 @@
               class="w-[100%] py-1 lg:py-2 px-2 md:px-2 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
             >
               <p class="text-[8px] sm:text-[12px] md:text-lg lg:text-[22px]">
-                <span class="font-bold">Hotel Room:</span>&nbsp;2 beds
+                <span class="font-bold">{{
+                  priceDescription[1].title.span
+                }}</span
+                >&nbsp;{{ priceDescription[1].title.nonspan }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
               >
                 <span class="line-through text-red-600 font-extralight"
-                  >€&nbsp;156</span
-                >&nbsp;€&nbsp;35
+                  >€&nbsp;{{ priceDescription[1].price.normalPrice }}</span
+                >&nbsp;€&nbsp;{{ priceDescription[1].price.discountPrice }}
               </p>
             </div>
           </div>
@@ -73,9 +81,9 @@
         <!-- Content 3 -->
         <div data-aos="fade-right">
           <SmallCard
-            img="/_nuxt/assets/images/emoji/meditation.png"
-            description="Leer hoe jij ook remote gaat werken met onze 9 delige video course"
-            title="meditation"
+            :img="dataSmallCard[1].img"
+            :description="dataSmallCard[1].description"
+            :title="dataSmallCard[1].title"
             class="my-5 md:my-10"
           />
         </div>
@@ -115,7 +123,7 @@
             <img
               src="/_nuxt/assets/images/arrow.png"
               alt="arrow"
-              class="rotate-[5deg] absolute bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
+              class="rotate-[5deg] absolute bottom-[-10px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
             />
           </div>
         </div>
@@ -123,9 +131,9 @@
         <!-- Content 2 -->
         <div data-aos="fade-left">
           <SmallCard
-            img="/_nuxt/assets/images/emoji/shushing-face.png"
-            description="Unlock de beste tip, tricks & deals om makkelijker en goedkoper te reizen"
-            title="brain"
+            :img="dataSmallCard[2].img"
+            :description="dataSmallCard[2].description"
+            :title="dataSmallCard[2].title"
             class="my-10"
           />
         </div>
@@ -138,15 +146,15 @@
               alt="code-remote"
               class="shadow-effect block rounded-xl"
             />
-            <div class="flex justify-end mt-10">
+            <div class="flex justify-end mt-5 md:mt-10">
               <div
-                class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:pl-4 lg:pr-10 pr-5 lg:py-2 rounded-[9px] text-start shadow-effect"
+                class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:pl-4 lg:pr-10 pr-5 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
               >
                 <p class="font-bold text-[10px] md:text-[20px] lg:text-[25px]">
-                  Stap voor stap
+                  {{ StapVoor.title1 }}
                 </p>
                 <p class="font-thin text-[8px] md:text-[20px] lg:text-[25px]">
-                  naar jou online inkomen
+                  {{ StapVoor.title2 }}
                 </p>
               </div>
             </div>
@@ -156,9 +164,9 @@
         <!-- Content 4 -->
         <div data-aos="fade-left">
           <SmallCard
-            img="/_nuxt/assets/images/emoji/airplane.png"
-            description=" Maak en deel de moosite herinneringen samen maken we jou dromen waar"
-            title="brain"
+            :img="dataSmallCard[3].img"
+            :description="dataSmallCard[3].description"
+            :title="dataSmallCard[3].title"
             class="mt-5 md:mt-24"
           />
         </div>
@@ -172,6 +180,67 @@ import SmallCard from "@/components/SmallCard.vue";
 export default {
   components: {
     SmallCard,
+  },
+  data() {
+    return {
+      title: {
+        // first to last word
+        firstHeader: ["Dit is wat ", "jij ontvangt"],
+        secondHeader: ["In de", "ik wil reizen", "community"],
+      },
+      priceDescription: [
+        {
+          title: {
+            span: "Retour",
+            nonspan: "Malediven",
+          },
+          price: {
+            normalPrice: "899",
+            discountPrice: "256",
+          },
+        },
+        {
+          title: {
+            span: "Hotel Room:",
+            nonspan: "2 beds",
+          },
+          price: {
+            normalPrice: "35",
+            discountPrice: "156",
+          },
+        },
+      ],
+      StapVoor: {
+        title1: "Stap voor stap",
+        title2: "naar jou online inkomen",
+      },
+      dataSmallCard: [
+        {
+          img: "/_nuxt/assets/images/emoji/brain.png",
+          description:
+            "Toegang tot de tips, tools & kennis van onze remote inkomen coaches",
+          title: "brain",
+        },
+        {
+          img: "/_nuxt/assets/images/emoji/meditation.png",
+          description:
+            "Leer hoe jij ook remote gaat werken met onze 9 delige video course",
+          title: "meditation",
+        },
+        {
+          img: "/_nuxt/assets/images/emoji/shushing-face.png",
+          description:
+            "Unlock de beste tip, tricks & deals om makkelijker en goedkoper te reizen",
+          title: "shushing",
+        },
+        {
+          img: "/_nuxt/assets/images/emoji/airplane.png",
+          description:
+            " Maak en deel de moosite herinneringen samen maken we jou dromen waar",
+          title: "brain",
+        },
+      ],
+    };
   },
 };
 </script>

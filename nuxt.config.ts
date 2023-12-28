@@ -1,7 +1,7 @@
 /**
  * replace with actual title or name of the project
  */
-const projectName = "nuxt-app";
+const projectName = "reizenmetluc";
 /**
  * replace with actual description for seo
  */
@@ -28,9 +28,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
   ],
 
-  plugins: [
-    { src: '~/plugins/aos.js', mode: 'client' }
-  ],
+  plugins: [{ src: "~/plugins/aos.js", mode: "client" }],
 
   css: ["~/assets/css/main.css"],
   i18n: {
@@ -38,6 +36,7 @@ export default defineNuxtConfig({
   },
   image: {
     format: ["webp", "jpg", "png"],
+    dir: "assets/images",
   },
   devServer: {
     /**

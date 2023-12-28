@@ -1,20 +1,30 @@
 <template>
-  <section class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0">
+  <section
+    class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0"
+    lazy="loading"
+  >
     <div
       class="inline-block text-center my-3 mx-5 items-start"
       data-aos="flip-up"
     >
       <h1 class="text-[30px] md:text-[44px] font-bold pb-3 tracking-widest">
-        Voor
-        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">reizigers</span>
-        door
-        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">reizigers</span>
+        {{ title.firstHeader[0] }}
+        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">{{
+          title.firstHeader[1]
+        }}</span>
+        {{ title.firstHeader[2] }}
+        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">{{
+          title.firstHeader[3]
+        }}</span>
       </h1>
       <p class="text-[20px] font-light tracking-widest">
-        <span class="font-bold">Inspireer, leer</span> en
-        <span class="font-bold">motiveer</span>.We
-        <span class="font-bold">staan </span>altijd
-        <span class="font-bold">voor elkaar klaar</span>
+        <span class="font-bold">{{ title.secondHeader[0] }}</span>
+        {{ title.secondHeader[1] }}
+        <span class="font-bold">{{ title.secondHeader[2] }}</span>
+        {{ title.secondHeader[3] }}
+        <span class="font-bold">{{ title.secondHeader[4] }}</span>
+        {{ title.secondHeader[5] }}
+        <span class="font-bold">{{ title.secondHeader[5] }}</span>
       </p>
     </div>
     <!-- Slider -->
@@ -24,6 +34,26 @@
 
 <script>
 import Slider from "@/components/Slider.vue";
+
+export default {
+  data() {
+    return {
+      title: {
+        // first to last word
+        firstHeader: ["Voor", "reizigers", "door", "reizigers"],
+        secondHeader: [
+          "Inspireer, leer",
+          "en",
+          "motiveer.",
+          "We",
+          "staan",
+          "altijd",
+          "voor elkaar klaar",
+        ],
+      },
+    };
+  },
+};
 </script>
 
 <style>

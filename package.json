@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.1.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.17.1",
@@ -24,7 +25,6 @@
     "@fullcalendar/daygrid": "^6.1.9",
     "@fullcalendar/interaction": "^6.1.9",
     "@fullcalendar/vue3": "^6.1.9",
-    "@nuxt/image": "^1.0.0-rc.2",
     "@nuxtjs/i18n": "^8.0.0-rc.4",
     "@pinia/nuxt": "^0.5.1",
     "@popperjs/core": "^2.11.8",

@@ -3,18 +3,19 @@
     class="relative w-full flex text-white py-10 justify-center items-center"
   >
     <div
-      class="w-[90%] h-[500px] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
+      class="w-[95%] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
     >
       <div class="flex justify-center text-center">
-        <h1 class="text-[30px] lg:text-[44px] my-5 font-bold">
-          Deze <span class="text-primarycolor font-bold">reizigers</span> hebben
-          we al geholpen
+        <h1 class="text-[30px] lg:text-[44px] mt-5 font-bold">
+          {{ title.nonspan[0] }}
+          <span class="text-primarycolor font-bold"> {{ title.span[0] }}</span>
+          {{ title.nonspan[1] }}
         </h1>
       </div>
-      <div class="wrap-slider2" id="js-wrapSlider2">
+      <div class="wrap-slider2 h-[350px] md:h-[400px]" id="js-wrapSlider2">
         <ul class="js-slider2">
           <li
-            class="item2 bg-black w-[379px] rounded-2xl shadow-effect relative h-[250px] md:h-[300px] mx-5 shadow-smallcard"
+            class="item2 bg-black w-[300px] md:w-[379px] rounded-[13px] shadow-effect relative h-[250px] md:h-[300px] mx-3 md:mx-5 shadow-smallcard pt-2 px-2 md:pt-5 md:px-5"
             v-for="itemtestimoni in testimoni"
             :key="itemtestimoni.id"
           >
@@ -43,9 +44,8 @@
 
 <style scoped>
 .wrap-slider2 {
-  width: 95%;
+  width: 98%;
   overflow: hidden;
-  height: 400px;
   position: relative;
   margin: auto;
 
@@ -62,7 +62,6 @@
 
     li {
       display: block;
-      padding: 10px;
     }
   }
 }
@@ -72,6 +71,10 @@
 export default {
   data() {
     return {
+      title: {
+        span: ["reizigers"],
+        nonspan: ["Deze", "hebben we al geholpen"],
+      },
       testimoni: [
         {
           id: 1,
