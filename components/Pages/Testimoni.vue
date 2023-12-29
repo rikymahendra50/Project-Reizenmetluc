@@ -25,8 +25,9 @@
             <div class="flex pt-3 absolute bottom-3">
               <img
                 :src="`/_nuxt/assets/images/testimonial comments/${itemtestimoni.imagePerson}`"
-                alt="title"
+                :alt="itemtestimoni.title"
                 class="w-[50px] h-[50px]"
+                loading="lazy"
               />
               <div class="flex flex-col pl-3">
                 <h1 class="font-bold text-sm">

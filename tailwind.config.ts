@@ -36,13 +36,16 @@ export default <Partial<Config>>{
       },
       backgroundImage: {
         // background: "url('~/assets/images/Background.png')",
-        background2: "url('~/assets/images/Website-background.jpg')",
+        // background2: "url('~/assets/images/Website-background1.jpg')",
       },
     },
     fontFamily: {
-      sans: ["GothamFonts"],
-      display: ["GothamFonts"],
-      body: ["GothamFonts"],
+      // sans: ["GothamMedium"],
+      // display: ["GothamMedium"],
+      // body: ["GothamMedium"],
+      extrabold: ["GothamBold"],
+      thin: ["GothamThin"],
+      bold: ["GothamBold"],
     },
   },
 };

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10">
+  <section class="pt-10 overflow-hidden">
     <div class="block text-center my-5" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
@@ -15,7 +15,7 @@
     </div>
     <div class="flex lg:mx-10">
       <!-- Class Left -->
-      <div class="relative flex flex-wrap flex-col w-1/2">
+      <div class="relative flex flex-col w-1/2">
         <!-- Content 1 -->
         <div class="md:mt-14">
           <SmallCard
@@ -24,6 +24,7 @@
             :title="dataSmallCard[0].title"
             class="my-10 shadow-effect"
             data-aos="fade-right"
+            loading="lazy"
           />
         </div>
         <!-- Content 2 -->
@@ -34,7 +35,9 @@
             <div
               class="w-[100%] py-1 lg:py-2 px-2 md:px-3 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
             >
-              <p class="text-[10px] sm:text-md md:text-[22px] lg:text-[34px]">
+              <p
+                class="text-[10px] sm:text-[12px] md:text-[22px] lg:text-[34px]"
+              >
                 <span class="font-bold">
                   {{ priceDescription[0].title.span }} </span
                 >&nbsp;{{ priceDescription[0].title.nonspan }}
@@ -50,7 +53,7 @@
           </div>
 
           <div
-            class="absolute bottom-1 sm:bottom-10 md:bottom-4 lg:bottom-10 left-[-5px] max-w-[200px] md:max-w-[237px] md:h-[93px] ml-2"
+            class="absolute bottom-1 sm:bottom-10 md:bottom-4 lg:bottom-10 left-[-5px] max-w-[200px] md:max-w-[237px] ml-2"
           >
             <div
               class="w-[100%] py-1 lg:py-2 px-2 md:px-2 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
@@ -75,6 +78,7 @@
             src="/_nuxt/assets/images/Screenshots for section 3/view.png"
             alt="view-1"
             class="w-[80%] mx-auto"
+            loading="lazy"
           />
         </div>
 
@@ -97,18 +101,20 @@
             src="/_nuxt/assets/images/Screenshots for section 3/girls-on-the-beach.jpg"
             alt="girl-beach"
             class="w-[40%] h-[60%] relative left-5 top-6 md:top-16 rounded-2xl max-w-full z-10 shadow-effect"
+            loading="lazy"
           />
           <img
             src="/_nuxt/assets/images/Screenshots for section 3/IMG_0723.PNG"
             alt="thailand"
             class="w-[70%] rounded-2xl max-w-full relative right-5 md:right-10 shadow-effect"
+            loading="lazy"
           />
         </div>
         <!-- End of class 1 -->
       </div>
 
       <!-- Class 2 -->
-      <div class="flex flex-wrap flex-col w-1/2 overflow-hidden">
+      <div class="flex flex-col w-1/2">
         <!-- Content 1 -->
         <div
           class="relative flex flex-col w-[80%] mx-auto"
@@ -119,11 +125,13 @@
               src="/_nuxt/assets/images/people3.png"
               alt="people"
               class="relative"
+              loading="lazy"
             />
             <img
               src="/_nuxt/assets/images/arrow.png"
               alt="arrow"
               class="rotate-[5deg] absolute bottom-[-10px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
+              lazy="lazy"
             />
           </div>
         </div>
@@ -148,12 +156,12 @@
             />
             <div class="flex justify-end mt-5 md:mt-10">
               <div
-                class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:pl-4 lg:pr-10 pr-5 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
+                class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:p-4 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
               >
-                <p class="font-bold text-[10px] md:text-[20px] lg:text-[25px]">
+                <p class="font-bold text-[10px] md:text-[25px]">
                   {{ StapVoor.title1 }}
                 </p>
-                <p class="font-thin text-[8px] md:text-[20px] lg:text-[25px]">
+                <p class="font-thin text-[8px] md:text-[20px] 2xl:text-[25px]">
                   {{ StapVoor.title2 }}
                 </p>
               </div>

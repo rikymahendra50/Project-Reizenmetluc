@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-background2 bg-no-repeat h-full bg-cover text-white">
+  <section
+    class="bg-background2 bg-no-repeat h-full bg-cover text-white font-thin"
+  >
     <FirstPage />
 
     <SecondPage />

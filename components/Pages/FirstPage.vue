@@ -21,7 +21,7 @@
       </div>
       <!-- End Left Content -->
       <!-- Right Content -->
-      <div class="flex flex-col md:w-[60%] mt-10 md:mt-5">
+      <div class="flex flex-col md:w-[60%] mt-10 mx-5 md:mx-0 md:mt-5">
         <div class="relative w-[100%] flex">
           <div class="flex">
             <img
@@ -36,20 +36,21 @@
               <img
                 :src="commentScrenshot[0].fileName"
                 :alt="commentScrenshot[0].title"
-                class="md:rounded-lg shadow-effect mt-5 md:mt-10"
+                class="rounded-sm md:rounded-lg shadow-effect mt-5 md:mt-10"
               />
               <p
-                class="bg-primarycolor shadow-effect absolute right-[-60px] top-[70px] sm:top-[90px] md:top-[81px] lg:top-[90px] xl:top-[140px] px-2 rounded-md font-bold text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] tracking-widest z-10 xl:text-[16px]"
+                class="bg-primarycolor shadow-effect absolute right-[-60px] top-[65px] sm:top-[90px] md:top-[81px] lg:top-[90px] xl:top-[140px] px-2 rounded-md font-bold min-[400px]:text-[12px] text-[8px] md:text-[12px] lg:text-[14px] tracking-widest z-10 xl:text-[16px]"
               >
                 {{ orangeTitle[0].title }}
               </p>
               <img
                 :src="commentScrenshot[1].fileName"
                 :alt="commentScrenshot[1].title"
-                class="w-full md:rounded-lg shadow-effect relative"
+                class="rounded-sm md:rounded-lg shadow-effect relative"
               />
             </div>
-            <div class="relative flex w-[40%] h-[90%] mt-5">
+            <!-- end comment -->
+            <div class="relative w-[40%] mt-8">
               <img
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
@@ -59,21 +60,21 @@
           </div>
         </div>
         <div class="relative flex h-[100%]">
-          <div class="flex-col flex w-1/2 mt-2 lg:mt-10">
+          <div class="flex-col flex w-1/2 mt-2 lg:mt-10 mr-5 sm:mr-3">
             <p
-              class="bg-primarycolor shadow-effect absolute top-[-3px] md:top-[-10px] lg:top-[-11px] py-1 lg:py-2 px-2 rounded-md font-bold text-[8px] sm:text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] tracking-widest"
+              class="bg-primarycolor shadow-effect absolute lg:left-[20px] top-[-3px] md:top-[-10px] lg:top-[-11px] py-1 lg:py-2 px-2 rounded-md font-bold text-[8px] sm:text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] tracking-widest min-[400px]:text-[12px]"
             >
               {{ orangeTitle[1].title }}
             </p>
             <img
               :src="NormalPicture[2].fileName"
               :alt="NormalPicture[2].title"
-              class="ml-[40px] lg:ml-[60px] w-[70%] mt-5 lg:mt-5 shadow-effect rounded-t-lg"
+              class="ml-[40px] lg:ml-[60px] w-[70%] mt-5 shadow-effect rounded-t-lg"
             />
           </div>
           <div class="w-1/2 relative flex flex-col lg:mt-0 mt-5">
             <p
-              class="bg-primarycolor w-[80%] lg:w-[60%] text-[8px] sm:text-[11px] md:text-[10px] lg:text-[14px] shadow-effect rounded-md font-bold lg:mt-5 font-bold py-1 px-2 xl:text-[16px]"
+              class="bg-primarycolor w-[80%] lg:w-[60%] text-[8px] sm:text-[11px] md:text-[10px] lg:text-[14px] shadow-effect rounded-md font-bold lg:mt-5 font-bold py-1 px-2 xl:text-[16px] min-[400px]:text-[12px]"
             >
               {{ orangeTitle[2].title }}
             </p>

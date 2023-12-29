@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .wrap-slider {
   width: 100%;
   overflow: hidden;

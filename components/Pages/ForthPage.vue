@@ -30,7 +30,7 @@
             class="text-[24px] lg:text-[30px] font-bold lg:flex lg:justify-between lg:items-center"
           >
             {{ itemPageCard.title }}
-            <span class="font-extralight text-[24px]">{{
+            <span class="text-[#BFBFBF] font-bold text-[24px]">{{
               itemPageCard.price
             }}</span>
           </h1>

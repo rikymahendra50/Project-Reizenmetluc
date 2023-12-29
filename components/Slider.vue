@@ -1,13 +1,13 @@
 <template>
   <div class="wrap-slider" id="js-wrapSlider">
-    <ul class="js-slider" lazyloading>
+    <ul class="js-slider">
       <li
         v-for="item in sliderItems"
         :key="item.id"
         class="item w-[245px] md:h-[446px]"
       >
         <video
-          :src="'_nuxt/assets/videos/' + item.src"
+          :src="'/_nuxt/assets/videos/' + item.src"
           :alt="item.title"
           muted
           autoplay
