@@ -1,10 +1,9 @@
 <template>
-  <section class="relative flex flex-col py-10 mt-3 lg:mt-10 sm:mt-0">
-    <div
-      class="inline-block text-center my-3 mx-5 items-start"
-      data-aos="flip-up"
-    >
-      <h1 class="text-[30px] md:text-[44px] font-bold pb-3 tracking-widest">
+  <section class="relative overflow-hidden">
+    <div class="text-center pt-10 lg:pt-20" data-aos="flip-up">
+      <h1
+        class="text-[25px] md:text-[44px] font-bold pb-3 tracking-widest text-center"
+      >
         {{ title.firstHeader[0] }}
         <span class="bg-primarycolor rounded-[10px] px-3 pb-1">{{
           title.firstHeader[1]
@@ -14,7 +13,7 @@
           title.firstHeader[3]
         }}</span>
       </h1>
-      <p class="text-[20px] font-light tracking-widest">
+      <p class="text-[15px] md:text-[20px] font-light tracking-widest">
         <span class="font-bold">{{ title.secondHeader[0] }}</span>
         {{ title.secondHeader[1] }}
         <span class="font-bold">{{ title.secondHeader[2] }}</span>

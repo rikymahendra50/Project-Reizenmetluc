@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="buttonOrg text-[12px] sm:text-sm md:text-[18px] lg:text-[20px] font-extrabold tracking-widest flex flex-wrap w-[93%] h-8 md:h-11 bg-primarycolor justify-center items-center rounded-[7px] cursor-pointer hover:bg-slate-500"
+    class="text-center buttonOrg text-[12px] sm:text-[12px] md:text-[14px] xl:text-[20px] font-extrabold md:tracking-widest flex flex-wrap w-[95%] h-8 md:h-11 bg-primarycolor justify-center items-center rounded-[7px] cursor-pointer hover:bg-slate-500"
     target="_blank"
   >
     {{ title }}
