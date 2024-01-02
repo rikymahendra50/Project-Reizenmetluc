@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-10 overflow-hidden">
+  <section class="pt-10">
     <div class="block text-center my-5" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
@@ -13,8 +13,8 @@
         {{ title.secondHeader[2] }}
       </p>
     </div>
-    <div class="flex lg:mx-10">
-      <!-- Class Left -->
+    <div class="flex lg:mx-10 overflow-hidden py-5">
+      <!-- Content Left -->
       <div class="relative flex flex-col w-1/2">
         <!-- Content 1 -->
         <div class="md:mt-14">
@@ -39,15 +39,19 @@
                 class="text-[10px] sm:text-[12px] md:text-[22px] lg:text-[34px]"
               >
                 <span class="font-bold">
-                  {{ priceDescription[0].title.span }} </span
-                >&nbsp;{{ priceDescription[0].title.nonspan }}
+                  {{ LeftContent[0].priceDescription[0].title.span }} </span
+                >&nbsp;{{ LeftContent[0].priceDescription[0].title.nonspan }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
               >
                 <span class="line-through text-red-600 font-extralight"
-                  >€&nbsp;{{ priceDescription[0].price.normalPrice }}</span
-                >&nbsp;€&nbsp;{{ priceDescription[0].price.discountPrice }}
+                  >€&nbsp;{{
+                    LeftContent[0].priceDescription[0].price.normalPrice
+                  }}</span
+                >&nbsp;€&nbsp;{{
+                  LeftContent[0].priceDescription[0].price.discountPrice
+                }}
               </p>
             </div>
           </div>
@@ -60,23 +64,27 @@
             >
               <p class="text-[8px] sm:text-[12px] md:text-lg lg:text-[22px]">
                 <span class="font-bold">{{
-                  priceDescription[1].title.span
+                  LeftContent[0].priceDescription[1].title.span
                 }}</span
-                >&nbsp;{{ priceDescription[1].title.nonspan }}
+                >&nbsp;{{ LeftContent[0].priceDescription[1].title.nonspan }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
               >
                 <span class="line-through text-red-600 font-extralight"
-                  >€&nbsp;{{ priceDescription[1].price.normalPrice }}</span
-                >&nbsp;€&nbsp;{{ priceDescription[1].price.discountPrice }}
+                  >€&nbsp;{{
+                    LeftContent[0].priceDescription[1].price.normalPrice
+                  }}</span
+                >&nbsp;€&nbsp;{{
+                  LeftContent[0].priceDescription[1].price.discountPrice
+                }}
               </p>
             </div>
           </div>
 
           <img
-            src="/_nuxt/assets/images/Screenshots for section 3/view.png"
-            alt="view-1"
+            :src="LeftContent[0].src"
+            :alt="LeftContent[0].title"
             class="w-[80%] mx-auto"
             loading="lazy"
           />
@@ -98,22 +106,22 @@
           data-aos="fade-right"
         >
           <img
-            src="/_nuxt/assets/images/Screenshots for section 3/girls-on-the-beach.jpg"
-            alt="girl-beach"
+            :src="LeftContent[1].ImgSmallsrc"
+            :alt="LeftContent[1].ImgSmalltitle"
             class="w-[40%] h-[60%] relative left-5 top-6 md:top-16 rounded-2xl max-w-full z-10 shadow-effect"
             loading="lazy"
           />
           <img
-            src="/_nuxt/assets/images/Screenshots for section 3/IMG_0723.PNG"
-            alt="thailand"
+            :src="LeftContent[1].ImgBigsrc"
+            :alt="LeftContent[1].ImgBigtitle"
             class="w-[70%] rounded-2xl max-w-full relative right-5 md:right-10 shadow-effect"
             loading="lazy"
           />
         </div>
-        <!-- End of class 1 -->
+        <!-- End of class left -->
       </div>
 
-      <!-- Class 2 -->
+      <!-- Content Right -->
       <div class="flex flex-col w-1/2">
         <!-- Content 1 -->
         <div
@@ -122,14 +130,14 @@
         >
           <div class="relative">
             <img
-              src="/_nuxt/assets/images/people3.png"
-              alt="people"
+              :src="RightContent[0].ImgRight[0].src"
+              :alt="RightContent[0].ImgRight[0].title"
               class="relative"
               loading="lazy"
             />
             <img
-              src="/_nuxt/assets/images/arrow.png"
-              alt="arrow"
+              :src="RightContent[0].ImgRight[1].src"
+              :alt="RightContent[0].ImgRight[1].title"
               class="rotate-[5deg] absolute bottom-[-10px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
               lazy="lazy"
             />
@@ -150,8 +158,8 @@
         <div class="relative w-full" data-aos="fade-left">
           <div class="relative w-[80%] mx-auto">
             <img
-              src="/_nuxt/assets/images/Screenshots for section 3/code-remote.png"
-              alt="code-remote"
+              :src="RightContent[0].ImgRight[2].src"
+              :alt="RightContent[0].ImgRight[2].title"
               class="shadow-effect block rounded-xl"
             />
             <div class="flex justify-end mt-5 md:mt-10">
@@ -159,10 +167,10 @@
                 class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:p-4 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
               >
                 <p class="font-bold text-[10px] md:text-[25px]">
-                  {{ StapVoor.title1 }}
+                  {{ RightContent[1].StapVoor.title1 }}
                 </p>
                 <p class="font-thin text-[8px] md:text-[20px] 2xl:text-[25px]">
-                  {{ StapVoor.title2 }}
+                  {{ RightContent[1].StapVoor.title1 }}
                 </p>
               </div>
             </div>
@@ -196,33 +204,73 @@ export default {
         firstHeader: ["Dit is wat ", "jij ontvangt"],
         secondHeader: ["In de", "ik wil reizen", "community"],
       },
-      priceDescription: [
+      // Left Content
+      LeftContent: [
+        // Image First
         {
-          title: {
-            span: "Retour",
-            nonspan: "Malediven",
-          },
-          price: {
-            normalPrice: "899",
-            discountPrice: "256",
-          },
+          src: "/_nuxt/assets/images/Screenshots for section 3/view.png",
+          title: "view-1",
+          priceDescription: [
+            {
+              title: {
+                span: "Retour",
+                nonspan: "Malediven",
+              },
+              price: {
+                normalPrice: "899",
+                discountPrice: "256",
+              },
+            },
+            {
+              title: {
+                span: "Hotel Room:",
+                nonspan: "2 beds",
+              },
+              price: {
+                normalPrice: "35",
+                discountPrice: "156",
+              },
+            },
+          ],
+        },
+        // Image Second
+        {
+          ImgSmallsrc:
+            "/_nuxt/assets/images/Screenshots for section 3/girls-on-the-beach.jpg",
+          ImgSmalltitle: "girl-beach",
+          ImgBigsrc:
+            "/_nuxt/assets/images/Screenshots for section 3/IMG_0723.PNG",
+          ImgBigtitle: "destination",
+        },
+      ],
+
+      RightContent: [
+        {
+          ImgRight: [
+            {
+              src: "/_nuxt/assets/images/People3.png",
+              title: "people",
+            },
+            {
+              src: "/_nuxt/assets/images/arrow.png",
+              title: "arrow",
+            },
+            {
+              src: "/_nuxt/assets/images/Screenshots for section 3/code-remote.png",
+              title: "code-remote",
+            },
+          ],
         },
         {
-          title: {
-            span: "Hotel Room:",
-            nonspan: "2 beds",
-          },
-          price: {
-            normalPrice: "35",
-            discountPrice: "156",
+          StapVoor: {
+            title1: "Stap voor stap",
+            title2: "naar jou online inkomen",
           },
         },
       ],
-      StapVoor: {
-        title1: "Stap voor stap",
-        title2: "naar jou online inkomen",
-      },
+
       dataSmallCard: [
+        // small card left
         {
           img: "/_nuxt/assets/images/emoji/brain.png",
           description:
@@ -235,6 +283,7 @@ export default {
             "Leer hoe jij ook remote gaat werken met onze 9 delige video course",
           title: "meditation",
         },
+        // small card right
         {
           img: "/_nuxt/assets/images/emoji/shushing-face.png",
           description:
@@ -245,7 +294,7 @@ export default {
           img: "/_nuxt/assets/images/emoji/airplane.png",
           description:
             " Maak en deel de moosite herinneringen samen maken we jou dromen waar",
-          title: "brain",
+          title: "plane",
         },
       ],
     };
