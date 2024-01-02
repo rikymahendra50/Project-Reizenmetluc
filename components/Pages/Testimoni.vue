@@ -57,7 +57,7 @@
     position: absolute;
     left: 100%;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -20%);
     display: flex;
     flex-direction: row;
 
