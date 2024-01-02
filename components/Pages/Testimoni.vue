@@ -33,7 +33,7 @@
                 <h1 class="font-bold text-sm">
                   {{ itemtestimoni.underscore }}
                 </h1>
-                <p class="font-thin text-sm">{{ itemtestimoni.username }}</p>
+                <p class="font-thin text-sm">@{{ itemtestimoni.username }}</p>
               </div>
             </div>
           </li>
@@ -63,6 +63,10 @@
 
     li {
       display: block;
+      transition: transform 0.3s ease;
+    }
+    li:hover {
+      transform: scale(1.1);
     }
   }
 }
@@ -216,12 +220,12 @@ export default {
         requestAnimFrame2(start2);
       }
 
-      wrapSlider2.addEventListener("mouseover", () => {
-        isPaused2 = true;
-      });
-      wrapSlider2.addEventListener("mouseout", () => {
-        isPaused2 = false;
-      });
+      // wrapSlider2.addEventListener("mouseover", () => {
+      //   isPaused2 = true;
+      // });
+      // wrapSlider2.addEventListener("mouseout", () => {
+      //   isPaused2 = false;
+      // });
 
       start2();
     },
