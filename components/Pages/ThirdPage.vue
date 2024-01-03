@@ -1,6 +1,6 @@
 <template>
-  <section class="pt-10">
-    <div class="block text-center my-5" data-aos="zoom-in">
+  <section class="mt-20 overflow-hidden">
+    <div class="block text-center" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
       >
@@ -13,7 +13,7 @@
         {{ title.secondHeader[2] }}
       </p>
     </div>
-    <div class="flex lg:mx-10 overflow-hidden py-5">
+    <div class="flex lg:mx-10 py-5">
       <!-- Content Left -->
       <div class="relative flex flex-col w-1/2">
         <!-- Content 1 -->
@@ -192,6 +192,7 @@
 </template>
 <script>
 import SmallCard from "@/components/SmallCard.vue";
+import jsonData from "@/data/ThirdPage.json";
 
 export default {
   components: {
@@ -199,104 +200,10 @@ export default {
   },
   data() {
     return {
-      title: {
-        // first to last word
-        firstHeader: ["Dit is wat ", "jij ontvangt"],
-        secondHeader: ["In de", "ik wil reizen", "community"],
-      },
-      // Left Content
-      LeftContent: [
-        // Image First
-        {
-          src: "/_nuxt/assets/images/Screenshots for section 3/view.png",
-          title: "view-1",
-          priceDescription: [
-            {
-              title: {
-                span: "Retour",
-                nonspan: "Malediven",
-              },
-              price: {
-                normalPrice: "899",
-                discountPrice: "256",
-              },
-            },
-            {
-              title: {
-                span: "Hotel Room:",
-                nonspan: "2 beds",
-              },
-              price: {
-                normalPrice: "35",
-                discountPrice: "156",
-              },
-            },
-          ],
-        },
-        // Image Second
-        {
-          ImgSmallsrc:
-            "/_nuxt/assets/images/Screenshots for section 3/girls-on-the-beach.jpg",
-          ImgSmalltitle: "girl-beach",
-          ImgBigsrc:
-            "/_nuxt/assets/images/Screenshots for section 3/IMG_0723.PNG",
-          ImgBigtitle: "destination",
-        },
-      ],
-
-      RightContent: [
-        {
-          ImgRight: [
-            {
-              src: "/_nuxt/assets/images/People3.png",
-              title: "people",
-            },
-            {
-              src: "/_nuxt/assets/images/arrow.png",
-              title: "arrow",
-            },
-            {
-              src: "/_nuxt/assets/images/Screenshots for section 3/code-remote.png",
-              title: "code-remote",
-            },
-          ],
-        },
-        {
-          StapVoor: {
-            title1: "Stap voor stap",
-            title2: "naar jou online inkomen",
-          },
-        },
-      ],
-
-      dataSmallCard: [
-        // small card left
-        {
-          img: "/_nuxt/assets/images/emoji/brain.png",
-          description:
-            "Toegang tot de tips, tools & kennis van onze remote inkomen coaches",
-          title: "brain",
-        },
-        {
-          img: "/_nuxt/assets/images/emoji/meditation.png",
-          description:
-            "Leer hoe jij ook remote gaat werken met onze 9 delige video course",
-          title: "meditation",
-        },
-        // small card right
-        {
-          img: "/_nuxt/assets/images/emoji/shushing-face.png",
-          description:
-            "Unlock de beste tip, tricks & deals om makkelijker en goedkoper te reizen",
-          title: "shushing",
-        },
-        {
-          img: "/_nuxt/assets/images/emoji/airplane.png",
-          description:
-            " Maak en deel de moosite herinneringen samen maken we jou dromen waar",
-          title: "plane",
-        },
-      ],
+      title: jsonData.title,
+      LeftContent: jsonData.LeftContent,
+      RightContent: jsonData.RightContent,
+      dataSmallCard: jsonData.dataSmallCard,
     };
   },
 };

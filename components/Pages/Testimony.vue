@@ -16,24 +16,24 @@
         <ul class="js-slider2">
           <li
             class="item2 bg-black w-[300px] md:w-[379px] rounded-[13px] shadow-effect relative h-[250px] md:h-[300px] mx-3 md:mx-5 shadow-smallcard pt-2 px-2 md:pt-5 md:px-5"
-            v-for="itemtestimoni in testimoni"
-            :key="itemtestimoni.id"
+            v-for="itemtestimony in testimony"
+            :key="itemtestimony.id"
           >
             <p class="text-[13px] lg:text-sm font-bold text-justify">
-              {{ itemtestimoni.comment }}
+              {{ itemtestimony.comment }}
             </p>
             <div class="flex pt-3 absolute bottom-3">
               <img
-                :src="`/_nuxt/assets/images/testimonial comments/${itemtestimoni.imagePerson}`"
-                :alt="itemtestimoni.title"
+                :src="`/_nuxt/assets/images/testimonial comments/${itemtestimony.imagePerson}`"
+                :alt="itemtestimony.title"
                 class="w-[50px] h-[50px]"
                 loading="lazy"
               />
               <div class="flex flex-col pl-3">
                 <h1 class="font-bold text-sm">
-                  {{ itemtestimoni.underscore }}
+                  {{ itemtestimony.underscore }}
                 </h1>
-                <p class="font-thin text-sm">@{{ itemtestimoni.username }}</p>
+                <p class="font-thin text-sm">@{{ itemtestimony.username }}</p>
               </div>
             </div>
           </li>
@@ -72,43 +72,14 @@
 }
 </style>
 
-<script scoped>
+<script>
+import jsonData from "@/data/Testimony.json";
+
 export default {
   data() {
     return {
-      title: {
-        span: ["reizigers"],
-        nonspan: ["Deze", "hebben we al geholpen"],
-      },
-      testimoni: [
-        {
-          id: 1,
-          comment:
-            "Dankzij Luc heb ik morgen mijn eerste bijles student via GoStudent, echt superblij dat deze tip zo snel resultaat heeft gebracht! Nu al blij dat deze community op mijn pad is gekomen.",
-          imagePerson: "persontestimoni.png",
-          username: "Dennis Mooren",
-          underscore: "DennisMore",
-          title: "persontestimoni",
-        },
-        {
-          id: 2,
-          comment:
-            "Je hebt me ook na laten denken en ik ga stoppen met me baan en leven in Valencia binnenkort. Ben klaar met al dat serieuze gedoe en ik ga nu helemaal los!",
-          imagePerson: "persontestimoni2.png",
-          username: "Sarah op Roodt",
-          underscore: "sarah.gram",
-          title: "persontestimoni2",
-        },
-        {
-          id: 3,
-          comment:
-            "Alleen al door de 1-op-1 call met Luc zou ik de VIP aan iedereen kunnen aanraden. Binnen een uur heb je helder op een rijtje wat je wil gaan bereiken en hoe je dat gaat doen. Daarnaast houdt hij je accountable om te zorgen dat je ook écht aan de slag gaat. ",
-          imagePerson: "persontestimoni3.png",
-          username: "Kimberley kijzers",
-          underscore: "kijzer.kim",
-          title: "persontestimoni3",
-        },
-      ],
+      title: jsonData.title,
+      testimony: jsonData.testimony,
     };
   },
   mounted() {

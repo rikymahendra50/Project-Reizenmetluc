@@ -10,7 +10,7 @@
 
     <ForthPage />
 
-    <Testimoni />
+    <Testimony />
   </section>
 </template>
 
@@ -20,7 +20,7 @@ import FirstPage from "@/components/Pages/FirstPage.vue";
 import SecondPage from "@/components/Pages/SecondPage.vue";
 import ThirdPage from "@/components/Pages/ThirdPage.vue";
 import ForthPage from "@/components/Pages/ForthPage.vue";
-import Testimoni from "@/components/Pages/Testimoni.vue";
+import Testimony from "@/components/Pages/Testimony.vue";
 
 export default {
   components: {
@@ -28,7 +28,7 @@ export default {
     SecondPage,
     ThirdPage,
     ForthPage,
-    Testimoni,
+    Testimony,
   },
 };
 </script>

@@ -106,69 +106,15 @@
 </template>
 
 <script>
+import jsonData from "@/data/FirstPage.json";
 export default {
   data() {
     return {
-      LeftContent: {
-        bigTitle: "Join de nieuwe generatie van",
-        spanBigtitle: "levensgenieters",
-        smallTitle:
-          "Ben je klaar met de sleur van het dagelijks leven en is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
-        description:
-          "Ben je klaar met de sleur van het dagelijks leven en is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
-      },
-      NormalPicture: [
-        {
-          id: 1,
-          title: "picture-1",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0701.webp",
-        },
-        {
-          id: 2,
-          title: "picture-2",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0708.webp",
-        },
-        {
-          id: 3,
-          title: "picture-3",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/Person.webp",
-        },
-        {
-          id: 4,
-          title: "picture-4",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0702.webp",
-        },
-      ],
-      commentScrenshot: [
-        {
-          id: 1,
-          title: "comment-1",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0833.webp",
-        },
-        {
-          id: 2,
-          title: "comment-2",
-          fileName:
-            "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0832.webp",
-        },
-      ],
-      orangeTitle: [
-        { id: 1, title: "Unlock jouw droomleven" },
-        { id: 2, title: "Maak like-minded vrienden" },
-        { id: 3, title: " Inspiratie & motivatie op 1 plek - voor jou" },
-      ],
-      footerFirstPage: {
-        title: "3000+ reizigers",
-        titleSpan: "leven op dit moment hun droom",
-        pictureofPeople:
-          "/_nuxt/assets/images/Screenshots for sections 1/People1.png",
-        alt: "People",
-      },
+      LeftContent: jsonData.LeftContent,
+      NormalPicture: jsonData.NormalPicture,
+      commentScrenshot: jsonData.commentScrenshot,
+      orangeTitle: jsonData.orangeTitle,
+      footerFirstPage: jsonData.footerFirstPage,
     };
   },
 };

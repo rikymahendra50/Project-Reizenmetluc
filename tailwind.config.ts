@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const colors = require("tailwindcss/colors");
+// Dalam nuxt.config.js
 
 export default <Partial<Config>>{
   content: ["docs/content/**/*.md"],

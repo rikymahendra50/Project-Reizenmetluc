@@ -1,0 +1,88 @@
+{
+  "title": {
+    "firstHeader": ["Dit is wat ", "jij ontvangt"],
+    "secondHeader": ["In de", "ik wil reizen", "community"]
+  },
+  "LeftContent": [
+    {
+      "src": "/_nuxt/assets/images/Screenshots for section 3/view.png",
+      "title": "view-1",
+      "priceDescription": [
+        {
+          "title": {
+            "span": "Retour",
+            "nonspan": "Malediven"
+          },
+          "price": {
+            "normalPrice": "899",
+            "discountPrice": "256"
+          }
+        },
+        {
+          "title": {
+            "span": "Hotel Room:",
+            "nonspan": "2 beds"
+          },
+          "price": {
+            "normalPrice": "35",
+            "discountPrice": "156"
+          }
+        }
+      ]
+    },
+    {
+      "ImgSmallsrc": "/_nuxt/assets/images/Screenshots for section 3/girls-on-the-beach.jpg",
+      "ImgSmalltitle": "girl-beach",
+      "ImgBigsrc": "/_nuxt/assets/images/Screenshots for section 3/IMG_0723.PNG",
+      "ImgBigtitle": "destination"
+    }
+  ],
+
+  "RightContent": [
+    {
+      "ImgRight": [
+        {
+          "src": "/_nuxt/assets/images/People3.png",
+          "title": "people"
+        },
+        {
+          "src": "/_nuxt/assets/images/arrow.png",
+          "title": "arrow"
+        },
+        {
+          "src": "/_nuxt/assets/images/Screenshots for section 3/code-remote.png",
+          "title": "code-remote"
+        }
+      ]
+    },
+    {
+      "StapVoor": {
+        "title1": "Stap voor stap",
+        "title2": "naar jou online inkomen"
+      }
+    }
+  ],
+
+  "dataSmallCard": [
+    {
+      "img": "/_nuxt/assets/images/emoji/brain.png",
+      "description": "Toegang tot de tips, tools & kennis van onze remote inkomen coaches",
+      "title": "brain"
+    },
+    {
+      "img": "/_nuxt/assets/images/emoji/meditation.png",
+      "description": "Leer hoe jij ook remote gaat werken met onze 9 delige video course",
+      "title": "meditation"
+    },
+    {
+      "img": "/_nuxt/assets/images/emoji/shushing-face.png",
+      "description": "Unlock de beste tip, tricks & deals om makkelijker en goedkoper te reizen",
+      "title": "shushing"
+    },
+    {
+      "img": "/_nuxt/assets/images/emoji/airplane.png",
+      "description": " Maak en deel de moosite herinneringen samen maken we jou dromen waar",
+      "title": "plane"
+    }
+  ]
+}

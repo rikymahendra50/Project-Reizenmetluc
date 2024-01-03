@@ -1,0 +1,57 @@
+{
+  "ForthPageCard": [
+    {
+      "id": 1,
+      "title": "Gratis",
+      "description": "Deze groep is perfect voor als je **gezellig** met wil **andere reizigers** chatten, **inspiratie op wilt** doen en opzoek bent naar die **handige travel hacks en deals**.",
+      "list": [
+        "Chat met like-minded reizigers",
+        "Vind jouw nieuwe travel buddy",
+        "Unlock handige reis tips",
+        "Laat jezelf inspireren"
+      ],
+      "Button": {
+        "title": "Pak Gratis Toegang",
+        "link": "https://discord.com/invite/wu59fp7XAW"
+      }
+    },
+    {
+      "id": 2,
+      "title": " Maandelijks /",
+      "price": "€7,77",
+      "description": "**Verbreed je netwerk**, leer de **juiste kennis** om online **geld te verdienen** en ontdekt hoe jij van **reizen en werken** je lifestyle gaat maken.",
+      "list": [
+        "Alles van de vorige +",
+        "7+ online verdien modellen",
+        "Unlock extra geld door onze bespaar tips",
+        "Dagelijks remote vacatures",
+        "Netwerk van remote werkers",
+        "Stel direct al je vragen aan onze coaches"
+      ],
+      "Button": {
+        "title": "Ik Start Vandaag Nog",
+        "link": "https://checkout.stripe.com/c/pay/cs_live_a1eE9ms4UoYNUMyREPpF1HKFkfz21RmqtFgyQI3veJFCLSoG2Ko7blIrk7#fidkdWxOYHwnPyd1blppbHNgWjA0SEBwY3dGQVdDbzBmR19JMlJRUW1UMDNOUGlib20yPUhOX2g8f0x%2FQUs1ckltTk9Kdz00dWxXZ0JRcVdKZ1FQPGF9b1A9ZFdIamBrdHJXMzJCXUJCZnY3NTVNYmdmd2RqNicpJ3VpbGtuQH11anZgYUxhJz8nZ0xcNzxoZ1JnPDxBNkNWYVcwJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJycit3YGx%2FYGtoYHFpcGYra2kqJ3gl"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Jaarlijks /",
+      "price": "€77,77",
+      "description": "Voor **de mensen die weten** dat als ze ergens voor gaan **dromen** uit komen. Krijg **2 maanden** gratis + **1 op 1 coaching call** met Luc.",
+      "list": [
+        "Alles van de vorige 2 +",
+        "1 op 1 transformatie call",
+        "2 maanden gratis + direct 1 jaar toegang",
+        "Altijd up to date"
+      ],
+      "Button": {
+        "title": "Geef 2 Maan den Gratis",
+        "link": "https://checkout.stripe.com/c/pay/cs_live_a1dtGIsGQGYlrpQ0xyOEMjEqu5TuysVCmDxdEi5sEW1C17Va6DhG4zhJ3Q#fidkdWxOYHwnPyd1blppbHNgWjA0SEBwY3dGQVdDbzBmR19JMlJRUW1UMDNOUGlib20yPUhOX2g8f0x%2FQUs1ckltTk9Kdz00dWxXZ0JRcVdKZ1FQPGF9b1A9ZFdIamBrdHJXMzJCXUJCZnY3NTVNYmdmd2RqNicpJ3VpbGtuQH11anZgYUxhJz8nNz1qMW1wYTVjMF13PDVmM2pAJyknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJycit3YGx%2FYGtoYHFpcGYra2kqJ3gl"
+      }
+    }
+  ],
+  "header": {
+    "title": "Hier is wat jij gaat **unlocken**",
+    "description": "**2 kopjes koffie** per maand voor **jouw droom leven**, dat is pas een **goeie deal**"
+  }
+}
