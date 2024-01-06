@@ -13,6 +13,9 @@
   .active {
     @apply bg-emerald-200;
   }
+  .container-custom {
+    @apply px-3 sm:px-5 lg:px-12 xl:px-[40px];
+  }
 }
 
 .shadow-effect {

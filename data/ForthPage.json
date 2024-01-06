@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "title": " Maandelijks /",
+      "title": " Maandelijks",
       "price": "€7,77",
       "description": "**Verbreed je netwerk**, leer de **juiste kennis** om online **geld te verdienen** en ontdekt hoe jij van **reizen en werken** je lifestyle gaat maken.",
       "list": [
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "title": "Jaarlijks /",
+      "title": "Jaarlijks",
       "price": "€77,77",
       "description": "Voor **de mensen die weten** dat als ze ergens voor gaan **dromen** uit komen. Krijg **2 maanden** gratis + **1 op 1 coaching call** met Luc.",
       "list": [
@@ -51,7 +51,7 @@
     }
   ],
   "header": {
-    "title": "Hier is wat jij gaat **unlocken**",
+    "title": "Hier is wat .. jij gaat **unlocken**",
     "description": "**2 kopjes koffie** per maand voor **jouw droom leven**, dat is pas een **goeie deal**"
   }
 }

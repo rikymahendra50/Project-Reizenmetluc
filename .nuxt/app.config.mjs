@@ -1,6 +1,6 @@
 
 import { updateAppConfig } from '#app'
-import { defuFn } from 'C:/Users/Microsoft/Downloads/Project-Reizenmetluc/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'C:/Users/Microsoft/Documents/Riky Mahendra/Project-Reizenmetluc2/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {
   "nuxt": {}
@@ -13,6 +13,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/app.config.ts"
+import cfg0 from "C:/Users/Microsoft/Documents/Riky Mahendra/Project-Reizenmetluc2/app.config.ts"
 
 export default /* #__PURE__ */ defuFn(cfg0, inlineConfig)

@@ -43,6 +43,7 @@
     "nuxt-swiper": "^1.2.2",
     "pinia": "^2.1.7",
     "stimulus": "^3.2.2",
+    "swiper": "^11.0.5",
     "v-calendar": "^3.1.2",
     "vue-picture-cropper": "^0.7.0",
     "vue-tel-input": "^8.1.4",
