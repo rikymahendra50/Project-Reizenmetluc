@@ -1,0 +1,20 @@
+{
+  "title": "FAQ",
+  "faq": [
+    {
+      "id": 0,
+      "header": "Ga ik 100% zeker geld verdienen?",
+      "detail": "test"
+    },
+    {
+      "id": 1,
+      "header": "Kan ik maandelijks opzeggen?",
+      "detail": "Mocht de community niets voor jou zijn of heb je ineens andere plannen gekregen, dan kun je maandelijks het community abonnement opzeggen door simpelweg een e-mail te sturen naar info@reizenmetluc.nl. Vermeld je Discord-naam en het e-mailadres dat je hebt gebruikt bij de betaling. Binnen 24 tot 48 uur zal ons team jouw lidmaatschap annuleren."
+    },
+    {
+      "id": 1,
+      "header": "Wanneer krijg ik toegang tot de “ik wil reizen” community?",
+      "detail": "test"
+    }
+  ]
+}

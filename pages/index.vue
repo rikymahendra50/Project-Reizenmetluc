@@ -1,15 +1,19 @@
 <template>
-  <section class="text-white font-thin bg-black">
+  <section class="font-thin">
     <!-- <FirstPage /> -->
 
-    <!-- <SecondPage /> -->
+    <SecondPage />
 
-    <!-- <ThirdPage /> -->
-    <!-- 
-    <ForthPage /> -->
+    <ThirdPage />
+    <div
+      class="bg-background2 bg-no-repeat bg-cover border-2 gradient-background"
+    >
+      <ForthPage />
 
-    <Testimony />
-    <FAQPage />
+      <Testimony />
+
+      <FAQPage />
+    </div>
   </section>
 </template>
 
@@ -29,6 +33,7 @@ export default {
     ThirdPage,
     ForthPage,
     Testimony,
+    FAQPage,
   },
 };
 </script>

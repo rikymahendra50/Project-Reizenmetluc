@@ -2,16 +2,27 @@ export function convertRegExp(element) {
   const pElements = element.querySelectorAll(".desk");
   const elementsLock = element.querySelector(".header");
   const elementsBuble = element.querySelector(".comment");
-  const elementsBR = element.querySelector(".br");
-
-  // Function change font-bold
-  // spanBR(elementsBR);
+  const yellowText = element.querySelector(".yellow");
 
   functionBold(pElements);
 
   BackgroundLock(elementsLock);
 
   BackgroundBuble(elementsBuble);
+
+  TextYellow(yellowText);
+}
+
+function TextYellow(yellowText) {
+  if (yellowText) {
+    let newYellow = yellowText.innerHTML;
+    newYellow = newYellow.replace(
+      /\#(.*?)\#/g,
+      '<span class="bg-primarycolor">$1</span>'
+    );
+
+    yellowText.innerHTML = newYellow;
+  }
 }
 
 function functionBold(pElements) {

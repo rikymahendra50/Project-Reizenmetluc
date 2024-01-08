@@ -1,5 +1,5 @@
-<!-- <template>
-  <section class="mt-20 overflow-hidden">
+<template>
+  <section class="bg-white mt-20 overflow-hidden">
     <div class="block text-center" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
@@ -30,7 +30,7 @@
             class="absolute right-0 sm:right-2 md:right-5 lg:right-10 top-0 max-w-[200px] md:max-w-[332px]"
           >
             <div
-              class="w-[100%] py-1 lg:py-2 px-2 md:px-3 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
+              class="w-[100%] py-1 lg:py-2 px-2 md:px-3 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect text-white"
             >
               <p
                 class="text-[10px] sm:text-[12px] md:text-[22px] lg:text-[34px]"
@@ -57,7 +57,7 @@
             class="absolute bottom-1 sm:bottom-10 md:bottom-4 lg:bottom-10 left-[-5px] max-w-[200px] md:max-w-[237px] ml-2"
           >
             <div
-              class="w-[100%] py-1 lg:py-2 px-2 md:px-2 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
+              class="w-[100%] py-1 lg:py-2 px-2 md:px-2 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect text-white"
             >
               <p class="text-[8px] sm:text-[12px] md:text-lg lg:text-[22px]">
                 <span class="font-bold">{{
@@ -154,7 +154,7 @@
             />
             <div class="flex justify-end mt-5 md:mt-10">
               <div
-                class="flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:p-4 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
+                class="text-white flex flex-col bg-[#1E1C1D] max-w-[316px] p-2 md:p-4 lg:py-2 rounded-[3px] md:rounded-[9px] text-start shadow-effect"
               >
                 <p class="font-bold text-[10px] md:text-[25px]">
                   {{ RightContent[1].StapVoor.title1 }}
@@ -196,8 +196,4 @@ export default {
     };
   },
 };
-</script> -->
-
-<template>
-  <p>test</p>
-</template>
+</script>

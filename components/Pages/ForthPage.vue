@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-background1 bg-no-repeat bg-cover container-custom border">
-    <div class="flex flex-col ml-3 lg:ml-10 my-10" data-aos="zoom-in">
+  <section class="text-white px-5">
+    <div class="flex flex-col ml-3 lg:ml-10 py-10 lg:py-20" data-aos="zoom-in">
       <h1
         class="header text-[40px] md:text-[60px] lg:text-[72px] font-extrabold lg:leading-[100px]"
       >
@@ -17,9 +17,7 @@
         class="sm:w-1/3 relative mb-5 mr-2 mx-auto"
         data-aos="flip-left"
       >
-        <div
-          class="card bg-opacity-50 rounded-[3.125rem] py-8 px-8 xl:py-10 relative"
-        >
+        <div class="card rounded-[3.125rem] py-8 px-8 xl:py-10 relative">
           <span
             v-if="
               itemPageCard.price !== undefined && itemPageCard.price !== null
