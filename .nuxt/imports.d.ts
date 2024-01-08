@@ -7,6 +7,7 @@ export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerS
 export { default as useAuth } from '../composables/useAuth';
 export { default as useAxios } from '../composables/useAxios';
 export { useCustomFetch } from '../composables/useCustomFetch';
+export { convertRegExp } from '../utils/convertRegExp';
 export { useI18n } from '../node_modules/vue-i18n/dist/vue-i18n';
 export { useRouteBaseName, useLocalePath, useLocaleRoute, useSwitchLocalePath, useLocaleHead, useBrowserLocale, useCookieLocale, defineI18nRoute, defineI18nLocale, defineI18nConfig } from '../node_modules/@nuxtjs/i18n/dist/runtime/composables';
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';

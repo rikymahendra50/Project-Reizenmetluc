@@ -1,15 +1,14 @@
 <template>
   <section class="text-white font-thin bg-black">
-    <!-- <FirstPage />
+    <!-- <FirstPage /> -->
 
-    <SecondPage />
+    <!-- <SecondPage /> -->
 
-    <ThirdPage /> -->
+    <!-- <ThirdPage /> -->
+    <!-- 
+    <ForthPage /> -->
 
-    <!-- <ForthPage /> -->
-
-    <!-- <Testimony /> -->
-    <SwiperComponent />
+    <Testimony />
     <FAQPage />
   </section>
 </template>
@@ -22,7 +21,6 @@ import ThirdPage from "@/components/Pages/ThirdPage.vue";
 import ForthPage from "@/components/Pages/ForthPage.vue";
 import Testimony from "@/components/Pages/Testimony.vue";
 import FAQPage from "@/components/Pages/FAQPage.vue";
-import SwiperComponent from "@/components/Pages/SwiperComponent.vue";
 
 export default {
   components: {
@@ -31,7 +29,6 @@ export default {
     ThirdPage,
     ForthPage,
     Testimony,
-    SwiperComponent,
   },
 };
 </script>

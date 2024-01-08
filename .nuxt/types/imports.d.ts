@@ -40,6 +40,7 @@ declare global {
   const computedWithControl: typeof import('../../node_modules/@vueuse/core')['computedWithControl']
   const controlledComputed: typeof import('../../node_modules/@vueuse/core')['controlledComputed']
   const controlledRef: typeof import('../../node_modules/@vueuse/core')['controlledRef']
+  const convertRegExp: typeof import('../../utils/convertRegExp')['convertRegExp']
   const createError: typeof import('../../node_modules/nuxt/dist/app')['createError']
   const createEventHook: typeof import('../../node_modules/@vueuse/core')['createEventHook']
   const createGlobalState: typeof import('../../node_modules/@vueuse/core')['createGlobalState']
@@ -458,6 +459,7 @@ declare module 'vue' {
     readonly computedWithControl: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['computedWithControl']>
     readonly controlledComputed: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['controlledComputed']>
     readonly controlledRef: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['controlledRef']>
+    readonly convertRegExp: UnwrapRef<typeof import('../../utils/convertRegExp')['convertRegExp']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
     readonly createEventHook: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['createEventHook']>
     readonly createGlobalState: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['createGlobalState']>
@@ -869,6 +871,7 @@ declare module '@vue/runtime-core' {
     readonly computedWithControl: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['computedWithControl']>
     readonly controlledComputed: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['controlledComputed']>
     readonly controlledRef: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['controlledRef']>
+    readonly convertRegExp: UnwrapRef<typeof import('../../utils/convertRegExp')['convertRegExp']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
     readonly createEventHook: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['createEventHook']>
     readonly createGlobalState: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['createGlobalState']>

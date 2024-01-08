@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 // Dalam nuxt.config.js
 
 export default <Partial<Config>>{
-  content: ["./public/**/*.{html,js}"],
+  content: ["docs/content/**/*.md"],
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
@@ -38,12 +38,10 @@ export default <Partial<Config>>{
       backgroundImage: {
         background1: "url('~/assets/images/Background.png')",
         background2: "url('~/assets/images/Website-background1.jpg')",
+        backgroundSlider1: "url('~/assets/images/Section 2/bg-1.png')",
       },
     },
     fontFamily: {
-      // sans: ["GothamMedium"],
-      // display: ["GothamMedium"],
-      // body: ["GothamMedium"],
       extrabold: ["GothamBold"],
       thin: ["GothamThin"],
       bold: ["GothamBold"],

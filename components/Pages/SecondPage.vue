@@ -1,53 +1,69 @@
 <template>
-  <section class="relative overflow-hidden">
-    <div class="text-center pt-10 lg:pt-20" data-aos="flip-up">
-      <h1
-        class="text-[25px] md:text-[44px] font-bold pb-3 tracking-widest text-center"
-      >
-        {{ title.firstHeader[0] }}
-        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">{{
-          title.firstHeader[1]
-        }}</span>
-        {{ title.firstHeader[2] }}
-        <span class="bg-primarycolor rounded-[10px] px-3 pb-1">{{
-          title.firstHeader[3]
-        }}</span>
-      </h1>
-      <p class="text-[15px] md:text-[20px] font-light tracking-widest">
-        <span class="font-bold">{{ title.secondHeader[0] }}</span>
-        {{ title.secondHeader[1] }}
-        <span class="font-bold">{{ title.secondHeader[2] }}</span>
-        {{ title.secondHeader[3] }}
-        <span class="font-bold">{{ title.secondHeader[4] }}</span>
-        {{ title.secondHeader[5] }}
-        <span class="font-bold">{{ title.secondHeader[5] }}</span>
-      </p>
+  <section class="bg-white">
+    <div class="h-[608px]" data-aos="flip-up">
+      <!-- Slider -->
+      <div class="slider-overlay text-right container-custom">
+        <div class="w-full lg:w-[50%] float-right flex flex-col">
+          <div class="mt-5 mr-[2.138rem]">
+            <img
+              :src="`/_nuxt/assets/images/${images.secondImage}`"
+              alt="star"
+              class="float-right pt-5 sm:pt-10 w-[5rem] md:w-[88px]"
+            />
+            <img
+              :src="`/_nuxt/assets/images/${images.firstImage}`"
+              alt="star"
+              class="float-right w-[80px] md:w-[88px]"
+            />
+          </div>
+          <div class="text-[#282728] md:mt-[-2.1rem] pr-5 md:pr-32 relative">
+            <h1
+              class="header br comment text-[3rem] lg:text-[4rem] font-bold leading-[4.5rem] md:leading-[5rem] relative"
+            >
+              {{ title.firstHeader }}
+            </h1>
+            <p
+              class="desk br text-[1rem] md:text-[1.25rem] leading-[24px] tracking-wider float-right mr-5 lg:mr- mt-3 md:mt-5"
+            >
+              {{ title.secondHeader }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="h-full flex items-center justify-center">
+        <img
+          :src="`/_nuxt/assets/images/section 2/${images.background1}`"
+          alt="bg-1"
+          class="w-[363px] absolute top-[-70px] left-0"
+        />
+        <img
+          :src="`/_nuxt/assets/images/section 2/${images.background2}`"
+          alt="bg-1"
+          class="w-[634px] absolute bottom-[-30px]"
+        />
+        <Slider />
+      </div>
     </div>
-    <!-- Slider -->
-    <Slider />
   </section>
 </template>
 
 <script>
 import Slider from "@/components/Slider.vue";
+import jsonData from "@/data/SecondPage.json";
+import { convertRegExp } from "@/utils/convertRegExp.js";
 
 export default {
   data() {
     return {
-      title: {
-        // first to last word
-        firstHeader: ["Voor", "reizigers", "door", "reizigers"],
-        secondHeader: [
-          "Inspireer, leer",
-          "en",
-          "motiveer.",
-          "We",
-          "staan",
-          "altijd",
-          "voor elkaar klaar",
-        ],
-      },
+      sliderItems: jsonData.sliderItems,
+      title: jsonData.title,
+      images: jsonData.images,
     };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
 };
 </script>

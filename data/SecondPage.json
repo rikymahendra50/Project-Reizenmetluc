@@ -14,5 +14,15 @@
       "title": "Slide 6",
       "src": "b70d9033d5a2427e9f0ffafd03b3181a.mp4"
     }
-  ]
+  ],
+  "title": {
+    "firstHeader": "Voor .. reizigers .. door .. ##reizigers##",
+    "secondHeader": "**Inspireer** **leer** en **motiveer**. .. We **staan** altijd **voor elkaar klaar**"
+  },
+  "images": {
+    "firstImage": "star2.png",
+    "secondImage": "star1.png",
+    "background1": "bg-1.png",
+    "background2": "bg-2.png"
+  }
 }

@@ -1,76 +1,155 @@
 <template>
-  <section
-    class="relative w-full flex text-white py-10 justify-center items-center"
+  <!-- <section
+    class="bg-white container-custom bg-background1 relative h-[1000px] bg-no-repeat bg-cover"
   >
     <div
-      class="w-[95%] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
+      class="flex flex-col gap-5 pt-10 border-2"
+      v-for="(eachJsonData, index) in testimony"
+      :key="eachJsonData.id"
     >
-      <div class="flex justify-center text-center">
-        <h1 class="text-[30px] lg:text-[44px] mt-5 font-bold">
-          {{ title.nonspan[0] }}
-          <span class="text-primarycolor font-bold"> {{ title.span[0] }}</span>
-          {{ title.nonspan[1] }}
-        </h1>
-      </div>
-      <div class="wrap-slider2 h-[350px] md:h-[400px]" id="js-wrapSlider2">
-        <ul class="js-slider2">
-          <li
-            class="item2 bg-black w-[300px] md:w-[379px] rounded-[13px] shadow-effect relative h-[250px] md:h-[300px] mx-3 md:mx-5 shadow-smallcard pt-2 px-2 md:pt-5 md:px-5"
-            v-for="itemtestimony in testimony"
-            :key="itemtestimony.id"
+      <h1
+        class="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter absolute top-0 pt-5 lg:w-[30%]"
+      >
+        {{ title }}
+      </h1>
+      <div
+        :class="
+          index % 2 === 0 ? 'flex lg:justify-end' : 'flex lg:justify-start'
+        "
+      >
+        <div class="flex relative items-center">
+          <div
+            :class="[
+              index > 0 ? 'bg-[#282728]' : 'bg-primarycolor',
+              'rounded-[10px] lg:rounded-[500px] lg:py-10 lg:px-20 w-[628px]',
+            ]"
           >
-            <p class="text-[13px] lg:text-sm font-bold text-justify">
-              {{ itemtestimony.comment }}
-            </p>
-            <div class="flex pt-3 absolute bottom-3">
-              <img
-                :src="`/_nuxt/assets/images/testimonial comments/${itemtestimony.imagePerson}`"
-                :alt="itemtestimony.title"
-                class="w-[50px] h-[50px]"
-                loading="lazy"
-              />
-              <div class="flex flex-col pl-3">
-                <h1 class="font-bold text-sm">
-                  {{ itemtestimony.underscore }}
-                </h1>
-                <p class="font-thin text-sm">@{{ itemtestimony.username }}</p>
-              </div>
+            <div class="absolute left-[-50px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="99"
+                viewBox="0 0 100 99"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M93.5707 71.6417C96.9398 64.9611 98.8373 57.4115 98.8373 49.4187C98.8373 22.1255 76.7118 0 49.4187 0C22.1255 0 0 22.1255 0 49.4187C0 76.7118 22.1255 98.8373 49.4187 98.8373C60.6799 98.8373 71.0615 95.0706 79.3721 88.7284L98.3839 90.3172C99.2773 90.3919 99.8977 89.2736 99.428 88.51C97.7665 85.809 95.038 80.3207 93.5707 71.6417Z"
+                  fill="#D9D9D9"
+                />
+                <image
+                  :href="`/_nuxt/assets/images/testimonial comments/${eachJsonData.imagePerson}`"
+                  width="100"
+                  height="99"
+                  x="0"
+                  y="0"
+                  clip-path="url(#clip-shape)"
+                />
+                <defs>
+                  <clipPath id="clip-shape">
+                    <path
+                      d="M93.5707 71.6417C96.9398 64.9611 98.8373 57.4115 98.8373 49.4187C98.8373 22.1255 76.7118 0 49.4187 0C22.1255 0 0 22.1255 0 49.4187C0 76.7118 22.1255 98.8373 49.4187 98.8373C60.6799 98.8373 71.0615 95.0706 79.3721 88.7284L98.3839 90.3172C99.2773 90.3919 99.8977 89.2736 99.428 88.51C97.7665 85.809 95.038 80.3207 93.5707 71.6417Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
-          </li>
-        </ul>
+            <p
+              class="text-[8px] lg:text-[14px] font-bold flex flex-col justify-center items-center text-justify"
+            >
+              {{ eachJsonData.comment }}
+            </p>
+            <p class="font-bold text-[8px] lg:text-[16px] pt-5">
+              {{ eachJsonData.username }}
+            </p>
+            <p class="text-[8px] lg:text-[16px]">
+              @{{ eachJsonData.underscore }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section
+    class="bg-white container-custom bg-background1 relative h-[1000px] bg-no-repeat bg-cover"
+  >
+    <div class="flex flex-col">
+      <h1
+        class="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter top-0 pt-5 lg:w-[30%] lg:absolute"
+      >
+        {{ title }}
+      </h1>
+      <div
+        class="flex pt-5"
+        v-for="(eachJsonData, index) in testimony"
+        :key="eachJsonData.id"
+      >
+        <div
+          class="w-full flex justify-center mt-5"
+          :class="
+            index % 2 === 0 ? 'flex lg:justify-end' : 'flex lg:justify-start'
+          "
+        >
+          <div
+            class="w-[90%] lg:w-[60%] p-3 pl-8 leading-tight md:p-8 lg:p-10 rounded-3xl sm:rounded-full relative flex items-center flex-wrap"
+            :class="[
+              index === 0 ? 'bg-primarycolor' : 'bg-[#282728] 2xl:mx-[262px]',
+            ]"
+          >
+            <div
+              class="flex items-center absolute left-[-29px] md:left-[-50px] w-[70px] lg:w-[100px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="99"
+                viewBox="0 0 100 99"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M93.5707 71.6417C96.9398 64.9611 98.8373 57.4115 98.8373 49.4187C98.8373 22.1255 76.7118 0 49.4187 0C22.1255 0 0 22.1255 0 49.4187C0 76.7118 22.1255 98.8373 49.4187 98.8373C60.6799 98.8373 71.0615 95.0706 79.3721 88.7284L98.3839 90.3172C99.2773 90.3919 99.8977 89.2736 99.428 88.51C97.7665 85.809 95.038 80.3207 93.5707 71.6417Z"
+                  fill="#D9D9D9"
+                />
+                <image
+                  :href="`/_nuxt/assets/images/testimonial comments/${eachJsonData.imagePerson}`"
+                  width="100"
+                  height="99"
+                  x="0"
+                  y="0"
+                  clip-path="url(#clip-shape)"
+                />
+                <defs>
+                  <clipPath id="clip-shape">
+                    <path
+                      d="M93.5707 71.6417C96.9398 64.9611 98.8373 57.4115 98.8373 49.4187C98.8373 22.1255 76.7118 0 49.4187 0C22.1255 0 0 22.1255 0 49.4187C0 76.7118 22.1255 98.8373 49.4187 98.8373C60.6799 98.8373 71.0615 95.0706 79.3721 88.7284L98.3839 90.3172C99.2773 90.3919 99.8977 89.2736 99.428 88.51C97.7665 85.809 95.038 80.3207 93.5707 71.6417Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="flex flex-col pl-8 justify-between">
+              <p
+                class="text-[12px] lg:text-[14px] font-bold flex flex-col justify-center items-center text-justify w-[95%]"
+              >
+                {{ eachJsonData.comment }}
+              </p>
+              <p class="font-bold text-[12px] lg:text-[16px] pt-5">
+                {{ eachJsonData.username }}
+              </p>
+              <p class="text-[12px] lg:text-[16px]">
+                @{{ eachJsonData.underscore }}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.wrap-slider2 {
-  width: 98%;
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translate(0, -20%);
-    display: flex;
-    flex-direction: row;
-
-    li {
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    li:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-</style>
 
 <script>
 import jsonData from "@/data/Testimony.json";
@@ -81,125 +160,6 @@ export default {
       title: jsonData.title,
       testimony: jsonData.testimony,
     };
-  },
-  mounted() {
-    this.setupSlider2();
-  },
-  methods: {
-    setupSlider2() {
-      window.requestAnimFrame2 = (function () {
-        return (
-          window.requestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-          }
-        );
-      })();
-      const wrapSlider2 = document.querySelector("#js-wrapSlider2");
-      const widthWrap2 = wrapSlider2.offsetWidth;
-
-      let items2;
-      let sliders2;
-      let sliderList2 = [];
-
-      const getSliderList2 = () => {
-        sliders2 = document.querySelectorAll(".js-slider2");
-        // get the dom elements in a array to better use it
-        sliderList2 = [...sliders2];
-      };
-      // made a function for update later
-      getSliderList2();
-
-      const slider2 = document.querySelectorAll(".js-slider2")[0];
-      const sliderWidth2 = slider2.offsetWidth;
-
-      const sumIsLargerThanSlider2 = sliderWidth2 >= widthWrap2 + sliderWidth2;
-
-      const iterationItems2 = Math.ceil(
-        (widthWrap2 + sliderWidth2) / sliderWidth2
-      );
-
-      // we clone number of slider we need
-      if (iterationItems2 > 1) {
-        for (let i = 0; i < iterationItems2 - 1; i++) {
-          const clone2 = slider2.cloneNode(true);
-          wrapSlider2.appendChild(clone2);
-        }
-
-        getSliderList2();
-      }
-
-      // we create an array for knowing the state of each item
-      let stateList2 = sliderList2.map((item, i) => {
-        let pos2 = 0;
-        let start2 = false;
-
-        // here we allow the slide to start fully at left
-        if (i < iterationItems2 - 1) {
-          pos2 = -widthWrap2 + sliders2[i].offsetWidth * i;
-          start2 = true;
-
-          sliders2[i].style.transform = `translate(${pos2}px, -50%)`;
-        }
-
-        return {
-          pos2,
-          start2,
-        };
-      });
-
-      // logic animation for sliding each item at a time
-      const translate2 = () => {
-        for (let i = 0; i < sliderList2.length; i++) {
-          const slider2 = sliderList2[i];
-          const sliderWidth2 = slider2.offsetWidth;
-          const nextIndex2 = i != sliderList2.length - 1 ? i + 1 : 0;
-          let pos2;
-
-          // if slider should be in movement
-          if (stateList2[i].start2) {
-            stateList2[i].pos2 -= 1;
-            pos2 = stateList2[i].pos2;
-
-            slider2.style.transform = `translate(${pos2}px, -50%)`;
-          }
-
-          const isComplete2 = pos2 <= -sliderWidth2;
-          const isOutSeen2 = pos2 <= -widthWrap2 - sliderWidth2;
-
-          // if the slider is fully on screen
-          if (isComplete2) {
-            stateList2[nextIndex2].start2 = true;
-          }
-          // if the slider finished crossing the slider and has disappeared
-          if (isOutSeen2) {
-            stateList2[i].start2 = false;
-            stateList2[i].pos2 = 0;
-          }
-        }
-      };
-
-      let isPaused2 = false;
-
-      function start2() {
-        if (!isPaused2) {
-          translate2();
-        }
-
-        requestAnimFrame2(start2);
-      }
-
-      // wrapSlider2.addEventListener("mouseover", () => {
-      //   isPaused2 = true;
-      // });
-      // wrapSlider2.addEventListener("mouseout", () => {
-      //   isPaused2 = false;
-      // });
-
-      start2();
-    },
   },
 };
 </script>

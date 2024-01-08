@@ -18,7 +18,7 @@
         data-aos="flip-left"
       >
         <div
-          class="card bg-opacity-50 rounded-[10px] py-8 px-8 xl:py-10 relative"
+          class="card bg-opacity-50 rounded-[3.125rem] py-8 px-8 xl:py-10 relative"
         >
           <span
             v-if="
@@ -63,22 +63,10 @@
     </div>
   </section>
 </template>
-
-<style>
-.card {
-  background: linear-gradient(
-    210deg,
-    rgba(255, 255, 255, 0.48) 1.44%,
-    rgba(255, 255, 255, 0.18) 52.73%,
-    rgba(255, 255, 255, 0.6) 98.94%
-  );
-  border-radius: 50px;
-}
-</style>
-
 <script>
 import CustomLink from "@/components/ButtonOrg.vue";
 import jsonData from "@/data/ForthPage.json";
+import { convertRegExp } from "@/utils/convertRegExp.js";
 
 export default {
   components: {
@@ -93,26 +81,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      const pElements = this.$el.querySelectorAll(".desk");
-      const pElementsBorder = this.$el.querySelector(".header");
-      pElements.forEach((pElement) => {
-        let newTextContent = pElement.innerHTML;
-
-        newTextContent = newTextContent.replace(
-          /\*\*(.*?)\*\*/g,
-          '<span class="font-bold">$1</span>'
-        );
-        pElement.innerHTML = newTextContent;
-      });
-      let newBorder = pElementsBorder.innerHTML;
-      newBorder = newBorder.replace(
-        /\*\*(.*?)\*\*/g,
-        '<span class="h-3 bg-primarycolor px-5 xl:px-7 rounded-full relative">$1<img src="/_nuxt/assets/images/icon-lock.svg" alt="lock" class="absolute top-[-55px] right-[-40px] lg:right-[-50px] lg:top-[-67px] w-[90px] lg:w-[110px]"></span> '
-      );
-
-      newBorder = newBorder.replace(/\.\./g, "<br>");
-
-      pElementsBorder.innerHTML = newBorder;
+      convertRegExp(this.$el);
     });
   },
 };

@@ -14,7 +14,32 @@
     @apply bg-emerald-200;
   }
   .container-custom {
-    @apply px-3 sm:px-5 lg:px-12 xl:px-[40px];
+    @apply px-3 sm:px-5 lg:px-16 xl:px-20;
+  }
+  .buble::before,
+  .buble::after {
+    @apply bottom-[-0.1rem] content-[""] h-8 absolute z-[-999];
+  }
+  .buble {
+    @apply bg-primarycolor my-1 py-1 md:px-5 xl:px-8 rounded-full relative self-end before:right-[-0.35rem] before:translate-x-0 before:translate-y-[-0.1rem] before:rounded-bl-[1rem_0.7rem] before:border-r-[4rem] before:border-r-primarycolor before:border-solid after:bg-white after:translate-x-[-30px] after:-translate-y-0.5 after:w-2.5 after:rounded-bl-[0.6rem] after:-right-10;
+  }
+  .slider-overlay {
+    @apply absolute w-full h-full z-[1] left-0 top-0;
+    background: linear-gradient(
+      264deg,
+      #fff 10.57%,
+      rgba(255, 255, 255, 0.8) 33.63%,
+      rgba(255, 255, 255, 0) 54.52%
+    );
+  }
+  .card {
+    background: linear-gradient(
+      210deg,
+      rgba(255, 255, 255, 0.48) 1.44%,
+      rgba(255, 255, 255, 0.18) 52.73%,
+      rgba(255, 255, 255, 0.6) 98.94%
+    );
+    border-radius: 50px;
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap-slider mt-5" id="js-wrapSlider">
+  <div class="wrap-slider" id="js-wrapSlider">
     <ul class="js-slider">
       <li
         v-for="item in sliderItems"
@@ -29,22 +29,6 @@ export default {
   data() {
     return {
       sliderItems: jsonData.sliderItems,
-      // sliderItems: [
-      //   { id: 1, title: "Slide 1", src: "Tiktok.mp4" },
-      //   { id: 2, title: "Slide 2", src: "Snaptik.mp4" },
-      //   { id: 3, title: "Slide 3", src: "Reelvideo-9660.mp4" },
-      //   { id: 4, title: "Slide 4", src: "Tjeerd travel appreciation.mov" },
-      //   {
-      //     id: 5,
-      //     title: "Slide 5",
-      //     src: "merge_2AE2B262-058A-455B-8A6C-C38964215548.mp4",
-      //   },
-      //   {
-      //     id: 6,
-      //     title: "Slide 6",
-      //     src: "b70d9033d5a2427e9f0ffafd03b3181a.mp4",
-      //   },
-      // ],
     };
   },
   mounted() {

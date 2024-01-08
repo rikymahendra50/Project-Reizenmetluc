@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section class="mt-20 overflow-hidden">
     <div class="block text-center" data-aos="zoom-in">
       <h1
@@ -14,9 +14,7 @@
       </p>
     </div>
     <div class="flex lg:mx-10 py-5">
-      <!-- Content Left -->
       <div class="relative flex flex-col w-1/2">
-        <!-- Content 1 -->
         <div class="md:mt-14">
           <SmallCard
             :img="dataSmallCard[0].img"
@@ -27,7 +25,6 @@
             loading="lazy"
           />
         </div>
-        <!-- Content 2 -->
         <div class="relative" data-aos="fade-right">
           <div
             class="absolute right-0 sm:right-2 md:right-5 lg:right-10 top-0 max-w-[200px] md:max-w-[332px]"
@@ -90,7 +87,6 @@
           />
         </div>
 
-        <!-- Content 3 -->
         <div data-aos="fade-right">
           <SmallCard
             :img="dataSmallCard[1].img"
@@ -100,7 +96,6 @@
           />
         </div>
 
-        <!-- Content 4 -->
         <div
           class="relative flex md:mt-10 justify-center"
           data-aos="fade-right"
@@ -118,12 +113,9 @@
             loading="lazy"
           />
         </div>
-        <!-- End of class left -->
       </div>
 
-      <!-- Content Right -->
       <div class="flex flex-col w-1/2">
-        <!-- Content 1 -->
         <div
           class="relative flex flex-col w-[80%] mx-auto"
           data-aos="fade-left"
@@ -144,7 +136,6 @@
           </div>
         </div>
 
-        <!-- Content 2 -->
         <div data-aos="fade-left">
           <SmallCard
             :img="dataSmallCard[2].img"
@@ -154,7 +145,6 @@
           />
         </div>
 
-        <!-- Content 3 -->
         <div class="relative w-full" data-aos="fade-left">
           <div class="relative w-[80%] mx-auto">
             <img
@@ -177,7 +167,6 @@
           </div>
         </div>
 
-        <!-- Content 4 -->
         <div data-aos="fade-left">
           <SmallCard
             :img="dataSmallCard[3].img"
@@ -207,4 +196,8 @@ export default {
     };
   },
 };
-</script>
+</script> -->
+
+<template>
+  <p>test</p>
+</template>

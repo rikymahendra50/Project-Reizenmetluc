@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["docs/content/**/*.md"],
   theme: {
     extend: {
       colors: {
@@ -13,12 +10,10 @@ module.exports = {
       backgroundImage: {
         background1: "url('~/assets/images/Background.png')",
         background2: "url('~/assets/images/Website-background1.jpg')",
+        backgroundSlider1: "url('~/assets/images/Section 2/bg-1.png')",
       },
     },
     fontFamily: {
-      // sans: ["GothamMedium", "sans-serif"],
-      // display: ["GothamMedium"],
-      // body: ["GothamMedium"],
       extrabold: ["GothamBold"],
       thin: ["GothamThin"],
       bold: ["GothamBold"],
