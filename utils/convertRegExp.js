@@ -3,6 +3,7 @@ export function convertRegExp(element) {
   const elementsLock = element.querySelector(".header");
   const elementsBuble = element.querySelector(".comment");
   const yellowText = element.querySelector(".yellow");
+  const elementButton = element.querySelector(".button");
 
   functionBold(pElements);
 

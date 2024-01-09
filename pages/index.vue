@@ -1,6 +1,6 @@
 <template>
-  <section class="font-thin">
-    <!-- <FirstPage /> -->
+  <section class="font-thin overflow-hidden">
+    <FirstPage />
 
     <SecondPage />
 

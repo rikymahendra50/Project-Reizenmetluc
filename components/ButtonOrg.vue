@@ -5,9 +5,7 @@
     target="_blank"
   >
     <div class="flex items-center justify-between w-full px-2">
-      <p
-        class="flex text-[14px] xl:text-[18px] xl:text-[20px] text-center w-full justify-center pl-5"
-      >
+      <p class="flex text-center w-full justify-center pl-5">
         {{ title }}
       </p>
       <span

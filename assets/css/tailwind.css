@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* @import "tailwindcss/base";
-@import "tailwindcss/components";
+@import "tailwindcss/components"; 
 @import "tailwindcss/utilities"; */
 
 @layer components {
@@ -21,7 +21,7 @@
     @apply bottom-[-0.1rem] content-[""] h-8 absolute z-[-999];
   }
   .buble {
-    @apply bg-primarycolor my-1 py-1 md:px-5 xl:px-8 rounded-full relative self-end before:right-[-0.35rem] before:translate-x-0 before:translate-y-[-0.1rem] before:rounded-bl-[1rem_0.7rem] before:border-r-[4rem] before:border-r-primarycolor before:border-solid after:bg-white after:translate-x-[-30px] after:-translate-y-0.5 after:w-2.5 after:rounded-bl-[0.6rem] after:-right-10;
+    @apply bg-primarycolor my-1 py-1 md:px-5 xl:px-8 rounded-full relative self-end before:right-[-0.35rem] before:translate-x-0 before:translate-y-[-0.1rem] before:rounded-bl-[1rem_0.7rem] before:border-r-[4rem] before:border-r-primarycolor before:border-solid after:bg-white after:bg-opacity-100 after:translate-x-[-30px] after:-translate-y-0.5 after:w-2.5 after:rounded-bl-[0.6rem] after:-right-10;
   }
   .slider-overlay {
     @apply absolute w-full h-full z-[1] left-0 top-0;

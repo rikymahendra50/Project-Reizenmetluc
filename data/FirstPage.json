@@ -1,42 +1,38 @@
 {
   "LeftContent": {
-    "bigTitle": "Join de nieuwe generatie van",
-    "spanBigtitle": "levensgenieters",
-    "smallTitle": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
+    "bigTitle": "Join #Claim Jouw Plek# In De Community de nieuwe generatie van levensgenieters",
     "description": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?"
   },
-  "NormalPicture": [
+  "Picture": [
     {
       "id": 1,
       "title": "picture-1",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0701.webp"
+      "fileName": "IMG_0701.webp"
     },
     {
       "id": 2,
       "title": "picture-2",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0708.webp"
+      "fileName": "IMG_0708.webp"
     },
     {
       "id": 3,
       "title": "picture-3",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/Person.webp"
+      "fileName": "Person.webp"
     },
     {
       "id": 4,
       "title": "picture-4",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0702.webp"
-    }
-  ],
-  "commentScrenshot": [
-    {
-      "id": 1,
-      "title": "comment-1",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0833.webp"
+      "fileName": "IMG_0702.webp"
     },
     {
-      "id": 2,
+      "id": 5,
+      "title": "comment-1",
+      "fileName": "IMG_0833.webp"
+    },
+    {
+      "id": 6,
       "title": "comment-2",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0832.webp"
+      "fileName": "IMG_0832.webp"
     }
   ],
   "orangeTitle": [
@@ -44,9 +40,8 @@
     { "id": 2, "title": "Maak like-minded vrienden" },
     { "id": 3, "title": "Inspiratie & motivatie op 1 plek - voor jou" }
   ],
-  "footerFirstPage": {
-    "title": "3000+ reizigers",
-    "titleSpan": "leven op dit moment hun droom",
+  "footer": {
+    "title": "**3000+ reizigers** leven op dit moment hun droom",
     "pictureofPeople": "/_nuxt/assets/images/Screenshots for sections 1/People1.png",
     "alt": "People"
   }
