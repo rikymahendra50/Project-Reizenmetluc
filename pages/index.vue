@@ -1,11 +1,10 @@
 <template>
   <section class="font-thin overflow-hidden">
     <FirstPage />
-
     <SecondPage />
-
     <div
       class="bg-background2 bg-no-repeat bg-cover border-2 gradient-background"
+      loading="lazy"
     >
       <ThirdPage />
 

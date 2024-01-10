@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section class="">
     <div class="h-[608px]" data-aos="flip-up">
       <!-- Slider -->
       <div class="slider-overlay text-right container-custom">
@@ -9,11 +9,13 @@
               :src="`/_nuxt/assets/images/${images.secondImage}`"
               alt="star"
               class="float-right pt-5 sm:pt-10 w-[5rem] md:w-[88px]"
+              loading="lazy"
             />
             <img
               :src="`/_nuxt/assets/images/${images.firstImage}`"
               alt="star"
               class="float-right w-[80px] md:w-[88px]"
+              loading="lazy"
             />
           </div>
           <div class="text-[#282728] md:mt-[-2.1rem] pr-5 md:pr-32 relative">
@@ -35,11 +37,13 @@
           :src="`/_nuxt/assets/images/section 2/${images.background1}`"
           alt="bg-1"
           class="w-[363px] absolute top-[-70px] left-0"
+          loading="lazy"
         />
         <img
           :src="`/_nuxt/assets/images/section 2/${images.background2}`"
-          alt="bg-1"
-          class="w-[634px] absolute bottom-[-30px]"
+          alt="bg-2"
+          class="w-[634px] absolute bottom-[-9px] md:bottom-[30px]"
+          loading="lazy"
         />
         <Slider />
       </div>

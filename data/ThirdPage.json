@@ -1,7 +1,7 @@
 {
   "title": {
-    "firstHeader": ["Dit is wat ", "jij ontvangt"],
-    "secondHeader": ["In de", "ik wil reizen", "community"]
+    "firstHeader": "Dit is wat jij #ontvangt#",
+    "secondHeader": "In de **ik wil reizen** community"
   },
   "LeftContent": [
     {
@@ -70,9 +70,9 @@
       "title": "brain"
     },
     {
-      "img": "/_nuxt/assets/images/emoji/meditation.png",
+      "img": "/_nuxt/assets/images/emoji/person-raising-hand.png",
       "description": "Leer hoe jij ook remote gaat werken met onze 9 delige video course",
-      "title": "meditation"
+      "title": "person-raising-hand"
     },
     {
       "img": "/_nuxt/assets/images/emoji/shushing-face.png",

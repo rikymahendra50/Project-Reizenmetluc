@@ -7,6 +7,7 @@
         :src="`/_nuxt/assets/images/${Logo}`"
         alt="logo"
         class="w-[40%] md:w-[30%] ml-8 sm:ml-0 sm:container-custom py-[39px] lg:absolute"
+        loading="lazy"
       />
       <div class="flex flex-col lg:flex-row h-full items-center">
         <div
@@ -31,12 +32,14 @@
               :src="`/_nuxt/assets/images/Screenshots for sections 1/webp/${Picture[3].fileName}`"
               alt="comment"
               class="rounded-[0.813rem] w-[252px] md:w-[90%] lg:w-[80%] justify-self-end mr-2 lg:mr-5 lg:mr-10"
+              loading="lazy"
             />
             <div class="relative md:w-[60%] justify-self-end">
               <img
                 :src="`/_nuxt/assets/images/Screenshots for sections 1/webp/${Picture[0].fileName}`"
                 alt="comment"
                 class="rounded-[0.813rem] w-[199px] mt-5"
+                loading="lazy"
               />
               <div
                 class="bg-primarycolor absolute right-[-150px] sm:right-[-200px] lg:right-[-300px] top-[50px] sm:top-[75px] lg:top-[45px] py-1 lg:py-2 px-3 rounded-[50px] font-bold text-[8px] sm:text-[11px] md:text-[14px] xl:text-[16px] min-[400px]:text-[12px] text-white z-10"
@@ -48,6 +51,7 @@
                       src="/_nuxt/assets/images/Screenshots for sections 1/comment-shape-2.svg"
                       alt="shape"
                       class="absolute bottom-[-3px] lg:bottom-[-5px] left-[-16px] w-[9%] scale-x-[-1]"
+                      loading="lazy"
                     />
                   </span>
                 </p>
@@ -71,6 +75,7 @@
                       src="/_nuxt/assets/images/Screenshots for sections 1/comment-shape-2.svg"
                       alt="shape"
                       class="absolute bottom-0 lg:bottom-[-8px] right-[-15px] w-[10%] lg:w-[20%]"
+                      loading="lazy"
                     />
                   </span>
                 </p>
@@ -80,6 +85,7 @@
               :src="`/_nuxt/assets/images/Screenshots for sections 1/webp/${Picture[5].fileName}`"
               alt="comment"
               class="rounded-[0.563rem] w-[263px] md:w-[80%] lg:w-[90%] justify-self-end"
+              loading="lazy"
             />
           </div>
         </div>
@@ -96,6 +102,7 @@
           src="/_nuxt/assets/images/Screenshots for sections 1/People1.png"
           alt="People1"
           class="w-[20%] sm:w-[15%] z-20"
+          loading="lazy"
         />
       </div>
     </div>
@@ -107,14 +114,10 @@
 </style>
 
 <script>
-import ButtonSmall from "@/components/ButtonSmall.vue";
 import jsonData from "@/data/FirstPage.json";
 import { convertRegExp } from "@/utils/convertRegExp.js";
 
 export default {
-  components: {
-    ButtonSmall,
-  },
   data() {
     return {
       Logo: jsonData.Logo,

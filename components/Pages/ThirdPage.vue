@@ -1,5 +1,5 @@
-<template>
-  <section class="bg-white mt-20 overflow-hidden">
+<!-- <template>
+  <section class="mt-20 overflow-hidden text-white">
     <div class="block text-center" data-aos="zoom-in">
       <h1
         class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
@@ -131,7 +131,7 @@
               :src="RightContent[0].ImgRight[1].src"
               :alt="RightContent[0].ImgRight[1].title"
               class="rotate-[5deg] absolute bottom-[-10px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
-              lazy="lazy"
+              loading="lazy"
             />
           </div>
         </div>
@@ -194,6 +194,106 @@ export default {
       RightContent: jsonData.RightContent,
       dataSmallCard: jsonData.dataSmallCard,
     };
+  },
+};
+</script> -->
+
+<template>
+  <section class="bg-white">
+    <div
+      class="flex flex-col lg:flex-row items-center container-custom lg:h-[900px] relative"
+    >
+      <div class="flex flex-col w-full lg:w-[40%] z-10">
+        <h1
+          class="text-[40px] lg:text-[72px] font-bold lg:pr-[150px] lg:leading-[70px] yellow"
+        >
+          {{ title.firstHeader }}
+        </h1>
+        <p
+          class="text-[20px] lg:text-[40px] font-thin lg:leading-[50px] mt-3 lg:mt-8 desk w-[60%] lg:w-full"
+        >
+          {{ title.secondHeader }}
+        </p>
+      </div>
+      <div
+        class="relative flex flex-col w-full lg:w-[80%] xl:w-[60%] lg:px-10 border-2"
+      >
+        <div
+          class="lg:w-[450px] absolute top-[-90px] md:top-[-150px] lg:top-[-220px] w-[200px] md:w-[300px] right-[-20px] border-2"
+        >
+          <img
+            src="/_nuxt/assets/images/Screenshots for section 3/Brent, Thimo and Laura.png"
+            alt="3people"
+          />
+          <div
+            class="absolute left-[-100px] sm:left-[-120px] lg:left-[-200px] top-[40px] sm:top-[35px] lg:top-[145px] py-1 lg:py-2 px-3 rounded-[50px] font-bold text-[8px] sm:text-[11px] md:text-[14px] xl:text-[16px] min-[400px]:text-[12px] text-white bg-primarycolor"
+          >
+            <p class="relative">
+              Stap voor stap naar jou online inkomen
+              <span>
+                <img
+                  src="/_nuxt/assets/images/Screenshots for sections 1/comment-shape-2.svg"
+                  alt="shape"
+                  class="absolute bottom-0 lg:bottom-[-6px] right-[-19px] w-[5%] lg:w-[10%]"
+                  loading="lazy"
+                />
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="z-10">
+          <SmallCard
+            :img="dataSmallCard[0].img"
+            :description="dataSmallCard[0].description"
+            :title="dataSmallCard[0].title"
+            class="my-3 sm:my-5 sm:ml-14"
+            :customStyle="'rotate-[-2deg] lg:rotate-[-4deg]'"
+          />
+          <SmallCard
+            :img="dataSmallCard[2].img"
+            :description="dataSmallCard[2].description"
+            :title="dataSmallCard[2].title"
+            class="my-3 sm:my-5 sm:mr-14"
+            :customStyle="'rotate-[2deg] lg:rotate-[4deg]'"
+          />
+          <SmallCard
+            :img="dataSmallCard[1].img"
+            :description="dataSmallCard[1].description"
+            :title="dataSmallCard[1].title"
+            class="my-3 sm:my-5 sm:ml-14"
+            :customStyle="'rotate-[-2deg] lg:rotate-[-4deg]'"
+          />
+          <SmallCard
+            :img="dataSmallCard[3].img"
+            :description="dataSmallCard[3].description"
+            :title="dataSmallCard[3].title"
+            class="my-3 sm:my-5 sm:mr-14"
+            :customStyle="'rotate-[2deg] lg:rotate-[4deg]'"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import jsonData from "@/data/ThirdPage.json";
+import { convertRegExp } from "@/utils/convertRegExp.js";
+import SmallCard from "@/components/SmallCard.vue";
+
+export default {
+  data() {
+    return {
+      title: jsonData.title,
+      LeftContent: jsonData.LeftContent,
+      RightContent: jsonData.RightContent,
+      dataSmallCard: jsonData.dataSmallCard,
+    };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
 };
 </script>
