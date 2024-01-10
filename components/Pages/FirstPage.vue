@@ -4,7 +4,7 @@
       class="bg-background1 bg-no-repeat bg-cover w-[98%] mx-auto my-10 rounded-[54px] relative lg:h-[535px] items-center"
     >
       <img
-        src="/_nuxt/assets/images/logo.png"
+        :src="`/_nuxt/assets/images/${Logo}`"
         alt="logo"
         class="w-[40%] md:w-[30%] ml-8 sm:ml-0 sm:container-custom py-[39px] lg:absolute"
       />
@@ -16,7 +16,8 @@
             class="font-bold text-[30px] lg-[10px] 2xl:text-[40px] leading-snug relative desk button"
           >
             {{ LeftContent.bigTitle }}
-            {{ LeftContent.button }}
+
+            <a :href="LeftContent.buttonLink">{{ LeftContent.button }}</a>
           </h1>
           <p class="mt-3 lg:mt-5">
             {{ LeftContent.description }}
@@ -106,12 +107,17 @@
 </style>
 
 <script>
+import ButtonSmall from "@/components/ButtonSmall.vue";
 import jsonData from "@/data/FirstPage.json";
 import { convertRegExp } from "@/utils/convertRegExp.js";
 
 export default {
+  components: {
+    ButtonSmall,
+  },
   data() {
     return {
+      Logo: jsonData.Logo,
       LeftContent: jsonData.LeftContent,
       Picture: jsonData.Picture,
       orangeTitle: jsonData.orangeTitle,

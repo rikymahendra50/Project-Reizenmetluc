@@ -23,7 +23,6 @@ function Button(elementButton) {
       /\#(.*?)\#/g,
       '<span class="buttonSmall">$1<span class="ml-2 bg-black rounded-full flex items-center p-2 w-[30px] h-[30px] justify-center"><img src="/_nuxt/assets/images/arrow2.svg" alt="arrow" /></span></span>'
     );
-
     elementButton.innerHTML = newButton;
   }
 }

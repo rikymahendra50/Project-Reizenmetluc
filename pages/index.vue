@@ -4,10 +4,11 @@
 
     <SecondPage />
 
-    <ThirdPage />
     <div
       class="bg-background2 bg-no-repeat bg-cover border-2 gradient-background"
     >
+      <ThirdPage />
+
       <ForthPage />
 
       <Testimony />

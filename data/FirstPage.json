@@ -1,8 +1,10 @@
 {
+  "Logo": "logo.png",
   "LeftContent": {
     "bigTitle": "Join .. de nieuwe generatie van levensgenieters",
     "description": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
-    "button": "#Claim Jouw Plek In De Community#"
+    "button": "#Claim Jouw Plek In De Community#",
+    "buttonLink": "https://discord.com/invite/wu59fp7XAW"
   },
   "Picture": [
     {
