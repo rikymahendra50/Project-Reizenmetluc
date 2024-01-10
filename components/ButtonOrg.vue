@@ -1,11 +1,9 @@
 <template>
-  <a
-    :href="link"
-    class="font-extrabold flex flex-wrap h-[50px] xl:h-[60px] bg-primarycolor rounded-[50px] cursor-pointer hover:bg-slate-500 justify-center w-full items-center"
-    target="_blank"
-  >
+  <a :href="link" :class="buttonStyle" target="_blank">
     <div class="flex items-center justify-between w-full px-2">
-      <p class="flex text-center w-full justify-center pl-5">
+      <p
+        class="flex text-center w-full justify-center pl-5 text-[12px] sm:text-[12px] md:text-[14px] xl:text-[16px]"
+      >
         {{ title }}
       </p>
       <span
@@ -27,6 +25,10 @@ export default {
     title: {
       type: String,
       required: true,
+    },
+    buttonStyle: {
+      type: String,
+      default: "",
     },
   },
 };

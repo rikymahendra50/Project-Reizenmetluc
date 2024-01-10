@@ -4,9 +4,10 @@
   >
     <div class="flex flex-col">
       <h1
-        class="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter top-0 pt-5 lg:w-[30%] lg:absolute"
-        v-html="textYellow(title)"
-      ></h1>
+        class="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter top-0 pt-5 lg:w-[30%] lg:absolute yellow"
+      >
+        {{ title }}
+      </h1>
       <div
         class="flex pt-5"
         v-for="(eachJsonData, index) in testimony"
@@ -80,6 +81,8 @@
 <script>
 import jsonData from "@/data/Testimony.json";
 
+import { convertRegExp } from "@/utils/convertRegExp.js";
+
 export default {
   data() {
     return {
@@ -88,17 +91,22 @@ export default {
       convertRegExp: jsonData.convertRegExp,
     };
   },
-  methods: {
-    textYellow(yellowText) {
-      if (yellowText) {
-        let newYellow = yellowText.replace(
-          /\#(.*?)\#/g,
-          '<span class="text-primarycolor">$1</span>'
-        );
-        return newYellow;
-      }
-      return "";
-    },
+  mounted() {
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
+  // methods: {
+  //   textYellow(yellowText) {
+  //     if (yellowText) {
+  //       let newYellow = yellowText.replace(
+  //         /\#(.*?)\#/g,
+  //         '<span class="text-primarycolor">$1</span>'
+  //       );
+  //       return newYellow;
+  //     }
+  //     return "";
+  //   },
+  // },
 };
 </script>

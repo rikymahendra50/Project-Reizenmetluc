@@ -6,14 +6,17 @@
       <img
         src="/_nuxt/assets/images/logo.png"
         alt="logo"
-        class="w-[30%] container-custom py-[39px] lg:absolute"
+        class="w-[40%] md:w-[30%] ml-8 sm:ml-0 sm:container-custom py-[39px] lg:absolute"
       />
       <div class="flex flex-col lg:flex-row h-full items-center">
         <div
-          class="flex flex-col container-custom w-[88%] lg:w-[47%] text-white"
+          class="flex flex-col container-custom w-[88%] lg:w-[47%] text-white relative"
         >
-          <h1 class="font-bold text-[30px] lg:text-[40px] leading-snug yellow">
+          <h1
+            class="font-bold text-[30px] lg-[10px] 2xl:text-[40px] leading-snug relative desk button"
+          >
             {{ LeftContent.bigTitle }}
+            {{ LeftContent.button }}
           </h1>
           <p class="mt-3 lg:mt-5">
             {{ LeftContent.description }}

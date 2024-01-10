@@ -54,6 +54,7 @@
             <ButtonOrg
               :link="itemPageCard.Button.link"
               :title="itemPageCard.Button.title"
+              class="buttonLarge"
             />
           </div>
         </div>

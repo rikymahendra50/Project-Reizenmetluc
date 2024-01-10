@@ -41,6 +41,13 @@
     );
     border-radius: 50px;
   }
+
+  .buttonLarge {
+    @apply font-extrabold flex flex-wrap h-[50px] xl:h-[60px] bg-primarycolor rounded-[50px] cursor-pointer hover:bg-slate-500 justify-center w-full items-center;
+  }
+  .buttonSmall {
+    @apply absolute left-20 top-0 flex font-extrabold p-3 h-[40px] bg-primarycolor rounded-[50px] cursor-pointer hover:bg-slate-500 justify-center text-[12px] sm:text-[12px] md:text-[14px] xl:text-[16px] items-center;
+  }
 }
 
 .shadow-effect {
