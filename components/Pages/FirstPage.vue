@@ -6,14 +6,17 @@
         class="flex flex-col md:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0 justify-center"
       >
         <h1
-          class="textSpanPrimary font-extrabold text-[26px] lg:text-[44px] tracking-widest"
+          class="textSpanPrimary font-extrabold text-2xl lg:text-[2.75rem] lg:tracking-widest leading-tight"
         >
           {{ LeftContent.title }}
         </h1>
-        <p class="py-5 font-thin text-[15px] lg:text-[20px] tracking-widest">
+        <p class="py-5 font-thin text-[15px] lg:text-[20px] lg:tracking-widest">
           {{ LeftContent.description }}
         </p>
-        <ButtonOrg link="page-1" title="Claim Jouw Plek In De Community" />
+        <ButtonOrg
+          :link="LeftContent.buttonLink"
+          :title="LeftContent.buttonTitle"
+        />
         <img
           :src="LeftContent.img"
           alt="leftimg"
@@ -46,7 +49,7 @@
               />
             </div>
             <!-- end comment -->
-            <div class="relative max-w-[255px] w-[40%] mt-8 flex items-center">
+            <div class="relative w-[40%] max-w-[255px] mt-8 flex items-center">
               <img
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
@@ -82,26 +85,26 @@
             <img
               :src="NormalPicture[3].fileName"
               :alt="NormalPicture[3].title"
-              class="mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect max-w-[286px]"
+              class="mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect"
+              width="300"
+              height="300"
             />
           </div>
         </div>
       </div>
     </div>
     <div
-      class="relative top-0 flex bg-white w-full h-[60px] lg:h-[88px] text-black p-3"
+      class="relative flex items-center bg-white h-[60px] lg:h-[88px] text-black p-3"
     >
-      <div class="flex items-center">
-        <h1 class="ml-0 md:ml-5 text-[14px] sm:text-sm md:text-lg">
-          <span class="font-bold"> {{ footerFirstPage.title }}</span>
-          {{ footerFirstPage.titleSpan }}
-        </h1>
-        <img
-          :src="footerFirstPage.pictureofPeople"
-          :alt="footerFirstPage.alt"
-          class="w-[70px] ml-2"
-        />
-      </div>
+      <h1 class="ml-0 md:ml-5 text-[14px] sm:text-sm md:text-lg">
+        <span class="font-bold"> {{ footerFirstPage.title }}</span>
+        {{ footerFirstPage.titleSpan }}
+      </h1>
+      <img
+        :src="footerFirstPage.pictureofPeople"
+        :alt="footerFirstPage.alt"
+        class="w-[70px] ml-2"
+      />
     </div>
   </section>
 </template>

@@ -15,23 +15,24 @@
         </p>
         <input
           type="checkbox"
-          class="toggle toggle-lg toggle-success mx-3"
+          class="toggle toggle-md lg:toggle-lg toggle-success mx-3"
           checked
-          v-model="isYearly"
+          v-model="showThirdCard"
         />
         <p class="font-bold text-[12px] sm:text-[15px] lg:text-2xl">
           {{ toggle.jaarlijks }}
         </p>
       </div>
     </div>
+    <!-- toggle 1 -->
     <div class="flex justify-center">
       <div class="flex flex-row">
         <div
-          v-if="!isYearly && !showThirdCard"
-          v-for="(itemPageCard, index) in ForthPageCard.slice(0, 2)"
+          v-if="!showThirdCard"
+          v-for="(itemPageCard, index) in ForthPageCard.slice(1, 2)"
           :key="itemPageCard.id"
           class="w-full relative max-w-[430px]"
-          data-aos="flip-left"
+          data-aos="flip-right"
         >
           <div
             class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect"
@@ -77,10 +78,10 @@
       </div>
 
       <div
-        v-if="isYearly || (!isYearly && showThirdCard)"
+        v-if="showThirdCard"
         v-for="itemPageCard in ForthPageCard.slice(2, 3)"
         :key="itemPageCard.id"
-        class="w-1/2 relative max-w-[430px]"
+        class="md:w-1/2 relative max-w-[430px]"
         data-aos="flip-left"
       >
         <div
@@ -90,12 +91,13 @@
             class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
           >
             {{ itemPageCard.title }}&nbsp;
-            <span class="text-[#BFBFBF] font-bold text-[24px]">{{
-              itemPageCard.price
-            }}</span>
+            <span
+              class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
+              >{{ itemPageCard.price }}</span
+            >
           </h1>
           <p
-            class="desk text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
+            class="bold text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
           >
             {{ itemPageCard.description }}
           </p>
@@ -124,6 +126,77 @@
         </div>
       </div>
     </div>
+
+    <!-- toggle 2 -->
+    <div class="flex items-center justify-center mt-10 mb-6">
+      <p class="font-bold text-[12px] sm:text-[15px] lg:text-2xl">
+        {{ toggle.gratis }}
+      </p>
+      <input
+        type="checkbox"
+        class="toggle toggle-md lg:toggle-lg toggle-success mx-3"
+        checked
+        v-model="showThirdCard2"
+      />
+      <p class="font-bold text-[12px] sm:text-[15px] lg:text-2xl">
+        {{ toggle.jaarlijks }}
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <div class="flex flex-row">
+        <div
+          v-for="(itemPageCard, index) in ForthPageCard.slice(1, 3)"
+          :key="itemPageCard.id"
+          class="w-full relative max-w-[430px]"
+          data-aos="flip-right"
+        >
+          <div
+            class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect"
+          >
+            <h1
+              class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
+            >
+              {{ itemPageCard.title }}&nbsp;
+              <span
+                class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
+                >{{ itemPageCard.price }}
+              </span>
+            </h1>
+            <p
+              class="bold text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
+            >
+              {{ itemPageCard.description }}
+            </p>
+            <ul class="flex flex-col mb-3 lg:mb-5">
+              <li
+                v-if="index !== 1 ? !showThirdCard2 : showThirdCard2"
+                v-for="item in itemPageCard.list"
+                :key="item.id"
+                class="flex pt-1 lg:pt-2 items-center"
+              >
+                <img
+                  :src="iconList"
+                  alt="checklist"
+                  class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+                />
+                <p class="font-bold text-[12px] lg:text-[18px] pl-3">
+                  {{ item }}
+                </p>
+              </li>
+            </ul>
+            <div
+              class="flex justify-center"
+              v-if="index !== 1 ? !showThirdCard2 : showThirdCard2"
+            >
+              <ButtonOrg
+                :link="itemPageCard.Button.link"
+                :title="itemPageCard.Button.title"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -147,14 +220,27 @@ export default {
       header: jsonData.header,
       toggle: jsonData.toggle,
       iconList: jsonData.iconList,
-      isYearly: false,
       showThirdCard: false,
+      showThirdCard2: false,
     };
   },
   mounted() {
     this.$nextTick(() => {
       convertRegExp(this.$el);
     });
+  },
+  methods: {
+    toggleShowThirdCard() {
+      this.showThirdCard = !this.showThirdCard;
+      this.showThirdCard2 = !this.showThirdCard2;
+    },
+  },
+  watch: {
+    showThirdCard: function () {
+      this.$nextTick(() => {
+        convertRegExp(this.$el);
+      });
+    },
   },
 };
 </script>

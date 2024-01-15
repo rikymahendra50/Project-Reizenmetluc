@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap-slider mt-5" id="js-wrapSlider">
+  <div class="wrap-slider" id="js-wrapSlider">
     <ul class="js-slider">
       <li
         v-for="item in sliderItems"

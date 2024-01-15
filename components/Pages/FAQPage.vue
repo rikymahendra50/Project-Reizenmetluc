@@ -1,7 +1,7 @@
 <template>
-  <section class="flex justify-center text-white lg:py-20" data-aos="fade-up">
+  <section class="flex justify-center text-white" data-aos="fade-up">
     <div class="w-[90%] rounded-[50px]">
-      <div class="flex flex-col lg:flex-row">
+      <div class="flex flex-col lg:flex-row lg:h-[800px]">
         <div
           class="flex flex-wrap items-center justify-center font-bold w-full lg:w-[45%] title-container"
         >
@@ -10,7 +10,7 @@
         <div class="flex flex-col lg:w-[55%] justify-center items-center">
           <div
             :class="[
-              'text-[24px] rounded-[30px] cardFaq relative flex flex-col my-5 lg:items-center lg:justify-center px-2 ',
+              'text-[24px] rounded-[30px] cardFaq relative flex flex-col my-5 lg:items-center lg:justify-center px-2',
               activeIndex === index ? 'w-[100%]' : 'w-[90%]',
             ]"
             v-for="(eachFaq, index) in faq"
@@ -30,7 +30,7 @@
                   :class="{ rotated: activeIndex === index }"
                   :src="icon"
                   alt="button-dropdown"
-                  class="w-[20px] md:w-[25px] transition-transform duration-500 justify-self-end lg:mr-0 mt-[-20px]"
+                  class="w-[20px] md:w-[25px] transition-transform duration-500 justify-self-end lg:mr-[-15px] mt-[-20px]"
                 />
               </div>
               <div v-if="activeIndex === index">
@@ -55,11 +55,12 @@
 }
 
 .cardFaq {
-  transition: height 0.5s, width 0.5s;
+  transition: max-height 0.5s, width 0.5s;
+  max-height: 300px;
 }
 
 .cardFaq.active {
-  height: 300px;
+  max-height: 1000px;
   width: 100%;
 }
 </style>
@@ -82,7 +83,6 @@ export default {
         this.activeIndex = null;
       } else {
         this.activeIndex = index;
-        // Atur tinggi dan lebar sesuai kebutuhan
       }
     },
   },

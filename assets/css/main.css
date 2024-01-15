@@ -4,6 +4,7 @@
   src: url("~/assets/fonts/Gotham-Font/GothamLight.ttf") format("truetype");
   font-display: swap;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url("~/assets/fonts/Gotham-Font/GothamBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,4 +20,5 @@
   src: url("~/assets/fonts/Gotham-Font/GothamMedium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }

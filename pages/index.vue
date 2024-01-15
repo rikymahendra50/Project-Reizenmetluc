@@ -2,13 +2,13 @@
   <section class="bg-background2 bg-no-repeat bg-cover text-white font-thin">
     <FirstPage />
 
-    <SecondPage />
+    <!-- <SecondPage />
 
     <ThirdPage />
 
     <ForthPage />
 
-    <Testimony />
+    <Testimony /> -->
 
     <FAQ />
     <FAQPage />

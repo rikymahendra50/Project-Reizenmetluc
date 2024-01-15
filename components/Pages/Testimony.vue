@@ -6,10 +6,10 @@
       class="w-[95%] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
     >
       <div class="flex justify-center text-center">
-        <h1 class="text-[30px] lg:text-[44px] mt-5 font-bold">
-          {{ title.nonspan[0] }}
-          <span class="text-primarycolor font-bold"> {{ title.span[0] }}</span>
-          {{ title.nonspan[1] }}
+        <h1
+          class="textSpanPrimary textSpanPrimary text-[30px] lg:text-[44px] mt-5 font-bold"
+        >
+          {{ title }}
         </h1>
       </div>
       <div class="wrap-slider2 h-[350px] md:h-[400px]" id="js-wrapSlider2">
@@ -73,6 +73,7 @@
 </style>
 
 <script>
+import { convertRegExp } from "@/utils/convert.js";
 import jsonData from "@/data/Testimony.json";
 
 export default {
@@ -84,6 +85,9 @@ export default {
   },
   mounted() {
     this.setupSlider2();
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
   methods: {
     setupSlider2() {

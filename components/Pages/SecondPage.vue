@@ -1,16 +1,17 @@
 <template>
   <section class="relative overflow-hidden">
-    <div class="text-center pt-10 lg:pt-20" data-aos="flip-up">
+    <div class="pt-10 lg:pt-20 flex items-center flex-col" data-aos="flip-up">
       <h1
-        class="bgSpanPrimary text-[25px] md:text-[44px] font-bold pb-3 tracking-widest text-center"
+        class="bgSpanPrimary text-lg md:text-4xl font-bold pb-3 lg:tracking-widest"
       >
         {{ title.firstHeader }}
       </h1>
-      <p class="bold text-[15px] md:text-[20px] font-light tracking-widest">
+      <p
+        class="bold text-sm md:text-xl font-light lg:tracking-widest text-center"
+      >
         {{ title.secondHeader }}
       </p>
     </div>
-    <!-- Slider -->
     <Slider />
   </section>
 </template>
