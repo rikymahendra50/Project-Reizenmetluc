@@ -1,15 +1,14 @@
 {
   "LeftContent": {
-    "bigTitle": "Join de nieuwe generatie van",
-    "spanBigtitle": "levensgenieters",
-    "smallTitle": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
-    "description": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?"
+    "title": "Join de nieuwe generatie van #levensgenieters#",
+    "description": "Ben je klaar met de sleur van het dagelijks leven dan is het tijd voor verandering of ga je voor de “ik vind het wel prima zo”?",
+    "img": "/_nuxt/assets/images/Screenshots for sections 1/arrow-nonshadow.png"
   },
   "NormalPicture": [
     {
       "id": 1,
       "title": "picture-1",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0701.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots%20for%20sections%201/webp/IMG_0701.webp"
     },
     {
       "id": 2,

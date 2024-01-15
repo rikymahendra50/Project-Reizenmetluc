@@ -1,22 +1,23 @@
 <template>
   <section>
-    <div class="flex flex-col md:flex-row items-center">
+    <div class="flex flex-col md:flex-row">
       <!-- Left Content -->
       <div
-        class="flex flex-col md:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0"
+        class="flex flex-col md:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0 justify-center"
       >
-        <h1 class="font-extrabold text-[26px] lg:text-[44px] tracking-widest">
-          {{ LeftContent.bigTitle }}
-          <span class="text-primarycolor">{{ LeftContent.spanBigtitle }}</span>
+        <h1
+          class="textSpanPrimary font-extrabold text-[26px] lg:text-[44px] tracking-widest"
+        >
+          {{ LeftContent.title }}
         </h1>
         <p class="py-5 font-thin text-[15px] lg:text-[20px] tracking-widest">
           {{ LeftContent.description }}
         </p>
         <ButtonOrg link="page-1" title="Claim Jouw Plek In De Community" />
         <img
-          src="/_nuxt/assets/images/Screenshots for sections 1/arrow-nonshadow.png"
-          alt="arrow-logo"
-          class="hidden lg:block w-[200px] h-[50px] absolute right-[-50px] bottom-[-70px]"
+          :src="LeftContent.img"
+          alt="leftimg"
+          class="hidden md:block w-[200px] h-[50px] mt-10 self-end mr-[-50px]"
         />
       </div>
       <!-- End Left Content -->
@@ -27,22 +28,17 @@
             <img
               :src="NormalPicture[0].fileName"
               :alt="NormalPicture[0].title"
-              class="rounded-lg shadow-effect w-[30%] h-[90%]"
+              class="rounded-lg shadow-effect max-w-[185px] w-[30%] h-[90%]"
             />
             <!-- comment -->
             <div
-              class="relative flex flex-col w-[40%] h-[90%] justify-between px-2 lg:px-5"
+              class="relative flex flex-col max-w-[263px] w-[40%] h-[90%] justify-between px-2 lg:px-5"
             >
               <img
                 :src="commentScrenshot[0].fileName"
                 :alt="commentScrenshot[0].title"
                 class="rounded-sm md:rounded-lg shadow-effect mt-5 md:mt-10"
               />
-              <p
-                class="bg-primarycolor shadow-effect absolute right-[-60px] top-[65px] sm:top-[90px] md:top-[81px] lg:top-[90px] xl:top-[140px] px-2 rounded-md font-bold min-[400px]:text-[12px] text-[8px] md:text-[12px] lg:text-[14px] tracking-widest z-10 xl:text-[16px]"
-              >
-                {{ orangeTitle[0].title }}
-              </p>
               <img
                 :src="commentScrenshot[1].fileName"
                 :alt="commentScrenshot[1].title"
@@ -50,38 +46,43 @@
               />
             </div>
             <!-- end comment -->
-            <div class="relative w-[40%] mt-8">
+            <div class="relative max-w-[255px] w-[40%] mt-8 flex items-center">
               <img
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
                 class="rounded-lg shadow-effect"
               />
+              <p
+                class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-160px] sm:mt-[-60px] md:mt-[-40px] px-1 sm:py-1 sm:px-2 rounded-lg font-bold text-[10px] min-[420px]:text-sm xl:tracking-widest"
+              >
+                {{ orangeTitle[0].title }}
+              </p>
             </div>
           </div>
         </div>
-        <div class="relative flex h-[100%]">
-          <div class="flex-col flex w-1/2 mt-2 lg:mt-10 mr-5 sm:mr-3">
+        <div class="relative flex">
+          <div class="w-[55%] flex-col flex mr-5 sm:mr-3">
             <p
-              class="bg-primarycolor shadow-effect absolute lg:left-[20px] top-[-3px] md:top-[-10px] lg:top-[-11px] py-1 lg:py-2 px-2 rounded-md font-bold text-[8px] sm:text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] tracking-widest min-[400px]:text-[12px]"
+              class="bg-primarycolor shadow-effect rounded-lg font-bold text-[10px] min-[420px]:text-sm lg:text-base sm:py-1 px-2 mt-[-5px] lg:tracking-widest absolute sm:ml-4 lg:ml-10 flex"
             >
               {{ orangeTitle[1].title }}
             </p>
             <img
               :src="NormalPicture[2].fileName"
               :alt="NormalPicture[2].title"
-              class="ml-[40px] lg:ml-[60px] w-[70%] mt-5 shadow-effect rounded-t-lg"
+              class="max-w-[280px] w-[60%] shadow-effect rounded-t-lg mt-5 sm:mt-10 self-end mr-2 lg:mr-5"
             />
           </div>
-          <div class="w-1/2 relative flex flex-col lg:mt-0 mt-5">
+          <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
             <p
-              class="bg-primarycolor w-[80%] lg:w-[60%] text-[8px] sm:text-[11px] md:text-[10px] lg:text-[14px] shadow-effect rounded-md font-bold lg:mt-5 font-bold py-1 px-2 xl:text-[16px] min-[400px]:text-[12px]"
+              class="bg-primarycolor w-[90%] lg:w-[80%] text-[10px] min-[420px]:text-[14px] lg:text-[16px] shadow-effect rounded-lg font-bold md:mt-5 sm:py-1 px-2 xl:tracking-widest"
             >
               {{ orangeTitle[2].title }}
             </p>
             <img
               :src="NormalPicture[3].fileName"
               :alt="NormalPicture[3].title"
-              class="w-[90%] mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect"
+              class="mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect max-w-[286px]"
             />
           </div>
         </div>
@@ -107,6 +108,7 @@
 
 <script>
 import jsonData from "@/data/FirstPage.json";
+import { convertRegExp } from "@/utils/convert.js";
 export default {
   data() {
     return {
@@ -116,6 +118,11 @@ export default {
       orangeTitle: jsonData.orangeTitle,
       footerFirstPage: jsonData.footerFirstPage,
     };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
 };
 </script>

@@ -1,4 +1,8 @@
 {
+  "title": {
+    "firstHeader": "Voor *reizigers* door *reizigers*",
+    "secondHeader": "**Inspireer**, **leer** en **motiveer**. We **staan** altijd **voor elkaar klaar**"
+  },
   "sliderItems": [
     { "id": 1, "title": "Slide 1", "src": "Tiktok.mp4" },
     { "id": 2, "title": "Slide 2", "src": "Snaptik.mp4" },

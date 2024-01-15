@@ -1,7 +1,7 @@
 {
   "title": {
-    "firstHeader": ["Dit is wat ", "jij ontvangt"],
-    "secondHeader": ["In de", "ik wil reizen", "community"]
+    "firstHeader": "Dit is wat jij #ontvangt#",
+    "secondHeader": "In de **ik wil reizen** community"
   },
   "LeftContent": [
     {
@@ -9,20 +9,14 @@
       "title": "view-1",
       "priceDescription": [
         {
-          "title": {
-            "span": "Retour",
-            "nonspan": "Malediven"
-          },
+          "title": "**Retour** Malediven",
           "price": {
             "normalPrice": "899",
             "discountPrice": "256"
           }
         },
         {
-          "title": {
-            "span": "Hotel Room:",
-            "nonspan": "2 beds"
-          },
+          "title": "**Hotel Room**: 2 beds",
           "price": {
             "normalPrice": "35",
             "discountPrice": "156"

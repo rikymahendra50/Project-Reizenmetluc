@@ -41,9 +41,6 @@ export default <Partial<Config>>{
       },
     },
     fontFamily: {
-      // sans: ["GothamMedium"],
-      // display: ["GothamMedium"],
-      // body: ["GothamMedium"],
       extrabold: ["GothamBold"],
       thin: ["GothamThin"],
       bold: ["GothamBold"],

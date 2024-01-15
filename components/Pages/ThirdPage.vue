@@ -2,15 +2,12 @@
   <section class="mt-20 overflow-hidden">
     <div class="block text-center" data-aos="zoom-in">
       <h1
-        class="text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
+        class="textSpanPrimary text-[26px] md:text-[50px] lg:text-[60px] 2xl:text-[84px] font-bold"
       >
-        {{ title.firstHeader[0] }}
-        <span class="text-primarycolor"> {{ title.firstHeader[1] }}</span>
+        {{ title.firstHeader }}
       </h1>
-      <p class="text-[15px] md:text-[20px] lg:text-[30px] 2xl:text-[46px]">
-        {{ title.secondHeader[0] }}
-        <span class="font-bold"> {{ title.secondHeader[1] }}</span>
-        {{ title.secondHeader[2] }}
+      <p class="bold text-[15px] md:text-[20px] lg:text-[30px] 2xl:text-[46px]">
+        {{ title.secondHeader }}
       </p>
     </div>
     <div class="flex lg:mx-10 py-5">
@@ -36,11 +33,9 @@
               class="w-[100%] py-1 lg:py-2 px-2 md:px-3 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
             >
               <p
-                class="text-[10px] sm:text-[12px] md:text-[22px] lg:text-[34px]"
+                class="bold text-[10px] sm:text-[12px] md:text-[22px] lg:text-[34px]"
               >
-                <span class="font-bold">
-                  {{ LeftContent[0].priceDescription[0].title.span }} </span
-                >&nbsp;{{ LeftContent[0].priceDescription[0].title.nonspan }}
+                {{ LeftContent[0].priceDescription[0].title }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
@@ -62,11 +57,10 @@
             <div
               class="w-[100%] py-1 lg:py-2 px-2 md:px-2 bg-[#1E1C1D] rounded-md md:rounded-lg shadow-effect"
             >
-              <p class="text-[8px] sm:text-[12px] md:text-lg lg:text-[22px]">
-                <span class="font-bold">{{
-                  LeftContent[0].priceDescription[1].title.span
-                }}</span
-                >&nbsp;{{ LeftContent[0].priceDescription[1].title.nonspan }}
+              <p
+                class="bold text-[8px] sm:text-[12px] md:text-lg lg:text-[22px]"
+              >
+                {{ LeftContent[0].priceDescription[1].title }}
               </p>
               <p
                 class="text-[8px] sm:text-sm md:text-lg lg:text-2xl font-bold text-right"
@@ -108,13 +102,13 @@
           <img
             :src="LeftContent[1].ImgSmallsrc"
             :alt="LeftContent[1].ImgSmalltitle"
-            class="w-[40%] h-[60%] relative left-5 top-6 md:top-16 rounded-2xl max-w-full z-10 shadow-effect"
+            class="w-[40%] h-[60%] relative left-5 top-6 md:top-16 rounded-2xl z-10 shadow-effect max-w-[257px]"
             loading="lazy"
           />
           <img
             :src="LeftContent[1].ImgBigsrc"
             :alt="LeftContent[1].ImgBigtitle"
-            class="w-[70%] rounded-2xl max-w-full relative right-5 md:right-10 shadow-effect"
+            class="w-[70%] rounded-2xl relative right-5 md:right-10 shadow-effect max-w-[417px]"
             loading="lazy"
           />
         </div>
@@ -161,6 +155,7 @@
               :src="RightContent[0].ImgRight[2].src"
               :alt="RightContent[0].ImgRight[2].title"
               class="shadow-effect block rounded-xl"
+              loading="lazy"
             />
             <div class="flex justify-end mt-5 md:mt-10">
               <div
@@ -193,6 +188,7 @@
 <script>
 import SmallCard from "@/components/SmallCard.vue";
 import jsonData from "@/data/ThirdPage.json";
+import { convertRegExp } from "@/utils/convert.js";
 
 export default {
   components: {
@@ -205,6 +201,11 @@ export default {
       RightContent: jsonData.RightContent,
       dataSmallCard: jsonData.dataSmallCard,
     };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      convertRegExp(this.$el);
+    });
   },
 };
 </script>

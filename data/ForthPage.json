@@ -51,7 +51,12 @@
     }
   ],
   "header": {
-    "title": "Hier is wat jij gaat **unlocken**",
+    "title": "Hier is wat jij gaat #unlocken#",
     "description": "**2 kopjes koffie** per maand voor **jouw droom leven**, dat is pas een **goeie deal**"
-  }
+  },
+  "toggle": {
+    "gratis": "Gratis - Maandelijks",
+    "jaarlijks": "Jaarlijks (save €15,54)"
+  },
+  "iconList": "/_nuxt/assets/images/checklist.png"
 }
