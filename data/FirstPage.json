@@ -10,34 +10,34 @@
     {
       "id": 1,
       "title": "picture-1",
-      "fileName": "/_nuxt/assets/images/Screenshots%20for%20sections%201/webp/IMG_0701.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots%20for%20sections%201/mobile/IMG_0701.jpg"
     },
     {
       "id": 2,
       "title": "picture-2",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0708.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/mobile//IMG_0708.jpg"
     },
     {
       "id": 3,
       "title": "picture-3",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/Person.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/mobile/Person.png"
     },
     {
       "id": 4,
       "title": "picture-4",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0702.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/mobile/IMG_0702.jpg"
     }
   ],
   "commentScrenshot": [
     {
       "id": 1,
       "title": "comment-1",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0833.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/mobile/IMG_0833.jpg"
     },
     {
       "id": 2,
       "title": "comment-2",
-      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/webp/IMG_0832.webp"
+      "fileName": "/_nuxt/assets/images/Screenshots for sections 1/mobile/IMG_0832.jpg"
     }
   ],
   "orangeTitle": [
@@ -48,7 +48,7 @@
   "footerFirstPage": {
     "title": "3000+ reizigers",
     "titleSpan": "leven op dit moment hun droom",
-    "pictureofPeople": "/_nuxt/assets/images/Screenshots for sections 1/People1.png",
+    "pictureofPeople": "/_nuxt/assets/images/Screenshots for sections 1/mobile/People1.png",
     "alt": "People"
   }
 }

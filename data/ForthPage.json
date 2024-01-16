@@ -56,7 +56,7 @@
   },
   "toggle": {
     "gratis": "Maandelijks",
-    "jaarlijks": "Jaarlijks (save €15,54)"
+    "jaarlijks": "**Jaarlijks** (save €15,54)"
   },
   "iconList": "/_nuxt/assets/images/checklist.png"
 }

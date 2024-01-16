@@ -20,12 +20,12 @@
             :description="dataSmallCard[0].description"
             :title="dataSmallCard[0].title"
             class="my-10 shadow-effect"
-            data-aos="fade-right"
+            data-aos="zoom-in"
             loading="lazy"
           />
         </div>
         <!-- Content 2 -->
-        <div class="relative" data-aos="fade-right">
+        <div class="relative" data-aos="zoom-in">
           <div
             class="absolute right-0 sm:right-2 md:right-5 lg:right-10 top-0 max-w-[200px] md:max-w-[332px]"
           >
@@ -85,7 +85,7 @@
         </div>
 
         <!-- Content 3 -->
-        <div data-aos="fade-right">
+        <div data-aos="zoom-in">
           <SmallCard
             :img="dataSmallCard[1].img"
             :description="dataSmallCard[1].description"
@@ -95,10 +95,7 @@
         </div>
 
         <!-- Content 4 -->
-        <div
-          class="relative flex md:mt-10 justify-center"
-          data-aos="fade-right"
-        >
+        <div class="relative flex md:mt-10 justify-center" data-aos="zoom-in">
           <img
             :src="LeftContent[1].ImgSmallsrc"
             :alt="LeftContent[1].ImgSmalltitle"
@@ -118,10 +115,7 @@
       <!-- Content Right -->
       <div class="flex flex-col w-1/2">
         <!-- Content 1 -->
-        <div
-          class="relative flex flex-col w-[80%] mx-auto"
-          data-aos="fade-left"
-        >
+        <div class="relative flex flex-col w-[80%] mx-auto" data-aos="zoom-in">
           <div class="relative">
             <img
               :src="RightContent[0].ImgRight[0].src"
@@ -139,7 +133,7 @@
         </div>
 
         <!-- Content 2 -->
-        <div data-aos="fade-left">
+        <div data-aos="zoom-in">
           <SmallCard
             :img="dataSmallCard[2].img"
             :description="dataSmallCard[2].description"
@@ -149,7 +143,7 @@
         </div>
 
         <!-- Content 3 -->
-        <div class="relative w-full" data-aos="fade-left">
+        <div class="relative w-full" data-aos="zoom-in">
           <div class="relative w-[80%] mx-auto">
             <img
               :src="RightContent[0].ImgRight[2].src"
@@ -173,7 +167,7 @@
         </div>
 
         <!-- Content 4 -->
-        <div data-aos="fade-left">
+        <div data-aos="zoom-in">
           <SmallCard
             :img="dataSmallCard[3].img"
             :description="dataSmallCard[3].description"
