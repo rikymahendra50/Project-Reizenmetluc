@@ -1,15 +1,13 @@
 <template>
   <section class="flex justify-center text-white" data-aos="fade-up">
     <div class="w-[90%] rounded-[50px]">
-      <div class="flex flex-col lg:flex-row lg:h-[900px] border-2">
+      <div class="flex flex-col lg:flex-row lg:h-[900px]">
         <div
           class="flex flex-wrap items-center justify-center font-bold w-full lg:w-[45%] title-container"
         >
           <h1 class="text-[70px] lg:text-[96px]">{{ title }}</h1>
         </div>
-        <div
-          class="flex flex-col lg:w-[55%] justify-center items-center border-2"
-        >
+        <div class="flex flex-col lg:w-[55%] justify-center items-center">
           <div
             :class="[
               'text-[24px] rounded-[30px] cardFaq relative flex flex-col my-5 lg:items-center lg:justify-center px-2 h-auto',
