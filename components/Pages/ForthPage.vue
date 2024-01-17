@@ -167,7 +167,7 @@
               </p>
             </li>
           </ul>
-          <div class="flex justify-center lg:pt-8">
+          <div class="flex justify-center pt-5 lg:pt-8">
             <ButtonOrg
               :link="itemPageCard.Button.link"
               :title="itemPageCard.Button.title"
