@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-// Impor komponen FirstPage.vue dan SecondPage.vue
 useHead({
   title: "home",
 });
