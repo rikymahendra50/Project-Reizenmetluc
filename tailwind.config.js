@@ -33,8 +33,8 @@ module.exports = {
         secondarycolor: "#FFF",
       },
       backgroundImage: {
-        background: "url('~/assets/images/Background.png')",
-        background2: "url('~/assets/images/Website-background1.jpg')",
+        background: "url('/images/Background.png')",
+        background2: "url('/images/Website-background1.jpg')",
       },
     },
     fontFamily: {

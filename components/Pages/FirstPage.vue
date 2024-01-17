@@ -32,6 +32,7 @@
               :src="NormalPicture[0].fileName"
               :alt="NormalPicture[0].title"
               class="rounded-lg shadow-effect max-w-[185px] w-[30%] h-[90%]"
+              loading="lazy"
             />
             <!-- comment -->
             <div
@@ -41,11 +42,13 @@
                 :src="commentScrenshot[0].fileName"
                 :alt="commentScrenshot[0].title"
                 class="rounded-sm md:rounded-lg shadow-effect mt-5 md:mt-10"
+                loading="lazy"
               />
               <img
                 :src="commentScrenshot[1].fileName"
                 :alt="commentScrenshot[1].title"
                 class="rounded-sm md:rounded-lg shadow-effect relative"
+                loading="lazy"
               />
             </div>
             <!-- end comment -->
@@ -54,6 +57,7 @@
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
                 class="rounded-lg shadow-effect"
+                loading="lazy"
               />
               <p
                 class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-160px] sm:mt-[-60px] md:mt-[-40px] px-1 sm:py-1 sm:px-2 rounded-lg font-bold text-[10px] min-[420px]:text-sm xl:tracking-widest"
@@ -74,6 +78,7 @@
               :src="NormalPicture[2].fileName"
               :alt="NormalPicture[2].title"
               class="max-w-[280px] w-[60%] shadow-effect rounded-t-lg mt-5 sm:mt-10 self-end mr-2 lg:mr-5"
+              loading="lazy"
             />
           </div>
           <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
@@ -88,6 +93,7 @@
               class="mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect"
               width="300"
               height="300"
+              loading="lazy"
             />
           </div>
         </div>
@@ -104,6 +110,7 @@
         :src="footerFirstPage.pictureofPeople"
         :alt="footerFirstPage.alt"
         class="w-[70px] ml-2"
+        loading="lazy"
       />
     </div>
   </section>

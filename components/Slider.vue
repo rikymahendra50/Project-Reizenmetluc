@@ -7,7 +7,7 @@
         class="item w-[245px] md:h-[446px]"
       >
         <video
-          :src="'/_nuxt/assets/videos/' + item.src"
+          :src="'/videos/' + item.src"
           :alt="item.title"
           muted
           autoplay
