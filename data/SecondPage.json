@@ -17,6 +17,16 @@
       "id": 6,
       "title": "Slide 6",
       "src": "b70d9033d5a2427e9f0ffafd03b3181a.mp4"
+    },
+    {
+      "id": 7,
+      "title": "Slide 7",
+      "src": "video1.mp4"
+    },
+    {
+      "id": 8,
+      "title": "Slide 8",
+      "src": "video2.mp4"
     }
   ]
 }

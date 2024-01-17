@@ -16,7 +16,6 @@
           class="shadow-effect-video"
           oncanplay="this.muted=true"
           playsinline
-          loading="lazy"
         ></video>
       </li>
     </ul>
