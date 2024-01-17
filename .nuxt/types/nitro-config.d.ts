@@ -3,7 +3,7 @@
 // App Config
 import type { Defu } from 'defu'
 
-import type { default as appConfig0 } from "/home/dev/nuxt/reizenmetluc/app.config";
+import type { default as appConfig0 } from "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/app.config";
 
 type UserAppConfig = Defu<{}, [typeof appConfig0]>
 

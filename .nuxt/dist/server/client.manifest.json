@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/home/dev/nuxt/reizenmetluc/node_modules/nuxt/dist/app/entry.js": {
+  "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/home/dev/nuxt/reizenmetluc/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/Users/Microsoft/Downloads/Project-Reizenmetluc/node_modules/nuxt/dist/app/entry.js"
   }
 }
