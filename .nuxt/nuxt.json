@@ -1,7 +1,7 @@
 {
-  "_hash": "mwJh3ygvI4",
+  "_hash": "oDio1VFYl4",
   "project": {
-    "rootDir": "C:/Users/Microsoft/Downloads/Project-Reizenmetluc"
+    "rootDir": "/home/dev/nuxt/reizenmetluc"
   },
   "versions": {
     "nuxt": "3.7.4"

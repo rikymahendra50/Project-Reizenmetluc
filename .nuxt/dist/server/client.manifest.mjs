@@ -1,1 +1,1 @@
-export { default } from "file:///C:/Users/Microsoft/Downloads/Project-Reizenmetluc/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///home/dev/nuxt/reizenmetluc/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
