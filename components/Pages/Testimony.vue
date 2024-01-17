@@ -24,7 +24,7 @@
             </p>
             <div class="flex pt-3 absolute bottom-3">
               <img
-                :src="`/images/testimonialcomments/${itemtestimony.imagePerson}`"
+                :src="itemtestimony.imagePerson"
                 :alt="itemtestimony.title"
                 class="w-[50px] h-[50px]"
                 loading="lazy"
