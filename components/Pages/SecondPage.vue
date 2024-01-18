@@ -39,7 +39,6 @@ export default {
 .wrap-slider {
   width: 100%;
   overflow: hidden;
-  height: 510px;
   position: relative;
 
   ul {

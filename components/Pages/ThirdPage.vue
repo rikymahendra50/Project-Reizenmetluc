@@ -126,7 +126,7 @@
             <img
               :src="RightContent[0].ImgRight[1].src"
               :alt="RightContent[0].ImgRight[1].title"
-              class="rotate-[5deg] absolute bottom-[-10px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
+              class="rotate-[5deg] absolute bottom-[-15px] sm:bottom-[-15px] md:bottom-[-24px] lg:bottom-[-40px]"
               lazy="lazy"
             />
           </div>

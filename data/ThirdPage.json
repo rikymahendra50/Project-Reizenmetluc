@@ -5,7 +5,7 @@
   },
   "LeftContent": [
     {
-      "src": "/images/Screenshots for section 3/view.png",
+      "src": "/images/Screenshots for section 3/compressed/view.png",
       "title": "view-1",
       "priceDescription": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "ImgSmallsrc": "/images/Screenshots for section 3/girls-on-the-beach.jpg",
+      "ImgSmallsrc": "/images/Screenshots for section 3/compressed/girls-on-the-beach.jpg",
       "ImgSmalltitle": "girl-beach",
       "ImgBigsrc": "/images/Screenshots for section 3/IMG_0723.PNG",
       "ImgBigtitle": "destination"
@@ -44,7 +44,7 @@
           "title": "arrow"
         },
         {
-          "src": "/images/Screenshots for section 3/code-remote.png",
+          "src": "/images/Screenshots for section 3/compressed/code-remote.png",
           "title": "code-remote"
         }
       ]

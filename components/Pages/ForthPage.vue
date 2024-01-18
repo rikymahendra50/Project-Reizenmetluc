@@ -26,11 +26,10 @@
     </div>
     <!-- toggle 1 -->
     <div class="flex justify-center">
-      <div class="flex flex-row">
+      <div class="flex flex-row w-full relative max-w-[430px]">
         <div
           v-for="(itemPageCard, index) in ForthPageCard.slice(0, 1)"
           :key="itemPageCard.id"
-          class="w-full relative max-w-[430px]"
           data-aos="flip-right"
         >
           <div
@@ -76,12 +75,11 @@
         </div>
       </div>
 
-      <div class="flex flex-row">
+      <div class="flex flex-row w-full relative max-w-[430px]">
         <div
           v-if="!showThirdCard"
           v-for="(itemPageCard, index) in ForthPageCard.slice(1, 2)"
           :key="itemPageCard.id"
-          class="w-full relative max-w-[430px]"
           data-aos="flip-right"
         >
           <div
@@ -125,53 +123,51 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div
-        v-if="showThirdCard"
-        v-for="itemPageCard in ForthPageCard.slice(2, 3)"
-        :key="itemPageCard.id"
-        class="w-full relative max-w-[430px]"
-        data-aos="flip-left"
-      >
         <div
-          class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect h-full"
+          v-if="showThirdCard"
+          v-for="itemPageCard in ForthPageCard.slice(2, 3)"
+          :key="itemPageCard.id"
+          data-aos="flip-left"
         >
-          <h1
-            class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
+          <div
+            class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect h-full"
           >
-            {{ itemPageCard.title }}&nbsp;
-            <span
-              class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
-              >{{ itemPageCard.price }}
-            </span>
-          </h1>
-          <p
-            class="bold text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
-          >
-            {{ itemPageCard.description }}
-          </p>
-          <ul class="flex flex-col mb-3 lg:mb-5">
-            <li
-              v-for="item in itemPageCard.list"
-              :key="item.id"
-              class="flex pt-1 lg:pt-2 items-center"
+            <h1
+              class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
             >
-              <img
-                :src="iconList"
-                alt="checklist"
-                class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+              {{ itemPageCard.title }}&nbsp;
+              <span
+                class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
+                >{{ itemPageCard.price }}
+              </span>
+            </h1>
+            <p
+              class="bold text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
+            >
+              {{ itemPageCard.description }}
+            </p>
+            <ul class="flex flex-col mb-3 lg:mb-5">
+              <li
+                v-for="item in itemPageCard.list"
+                :key="item.id"
+                class="flex pt-1 lg:pt-2 items-center"
+              >
+                <img
+                  :src="iconList"
+                  alt="checklist"
+                  class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+                />
+                <p class="font-bold text-[12px] lg:text-[18px] pl-3">
+                  {{ item }}
+                </p>
+              </li>
+            </ul>
+            <div class="flex justify-center pt-5 lg:pt-8">
+              <ButtonOrg
+                :link="itemPageCard.Button.link"
+                :title="itemPageCard.Button.title"
               />
-              <p class="font-bold text-[12px] lg:text-[18px] pl-3">
-                {{ item }}
-              </p>
-            </li>
-          </ul>
-          <div class="flex justify-center pt-5 lg:pt-8">
-            <ButtonOrg
-              :link="itemPageCard.Button.link"
-              :title="itemPageCard.Button.title"
-            />
+            </div>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 <template>
-  <div class="wrap-slider" id="js-wrapSlider">
+  <div class="wrap-slider h-[410px] lg:h-[510px]" id="js-wrapSlider">
     <ul class="js-slider">
       <li
         v-for="item in sliderItems"
         :key="item.id"
-        class="item w-[245px] md:h-[446px]"
+        class="item w-[200px] h-[346px] md:w-[245px] md:h-[446px]"
       >
         <video
           :src="'/videos/' + item.src"
