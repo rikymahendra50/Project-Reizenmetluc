@@ -41,7 +41,7 @@ function BackgroundPrimary(elementsPrimary) {
     let newBorder = elementsPrimary.innerHTML;
     newBorder = newBorder.replace(
       /\*(.*?)\*/g,
-      '<span class="bg-primarycolor rounded-[10px] px-3 pb-1">$1</span>'
+      '<span class="bg-primarycolor rounded-[10px] px-1 md:px-3 md:pb-1">$1</span>'
     );
 
     newBorder = newBorder.replace(/\.\./g, "<br>");

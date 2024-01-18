@@ -36,7 +36,7 @@
             class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect lg:h-full"
           >
             <h1
-              class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
+              class="text-[14px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
             >
               {{ itemPageCard.title }}&nbsp;
               <span
@@ -58,9 +58,11 @@
                 <img
                   :src="iconList"
                   alt="checklist"
-                  class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+                  class="w-3 h-3 md:w-5 md:h-5 lg:w-[31px] lg:h-[31px]"
                 />
-                <p class="font-bold text-[12px] lg:text-[18px] pl-3">
+                <p
+                  class="font-bold text-[10px] md:text-[12px] lg:text-[18px] pl-2 md:pl-3"
+                >
                   {{ item }}
                 </p>
               </li>
@@ -86,11 +88,11 @@
             class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect"
           >
             <h1
-              class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
+              class="text-[14px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
             >
               {{ itemPageCard.title }}&nbsp;
               <span
-                class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
+                class="text-[#BFBFBF] font-bold text-[14px] sm:text-[24px] lg:text-[30px]"
                 >{{ itemPageCard.price }}
               </span>
             </h1>
@@ -108,9 +110,9 @@
                 <img
                   :src="iconList"
                   alt="checklist"
-                  class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+                  class="w-3 h-3 sm:w-5 sm:h-5 lg:w-[31px] lg:h-[31px]"
                 />
-                <p class="font-bold text-[12px] pl-3">
+                <p class="font-bold text-[10px] md:text-[12px] pl-2 sm:pl-3">
                   {{ item }}
                 </p>
               </li>
@@ -133,11 +135,11 @@
             class="flex flex-col relative bg-black bg-opacity-50 rounded-[10px] mx-2 px-3 lg:px-10 py-4 lg:py-8 shadow-effect h-full"
           >
             <h1
-              class="text-[18px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
+              class="text-[14px] sm:text-[24px] lg:text-[30px] font-bold lg:flex lg:items-center"
             >
               {{ itemPageCard.title }}&nbsp;
               <span
-                class="text-[#BFBFBF] font-bold text-[18px] sm:text-[24px] lg:text-[30px]"
+                class="text-[#BFBFBF] font-bold text-[14px] sm:text-[24px] lg:text-[30px]"
                 >{{ itemPageCard.price }}
               </span>
             </h1>
@@ -155,9 +157,11 @@
                 <img
                   :src="iconList"
                   alt="checklist"
-                  class="w-5 h-5 lg:w-[31px] lg:h-[31px]"
+                  class="w-3 h-3 md:w-5 md:h-5 lg:w-[31px] lg:h-[31px]"
                 />
-                <p class="font-bold text-[12px] lg:text-[18px] pl-3">
+                <p
+                  class="font-bold text-[10px] md:text-[12px] lg:text-[18px] pl-2 md:pl-3"
+                >
                   {{ item }}
                 </p>
               </li>
