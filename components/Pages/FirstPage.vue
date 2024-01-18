@@ -10,7 +10,9 @@
         >
           {{ LeftContent.title }}
         </h1>
-        <p class="py-5 font-thin text-[15px] lg:text-[20px] lg:tracking-widest">
+        <p
+          class="py-5 font-thin text-[12px] md:text-[15px] lg:text-[18px] 2xl:[20px] lg:tracking-widest"
+        >
           {{ LeftContent.description }}
         </p>
         <ButtonOrg
@@ -83,7 +85,7 @@
           </div>
           <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
             <p
-              class="bg-primarycolor w-[90%] lg:w-[80%] text-[10px] min-[420px]:text-[14px] lg:text-[16px] shadow-effect rounded-lg font-bold md:mt-5 sm:py-1 px-2 xl:tracking-widest"
+              class="bg-primarycolor w-[90%] lg:w-[80%] text-[8px] min-[420px]:text-[12px] lg:text-[14px] xl:text-[16px] shadow-effect rounded-lg font-bold md:mt-5 sm:py-1 py-[3px] px-2 xl:tracking-widest"
             >
               {{ orangeTitle[2].title }}
             </p>
@@ -102,14 +104,14 @@
     <div
       class="relative flex items-center bg-white h-[60px] lg:h-[88px] text-black p-3"
     >
-      <h1 class="ml-0 md:ml-5 text-[14px] sm:text-sm md:text-lg">
+      <h1 class="ml-0 md:ml-5 text-[12px] sm:text-[14px] sm:text-sm md:text-lg">
         <span class="font-bold"> {{ footerFirstPage.title }}</span>
         {{ footerFirstPage.titleSpan }}
       </h1>
       <img
         :src="footerFirstPage.pictureofPeople"
         :alt="footerFirstPage.alt"
-        class="w-[70px] ml-2"
+        class="w-[50px] sm:w-[70px] ml-2"
         loading="lazy"
       />
     </div>
