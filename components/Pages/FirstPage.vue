@@ -1,7 +1,6 @@
 <template>
   <section>
     <div class="flex flex-col sm:flex-row">
-      <!-- test -->
       <!-- Left Content -->
       <div
         class="flex flex-col sm:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0 justify-center"
