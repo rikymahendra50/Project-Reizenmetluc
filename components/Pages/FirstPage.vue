@@ -1,35 +1,36 @@
 <template>
   <section>
-    <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col sm:flex-row">
       <!-- Left Content -->
       <div
-        class="flex flex-col md:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0 justify-center"
+        class="flex flex-col sm:w-[40%] relative mx-5 md:ml-10 lg:ml-20 mt-10 md:mt-0 justify-center"
       >
         <h1
-          class="textSpanPrimary font-extrabold text-2xl lg:text-[2.75rem] lg:tracking-widest leading-tight"
+          class="textSpanPrimary font-extrabold text-2xl md:text-3xl lg:text-4xl lg:tracking-widest"
         >
           {{ LeftContent.title }}
         </h1>
         <p
-          class="py-5 font-thin text-[12px] md:text-[15px] lg:text-[18px] 2xl:[20px] lg:tracking-widest"
+          class="py-5 font-thin text-[14px] md:text-[18px] 2xl:[20px] lg:tracking-widest"
         >
           {{ LeftContent.description }}
         </p>
         <ButtonOrg
           :link="LeftContent.buttonLink"
           :title="LeftContent.buttonTitle"
+          :widthCustom="false"
         />
         <img
           :src="LeftContent.img"
           alt="leftimg"
-          class="hidden md:block w-[200px] h-[50px] mt-10 self-end mr-[-50px]"
+          class="hidden sm:block w-[150px] h-[50px] lg:w-[250px] lg:h-[70px] mt-5 md:mt-10 self-end mr-[-60px] lg:mr-[-110px]"
         />
       </div>
       <!-- End Left Content -->
       <!-- Right Content -->
-      <div class="flex flex-col md:w-[60%] mt-10 mx-5 md:mx-0 md:mt-5">
-        <div class="relative w-[100%] flex">
-          <div class="flex">
+      <div class="flex flex-col sm:w-[60%] mt-6 mx-5 md:mx-0 md:mt-5">
+        <div class="relative flex">
+          <div class="flex w-[100%] justify-end">
             <img
               :src="NormalPicture[0].fileName"
               :alt="NormalPicture[0].title"
@@ -61,21 +62,30 @@
                 class="rounded-lg shadow-effect"
                 loading="lazy"
               />
-              <p
-                class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-160px] sm:mt-[-60px] md:mt-[-40px] px-1 sm:py-1 sm:px-2 rounded-lg font-bold text-[10px] min-[420px]:text-sm xl:tracking-widest"
+              <div
+                class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-90px] lg:left-[-140px] sm:mt-[-60px] md:mt-[-40px] px-1 md:py-1 md:px-2 rounded-lg"
               >
-                {{ orangeTitle[0].title }}
-              </p>
+                <p
+                  class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base xl:tracking-widest flex items-center justify-center"
+                >
+                  {{ orangeTitle[0].title }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="relative flex">
           <div class="w-[55%] flex-col flex mr-5 sm:mr-3">
-            <p
-              class="bg-primarycolor shadow-effect rounded-lg font-bold text-[10px] min-[420px]:text-sm lg:text-base sm:py-1 px-2 mt-[-5px] lg:tracking-widest absolute sm:ml-4 lg:ml-10 flex"
+            <div
+              class="bg-primarycolor shadow-effect rounded-lg sm:py-1 px-2 mt-[-5px] lg:tracking-widest absolute ml-3 sm:ml-2 md:ml-6 xl:ml-24"
             >
-              {{ orangeTitle[1].title }}
-            </p>
+              <p
+                class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base flex items-center justify-center"
+              >
+                {{ orangeTitle[1].title }}
+              </p>
+            </div>
+
             <img
               :src="NormalPicture[2].fileName"
               :alt="NormalPicture[2].title"
@@ -84,11 +94,15 @@
             />
           </div>
           <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
-            <p
-              class="bg-primarycolor w-[90%] lg:w-[80%] text-[8px] min-[420px]:text-[12px] lg:text-[14px] xl:text-[16px] shadow-effect rounded-lg font-bold md:mt-5 sm:py-1 py-[3px] px-2 xl:tracking-widest"
+            <div
+              class="bg-primarycolor w-[90%] lg:w-[80%] shadow-effect rounded-lg md:mt-5 md:py-1 py-[3px] px-2"
             >
-              {{ orangeTitle[2].title }}
-            </p>
+              <p
+                class="text-[8px] min-[420px]:text-[12px] sm:text-[11px] lg:text-[14px] xl:text-[16px] font-bold xl:tracking-widest"
+              >
+                {{ orangeTitle[2].title }}
+              </p>
+            </div>
             <img
               :src="NormalPicture[3].fileName"
               :alt="NormalPicture[3].title"

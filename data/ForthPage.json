@@ -5,10 +5,11 @@
       "title": "Gratis",
       "description": "Deze groep is perfect voor als je **gezellig** met wil **andere reizigers** chatten, **inspiratie op wilt** doen en opzoek bent naar die **handige travel hacks en deals**.",
       "list": [
-        "Chat met like-minded reizigers",
-        "Vind jouw nieuwe travel buddy",
+        "Algemene chat",
         "Unlock handige reis tips",
-        "Laat jezelf inspireren"
+        "Laat jezelf inspieren",
+        "Verdien een online inkomen",
+        "Creeer de vrijheid om vanaf je laptop te werken"
       ],
       "Button": {
         "title": "Pak Gratis Toegang",
@@ -58,5 +59,6 @@
     "gratis": "Maandelijks",
     "jaarlijks": "**Jaarlijks** (save €15,54)"
   },
-  "iconList": "/images/checklist.png"
+  "iconChecklist": "/images/checklist.png",
+  "iconX": "/images/x-logo.svg"
 }

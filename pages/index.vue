@@ -6,9 +6,9 @@
 
     <PagesThirdPage />
 
-    <PagesForthPage />
-
     <PagesTestimony />
+
+    <PagesForthPage />
 
     <PagesFAQPage />
   </section>

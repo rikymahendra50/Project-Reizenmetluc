@@ -5,7 +5,9 @@
         <div
           class="flex flex-wrap items-center justify-center font-bold w-full lg:w-[45%] title-container"
         >
-          <h1 class="text-[70px] lg:text-[96px]">{{ title }}</h1>
+          <h1 class="text-[40px] sm:text-[50px] md:text-[70px] lg:text-[96px]">
+            {{ title }}
+          </h1>
         </div>
         <div class="flex flex-col lg:w-[55%] justify-center items-center">
           <div
@@ -56,7 +58,7 @@
 
 .cardFaq {
   transition: max-height 0.5s, width 0.5s;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .cardFaq.active {

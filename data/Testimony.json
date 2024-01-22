@@ -1,29 +1,53 @@
 {
-  "title": "Deze #reizigers# hebben we al geholpen",
+  "title": "Dit is wat andere al hebben #verdient#",
   "testimony": [
     {
       "id": 1,
-      "comment": "Dankzij Luc heb ik morgen mijn eerste bijles student via GoStudent, echt superblij dat deze tip zo snel resultaat heeft gebracht! Nu al blij dat deze community op mijn pad is gekomen.",
-      "imagePerson": "/images/Testimonial1/PersonTestimoni.png",
-      "username": "Dennis Mooren",
-      "underscore": "DennisMore",
-      "title": "persontestimoni"
+      "imageSrc": "/images/Comments slide/1.jpg"
     },
     {
       "id": 2,
-      "comment": "Je hebt me ook na laten denken en ik ga stoppen met me baan en leven in Valencia binnenkort. Ben klaar met al dat serieuze gedoe en ik ga nu helemaal los!",
-      "imagePerson": "/images/Testimonial1/PersonTestimoni2.png",
-      "username": "Sarah op Roodt",
-      "underscore": "sarah.gram",
-      "title": "persontestimoni2"
+      "imageSrc": "/images/Comments slide/2.jpg"
     },
     {
       "id": 3,
-      "comment": "Alleen al door de 1-op-1 call met Luc zou ik de VIP aan iedereen kunnen aanraden. Binnen een uur heb je helder op een rijtje wat je wil gaan bereiken en hoe je dat gaat doen. Daarnaast houdt hij je accountable om te zorgen dat je ook écht aan de slag gaat.",
-      "imagePerson": "/images/Testimonial1/PersonTestimoni3.png",
-      "username": "Kimberley kijzers",
-      "underscore": "kijzer.kim",
-      "title": "persontestimoni3"
+      "imageSrc": "/images/Comments slide/3.jpg"
+    },
+    {
+      "id": 4,
+      "imageSrc": "/images/Comments slide/4.jpg"
+    },
+    {
+      "id": 5,
+      "imageSrc": "/images/Comments slide/5.jpg"
+    },
+    {
+      "id": 6,
+      "imageSrc": "/images/Comments slide/6.jpg"
+    },
+    {
+      "id": 7,
+      "imageSrc": "/images/Comments slide/7.jpg"
+    },
+    {
+      "id": 8,
+      "imageSrc": "/images/Comments slide/8.jpg"
+    },
+    {
+      "id": 9,
+      "imageSrc": "/images/Comments slide/9.jpg"
+    },
+    {
+      "id": 10,
+      "imageSrc": "/images/Comments slide/10.jpg"
+    },
+    {
+      "id": 11,
+      "imageSrc": "/images/Comments slide/11.jpg"
+    },
+    {
+      "id": 12,
+      "imageSrc": "/images/Comments slide/12.jpg"
     }
   ]
 }

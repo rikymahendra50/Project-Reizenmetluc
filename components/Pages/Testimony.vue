@@ -1,41 +1,33 @@
 <template>
   <section
-    class="relative w-full flex text-white py-10 justify-center items-center"
+    class="relative w-full flex text-white md:py-10 justify-center items-center"
   >
     <div
-      class="w-[95%] bg-[#282728] bg-opacity-[48%] rounded-lg md:rounded-3xl shadow-effect relative"
+      class="w-[95%] bg-[#282728] bg-opacity-[48%] rounded-lg lg:rounded-3xl shadow-effect relative"
     >
       <div class="flex justify-center text-center">
         <h1
-          class="textSpanPrimary textSpanPrimary text-[30px] lg:text-[44px] mt-5 font-bold"
+          class="textSpanPrimary textSpanPrimary text-[25px] sm:text-[30px] lg:text-[44px] mt-5 font-bold"
         >
           {{ title }}
         </h1>
       </div>
-      <div class="wrap-slider2 h-[350px] md:h-[400px]" id="js-wrapSlider2">
-        <ul class="js-slider2">
+      <div
+        class="wrap-slider2 h-[200px] sm:h-[350px] md:h-[390px] flex justify-center"
+        id="js-wrapSlider2"
+      >
+        <ul class="js-slider2 flex items-center">
           <li
-            class="item2 bg-black w-[300px] md:w-[379px] rounded-[13px] shadow-effect relative h-[250px] md:h-[300px] mx-3 md:mx-5 shadow-smallcard pt-2 px-2 md:pt-5 md:px-5"
             v-for="itemtestimony in testimony"
             :key="itemtestimony.id"
+            class="item2 w-[200px] md:w-[400px] mx-5"
           >
-            <p class="text-[13px] lg:text-sm font-bold text-justify">
-              {{ itemtestimony.comment }}
-            </p>
-            <div class="flex pt-3 absolute bottom-3">
-              <img
-                :src="itemtestimony.imagePerson"
-                :alt="itemtestimony.title"
-                class="w-[50px] h-[50px]"
-                loading="lazy"
-              />
-              <div class="flex flex-col pl-3">
-                <h1 class="font-bold text-sm">
-                  {{ itemtestimony.underscore }}
-                </h1>
-                <p class="font-thin text-sm">@{{ itemtestimony.username }}</p>
-              </div>
-            </div>
+            <img
+              :src="itemtestimony.imageSrc"
+              :alt="itemtestimony.id"
+              loading="lazy"
+              class="rounded-sm md:rounded-lg lg:rounded-2xl"
+            />
           </li>
         </ul>
       </div>
@@ -43,12 +35,11 @@
   </section>
 </template>
 
-<style scoped>
+<style>
 .wrap-slider2 {
-  width: 98%;
+  width: 100%;
   overflow: hidden;
   position: relative;
-  margin: auto;
 
   ul {
     padding: 0;
@@ -57,9 +48,10 @@
     position: absolute;
     left: 100%;
     top: 50%;
-    transform: translate(0, -20%);
+    transform: translate(0, -50%);
     display: flex;
     flex-direction: row;
+    will-change: transform;
 
     li {
       display: block;
@@ -91,16 +83,16 @@ export default {
   },
   methods: {
     setupSlider2() {
-      window.requestAnimFrame2 = (function () {
-        return (
-          window.requestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-          }
-        );
-      })();
+      // window.requestAnimFrame2 = (function () {
+      //   return (
+      //     window.requestAnimationFrame ||
+      //     window.webkitRequestAnimationFrame ||
+      //     window.mozRequestAnimationFrame ||
+      //     function (callback) {
+      //       window.setTimeout(callback, 1000 / 60);
+      //     }
+      //   );
+      // })();
       const wrapSlider2 = document.querySelector("#js-wrapSlider2");
       const widthWrap2 = wrapSlider2.offsetWidth;
 
@@ -110,7 +102,6 @@ export default {
 
       const getSliderList2 = () => {
         sliders2 = document.querySelectorAll(".js-slider2");
-        // get the dom elements in a array to better use it
         sliderList2 = [...sliders2];
       };
       // made a function for update later
@@ -195,12 +186,22 @@ export default {
         requestAnimFrame2(start2);
       }
 
-      // wrapSlider2.addEventListener("mouseover", () => {
-      //   isPaused2 = true;
-      // });
-      // wrapSlider2.addEventListener("mouseout", () => {
-      //   isPaused2 = false;
-      // });
+      // deskop
+      wrapSlider2.addEventListener("mouseover", () => {
+        isPaused2 = true;
+      });
+      wrapSlider2.addEventListener("mouseout", () => {
+        isPaused2 = false;
+      });
+
+      // mobile
+      wrapSlider2.addEventListener("touchstart", (event) => {
+        isPaused2 = true;
+      });
+
+      wrapSlider2.addEventListener("touchend", (event) => {
+        isPaused2 = false;
+      });
 
       start2();
     },

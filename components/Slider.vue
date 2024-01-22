@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap-slider h-[410px] lg:h-[510px]" id="js-wrapSlider">
+  <div class="wrap-slider h-[410px] md:h-[510px]" id="js-wrapSlider">
     <ul class="js-slider">
       <li
         v-for="item in sliderItems"
