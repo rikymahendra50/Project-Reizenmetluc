@@ -7,7 +7,7 @@
     >
       <div class="flex justify-center text-center">
         <h1
-          class="textSpanPrimary textSpanPrimary text-[25px] sm:text-[30px] lg:text-[44px] mt-5 font-bold"
+          class="textSpanPrimary text-[25px] sm:text-[30px] lg:text-[44px] mt-5 font-bold"
         >
           {{ title }}
         </h1>
@@ -83,16 +83,16 @@ export default {
   },
   methods: {
     setupSlider2() {
-      // window.requestAnimFrame2 = (function () {
-      //   return (
-      //     window.requestAnimationFrame ||
-      //     window.webkitRequestAnimationFrame ||
-      //     window.mozRequestAnimationFrame ||
-      //     function (callback) {
-      //       window.setTimeout(callback, 1000 / 60);
-      //     }
-      //   );
-      // })();
+      window.requestAnimFrame2 = (function () {
+        return (
+          window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+          }
+        );
+      })();
       const wrapSlider2 = document.querySelector("#js-wrapSlider2");
       const widthWrap2 = wrapSlider2.offsetWidth;
 
