@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 const colors = require("tailwindcss/colors");
-// Dalam nuxt.config.js
 
 export default <Partial<Config>>{
   content: ["docs/content/**/*.md"],
@@ -36,8 +35,8 @@ export default <Partial<Config>>{
         secondarycolor: "#FFF",
       },
       backgroundImage: {
-        // background: "url('~/assets/images/Background.png')",
-        // background2: "url('~/assets/images/Website-background1.jpg')",
+        background: "url('/images/Background.png')",
+        background2: "url('/images/Website-background1.jpg')",
       },
     },
     fontFamily: {
