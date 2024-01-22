@@ -7,7 +7,7 @@
     >
       <div class="flex justify-center text-center">
         <h1
-          class="textSpanPrimary text-[25px] sm:text-[30px] lg:text-[44px] mt-5 font-bold"
+          class="textSpanPrimary text-[20px] sm:text-[30px] lg:text-[44px] mt-5 font-bold"
         >
           {{ title }}
         </h1>
@@ -26,7 +26,7 @@
               :src="itemtestimony.imageSrc"
               :alt="itemtestimony.id"
               loading="lazy"
-              class="rounded-sm md:rounded-lg lg:rounded-2xl"
+              class="rounded-lg lg:rounded-2xl"
             />
           </li>
         </ul>

@@ -16,6 +16,7 @@
           class="shadow-effect-video"
           oncanplay="this.muted=true"
           playsinline
+          @loadedmetadata="videoLoaded"
         ></video>
       </li>
     </ul>
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       sliderItems: jsonData.sliderItems,
+      loadedVideos: 0,
     };
   },
   mounted() {
@@ -49,6 +51,10 @@ export default {
 
       // odd and even for up and down video
       const videos = document.querySelectorAll(".js-slider video");
+
+      videos.forEach((video) => {
+        video.addEventListener("loadedmetadata", this.videoLoaded);
+      });
 
       videos.forEach((video, index) => {
         if (index % 2 === 0) {
@@ -164,6 +170,16 @@ export default {
       // });
 
       start();
+    },
+    videoLoaded() {
+      // Increment the loadedVideos count
+      this.loadedVideos++;
+
+      // Check if all videos are loaded
+      if (this.loadedVideos === this.sliderItems.length) {
+        // All videos are loaded, start the slider animation or perform any other action
+        this.startSliderAnimation();
+      }
     },
   },
 };

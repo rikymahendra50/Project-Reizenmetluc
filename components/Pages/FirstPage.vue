@@ -63,10 +63,10 @@
                 loading="lazy"
               />
               <div
-                class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-90px] lg:left-[-140px] sm:mt-[-60px] md:mt-[-40px] px-1 md:py-1 md:px-2 rounded-lg"
+                class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-90px] lg:left-[-140px] sm:mt-[-60px] md:mt-[-40px] px-1 md:py-1 md:px-2 rounded-lg flex items-center justify-center"
               >
                 <p
-                  class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base xl:tracking-widest flex items-center justify-center"
+                  class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base xl:tracking-widest"
                 >
                   {{ orangeTitle[0].title }}
                 </p>
@@ -77,10 +77,10 @@
         <div class="relative flex">
           <div class="w-[55%] flex-col flex mr-5 sm:mr-3">
             <div
-              class="bg-primarycolor shadow-effect rounded-lg sm:py-1 px-2 mt-[-5px] lg:tracking-widest absolute ml-3 sm:ml-2 md:ml-6 xl:ml-24"
+              class="bg-primarycolor shadow-effect rounded-lg sm:py-1 px-2 mt-[-5px] lg:tracking-widest absolute ml-3 sm:ml-2 md:ml-6 xl:ml-24 flex items-center justify-center"
             >
               <p
-                class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base flex items-center justify-center"
+                class="font-bold text-[10px] min-[420px]:text-[14px] sm:text-[11px] lg:text-base"
               >
                 {{ orangeTitle[1].title }}
               </p>
@@ -95,7 +95,7 @@
           </div>
           <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
             <div
-              class="bg-primarycolor w-[90%] lg:w-[80%] shadow-effect rounded-lg md:mt-5 md:py-1 py-[3px] px-2"
+              class="bg-primarycolor w-[90%] lg:w-[80%] shadow-effect rounded-lg md:mt-5 md:py-1 py-[3px] px-2 flex items-center justify-center"
             >
               <p
                 class="text-[8px] min-[420px]:text-[12px] sm:text-[11px] lg:text-[14px] xl:text-[16px] font-bold xl:tracking-widest"
