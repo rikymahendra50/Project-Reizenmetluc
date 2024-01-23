@@ -35,7 +35,6 @@
               :src="NormalPicture[0].fileName"
               :alt="NormalPicture[0].title"
               class="rounded-lg shadow-effect max-w-[185px] w-[30%] h-[90%]"
-              loading="lazy"
             />
             <!-- comment -->
             <div
@@ -51,7 +50,6 @@
                 :src="commentScrenshot[1].fileName"
                 :alt="commentScrenshot[1].title"
                 class="rounded-sm md:rounded-lg shadow-effect relative"
-                loading="lazy"
               />
             </div>
             <!-- end comment -->
@@ -60,7 +58,6 @@
                 :src="NormalPicture[1].fileName"
                 :alt="NormalPicture[1].title"
                 class="rounded-lg shadow-effect"
-                loading="lazy"
               />
               <div
                 class="bg-primarycolor shadow-effect absolute left-[-80px] md:left-[-90px] mt-[-30px] sm:left-[-90px] lg:left-[-140px] sm:mt-[-60px] md:mt-[-40px] px-1 md:py-1 md:px-2 rounded-lg flex items-center justify-center"
@@ -90,7 +87,6 @@
               :src="NormalPicture[2].fileName"
               :alt="NormalPicture[2].title"
               class="max-w-[280px] w-[60%] shadow-effect rounded-t-lg mt-5 sm:mt-10 self-end mr-2 lg:mr-5"
-              loading="lazy"
             />
           </div>
           <div class="w-[45%] relative flex flex-col lg:mt-0 mt-5">
@@ -109,7 +105,6 @@
               class="mt-2 lg:mt-5 rounded-md md:rounded-[10px] shadow-effect"
               width="300"
               height="300"
-              loading="lazy"
             />
           </div>
         </div>
