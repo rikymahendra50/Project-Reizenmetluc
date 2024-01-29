@@ -1,9 +1,9 @@
 <template>
   <dialog ref="my_modal_4" class="modal">
-    <div class="w-[95%] bg-white flex flex-col rounded-lg">
+    <div class="w-[95%] bg-white flex flex-col rounded-lg relative">
       <div class="flex flex-row">
-        <div class="w-[50%] flex justify-center items-center flex-col lg:mx-2">
-          <div
+        <div class="w-[40%] flex justify-center items-center flex-col lg:mx-2">
+          <!-- <div
             class="bg-background2 text-white w-[90%] min-[400px]:w-[80%] lg:w-[70%] md:h-[90%] px-4 py-2 min-[420px]:py-5 lg:py-10 flex flex-col justify-center lg:px-10 cover"
           >
             <h1
@@ -47,10 +47,15 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
+          <img
+            src="/images/bookLucComunity.png"
+            alt="bookLucComunnity"
+            class="w-[100%] md:w-[60%]"
+          />
         </div>
         <div
-          class="bg-background2 w-[50%] text-white px-4 py-4 lg:px-10 lg:py-20 flex flex-col justify-center"
+          class="bg-background2 w-[60%] text-white px-4 py-4 lg:px-10 lg:py-20 flex flex-col justify-center"
         >
           <h1
             class="text-[12px] sm:text-[16px] lg:text-[24px] textSpanPrimary font-bold"
@@ -99,9 +104,12 @@
           </ul>
         </div>
       </div>
-      <button class="btn btn-sm md:btn-md" @click="closeModal($event)">
-        Close
-      </button>
+      <div
+        class="hover:bg-slate-500 bg-black absolute top-[-10px] right-[-10px] w-[30px] h-[30px] lg:w-[2.9rem] lg:h-[2.9rem] rounded-full flex items-center justify-center cursor-pointer"
+        @click="closeModal($event)"
+      >
+        X
+      </div>
     </div>
   </dialog>
 </template>
