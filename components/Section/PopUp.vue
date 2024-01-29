@@ -119,7 +119,7 @@
       rgba(255, 255, 255, 0.25) 17px,
       transparent 22px
     ),
-    url("/images/Background.png");
+    url("/images/Background2.png");
   margin: auto;
   border-radius: 5px;
   background-size: cover;
