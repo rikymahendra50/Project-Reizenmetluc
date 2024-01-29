@@ -1,0 +1,36 @@
+{
+  "PopUp1": {
+    "title": "De ultieme.. *IK WIL REIZEN* Bespaarguide",
+    "price": "Bespaar -€300 tot €500- per maand",
+    "buttonSpan": "Eenmalige deal",
+    "iconList": [
+      "/images/Emoji1/airplane.png",
+      "/images/Emoji1/house.png",
+      "/images/Emoji1/taco.png",
+      "/images/Emoji1/trolleybus.png",
+      "/images/Emoji1/person-walking.png"
+    ],
+    "list": [
+      "Zo vind je goedkope vluchten",
+      "Goedkope of gratis accommodatie",
+      "Bespaar op eten",
+      "Reis met openbaar verboer",
+      "Zo berspaar je op uitstapjes"
+    ]
+  },
+  "PopUp2": {
+    "title": "#De methode# hoe ik al 2 jaar de wereld over reis en #€300 tot €500# per maand bespaar",
+    "price": "Nu voor #19,95# ipv $39,95$",
+    "buttonTitle": "Claim de bespaar guide",
+    "buttonLink": "#",
+    "buttonSpan": "Eenmalige deal",
+    "iconList": "/images/checklist.png",
+    "list": [
+      "**Reis meer** voor minded geld",
+      "Unlock **4+ jaar aan reiservaring**",
+      "Vind de **goedkoopste vliegticketd**",
+      "**Slaap goedkoop** en comfortabel",
+      "Reis zorgeloos de wereld rond"
+    ]
+  }
+}

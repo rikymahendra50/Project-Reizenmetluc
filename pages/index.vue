@@ -1,20 +1,28 @@
 <template>
   <section class="bg-background2 bg-no-repeat bg-cover text-white font-thin">
-    <PagesFirstPage />
+    <SectionFirstPage />
 
-    <PagesSecondPage />
+    <SectionSecondPage />
 
-    <PagesThirdPage />
+    <SectionThirdPage />
 
-    <PagesTestimony />
+    <SectionTestimony />
 
-    <PagesForthPage />
+    <SectionForthPage />
 
-    <PagesFAQPage />
+    <SectionFAQPage />
+
+    <SectionPopUp />
   </section>
 </template>
 
+<style scoped>
+/*  */
+</style>
+
 <script setup>
+const showPopup = ref(true);
+
 useHead({
   title: "home",
 });

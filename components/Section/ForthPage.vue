@@ -43,11 +43,6 @@
                 >{{ itemPageCard.price }}
               </span>
             </h1>
-            <!-- <p
-              class="bold text-[10px] sm:text-[14px] my-2 lg:my-3 font-extraligh"
-            >
-              {{ itemPageCard.description }}
-            </p> -->
             <ul class="flex flex-col mb-3 lg:mb-5">
               <li
                 v-for="(item, index) in itemPageCard.list"
@@ -190,10 +185,6 @@
     </div>
   </section>
 </template>
-
-<style>
-/* style */
-</style>
 
 <script>
 import { convertRegExp } from "@/utils/convert.js";
