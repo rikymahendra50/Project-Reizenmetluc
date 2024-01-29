@@ -17,7 +17,7 @@
             class="w-full px-3 py-2 placeholder-gray-400 border rounded-md focus:outline-none focus:ring focus:border-indigo-300"
             id="username"
             type="text"
-            placeholder="example@gmail.com"
+            placeholder="email@gmail.com"
           />
         </div>
         <div class="mb-4 pt-2">
