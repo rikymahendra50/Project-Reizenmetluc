@@ -22,7 +22,7 @@
             <div class="relative">
               <span
                 ><img
-                  src="/images/Screenshots for sections 1/arrow-nonshadow.png"
+                  src="/images/arrow-nonshadow.png"
                   alt="arrow"
                   class="w-[50px] sm:w-[70px] lg:w-[100px] rotate-[-110deg] absolute right-2"
               /></span>
@@ -74,7 +74,7 @@
               {{ PopUp2.buttonTitle }}</NuxtLink
             >
             <p
-              class="flex items-center justify-center px-2 w-[80px] sm:w-[150px] max-w-[140px] bg-black sm:py-1 rounded-b-lg text-[8px] sm:text-[14px] font-bold ml-1"
+              class="flex items-center justify-center md:mt-1 px-2 w-[80px] sm:w-[150px] max-w-[140px] bg-black sm:py-1 rounded-b-lg text-[8px] sm:text-[14px] font-bold ml-1"
             >
               Eenmalige deal
             </p>
