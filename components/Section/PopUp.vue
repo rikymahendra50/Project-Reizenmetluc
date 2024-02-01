@@ -73,7 +73,8 @@
           </p>
           <div class="relative">
             <NuxtLink
-              to="/form"
+              to="https://api.leadconnectorhq.com/widget/form/jQY0iSuOqAxz5uRsOSS9"
+              target="_blank"
               class="bg-primarycolor text-[8px] min-[400px]:text-[12px] sm:text-[14px] lg:text-[20px] p-1 md:p-2 rounded-md my-2 px-2 md:px-5 min-[320px]:w-[100%] min-[400px]:w-[79%] sm:w-[55%] md:w-[65%] font-bold text-center"
             >
               {{ PopUp2.buttonTitle }}</NuxtLink
